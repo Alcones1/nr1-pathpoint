@@ -3,4 +3,4 @@ A common starting place for Pathpoint is APM Events and Logs, but it is up to yo
 When you are ready to make some edits you can simply download the current version of the JSON config, edit and re-upload it. You can also use "right click" to adjust touchpoint configurations.
 
 
-[Return to main Index](readme1.md) 
+[Return to main Index](https://github.com/Alcones1/nr1-pathpoint/blob/main/Readme1.md 
