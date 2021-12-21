@@ -12,8 +12,6 @@ import fireIcon from '../../images/FireIcon.svg';
 import fireIconOn from '../../images/FireIconOn.svg';
 import canaryIcon from '../../images/CanaryIcon.svg';
 import canaryIconOn from '../../images/CanaryIconOn.svg';
-import sixthSenseIcon from '../../images/SixthSense.svg';
-import sixthSenseIconOn from '../../images/SixthSenseOn.svg';
 // import goutIcon from '../../images/GoutIcon.svg';
 // import goutIconOn from '../../images/goutBlack.svg';
 
@@ -25,8 +23,6 @@ import kpiStatusUpper from '../../images/kpiStatusUpper.svg';
 import kpiStatusLower from '../../images/kpiStatusLower.svg';
 
 const Header = ({
-  iconSixthSenseStatus,
-  activeSixthSenseIcon,
   iconCanaryStatus,
   iconFireStatus,
   iconStartStatus,
@@ -56,55 +52,57 @@ const Header = ({
         </div>
         {RenderLogo(logoSetup)}
       </div>
-      <div className="kpi">
-        <RangeDateSelector
-          timeRangeKpi={timeRangeKpi}
-          additionalAction={changeTimeRangeKpi}
-          options={[
-            {
-              label: 'DAY',
-              value: '24 HOURS AGO'
-            },
-            {
-              label: 'WEEK',
-              value: '7 DAYS AGO'
-            },
-            {
-              label: 'MONTH',
-              value: '30 DAYS AGO'
-            },
-            {
-              label: 'YDT',
-              value: '365 DAYS AGO'
-            }
-          ]}
-        />
-        <>
-          {filterKpis.map((kpi, index) => {
-            return (
-              <div
-                key={index}
-                style={{ cursor: kpi.link !== '' ? 'pointer' : 'default' }}
-                onClick={() => {
-                  kpi.link !== '' && window.open(kpi.link);
-                }}
-                className="kpicontent"
-              >
-                <div className="kpicontent--colorgrey kpicontent--size10">
-                  {kpi.shortName}
+      {filterKpis.length > 0 && (
+        <div className="kpi">
+          <RangeDateSelector
+            timeRangeKpi={timeRangeKpi}
+            additionalAction={changeTimeRangeKpi}
+            options={[
+              {
+                label: 'DAY',
+                value: '24 HOURS AGO'
+              },
+              {
+                label: 'WEEK',
+                value: '7 DAYS AGO'
+              },
+              {
+                label: 'MONTH',
+                value: '30 DAYS AGO'
+              },
+              {
+                label: 'YDT',
+                value: '365 DAYS AGO'
+              }
+            ]}
+          />
+          <>
+            {filterKpis.map((kpi, index) => {
+              return (
+                <div
+                  key={index}
+                  style={{ cursor: kpi.link !== '' ? 'pointer' : 'default' }}
+                  onClick={() => {
+                    kpi.link !== '' && window.open(kpi.link);
+                  }}
+                  className="kpicontent"
+                >
+                  <div className="kpicontent--colorgrey kpicontent--size10">
+                    {kpi.shortName}
+                  </div>
+                  <div className="kpicontent--colorblack kpicontent--size12">
+                    {PrintKPI(kpi)}
+                  </div>
                 </div>
-                <div className="kpicontent--colorblack kpicontent--size12">
-                  {PrintKPI(kpi)}
-                </div>
-              </div>
-            );
-          })}
-        </>
-        <SelectorKpis
-          listKpis={kpis}
-          updateDataKpisChecked={updateDataKpisChecked}
-        />
-      </div>
+              );
+            })}
+          </>
+          <SelectorKpis
+            listKpis={kpis}
+            updateDataKpisChecked={updateDataKpisChecked}
+          />
+        </div>
+      )}
       <span
         className="budgetLoss"
         style={{
@@ -117,18 +115,6 @@ const Header = ({
       />
       <div className="containerRigthtHand">
         <div className="distributionIcons">
-          <div
-            style={{ visibility: 'hidden' }}
-            className="fireIconContainer"
-            onClick={() => {
-              activeSixthSenseIcon();
-            }}
-          >
-            <img
-              style={{ height: '18px' }}
-              src={iconSixthSenseStatus ? sixthSenseIconOn : sixthSenseIcon}
-            />
-          </div>
           <div
             className="fireIconContainer"
             onClick={() => {
@@ -337,8 +323,6 @@ export {
 export default Header;
 
 Header.propTypes = {
-  iconSixthSenseStatus: PropTypes.bool.isRequired,
-  activeSixthSenseIcon: PropTypes.func,
   iconCanaryStatus: PropTypes.bool.isRequired,
   iconFireStatus: PropTypes.bool.isRequired,
   iconStartStatus: PropTypes.bool.isRequired,
