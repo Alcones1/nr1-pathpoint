@@ -12,4 +12,4 @@ PRC (Person Count)
 ○ Current Sessions
 ○ Past Sessions
 ○ Previous Week Comparison
-[Return to main Index](readme1.md) 
+[Return to main Index](https://github.com/Alcones1/nr1-pathpoint/blob/main/Readme1.md) 
