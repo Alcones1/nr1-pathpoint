@@ -1,4 +1,4 @@
-![cambiar](screenshots/pathpoint.png)           
+![cambiar](screenshots/logo-pathpoint.png)           
            
                    New Relic Pathpoint Documentation
 
@@ -68,12 +68,12 @@ Pathpoint is an enterprise platform tracker that models system health in relatio
 
 
 
-=====================================================
-Return to top of [Index](#Index)
+
 
 
 
 ### <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
+
 
 Pathpoint will work in nearly any New Relic account. To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. 
 
