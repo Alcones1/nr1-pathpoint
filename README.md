@@ -28,7 +28,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
       *[Setting up Stages & Steps](#Setting_up_Stages_Steps)
 
-      *[Setting up Touchpoints](#Setting_up_Touchpoints)
+   
 
       * [Touchpoint Types](#Touchpoint_Types)  
          * [PCC (Process Count)](#PCC)  
@@ -38,6 +38,10 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
          * [FRT (Front End Health)](#FRT)
 
          * [SYN (Synthetic Check)](#SYN)
+
+      *    [Setting up Touchpoints](#Setting_up_Touchpoints)
+
+         	
 
     *  [In App Tuning](#In_App_Tuning) 
 
@@ -343,9 +347,7 @@ Return to top of [Index](#Index)
 
 
 Return to top of [Index](#Index)
-### <a id="Touchpoint_Types"></a>Touchpoint_Types ###
-
-Pathpoint offers different types of touchpoints, which are adapted according to the needs of the business. 
+### <a id="Touchpoint_Types"></a>Touchpoint_Types ### 
 
 Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
 
