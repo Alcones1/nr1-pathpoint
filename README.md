@@ -2,7 +2,7 @@
            
                    New Relic Pathpoint Documentation
 
-Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting business stages, and on this documentation you will learn how to interact with the Pathpoint GUI, like for example how to tweak the different Pathpoints, to get the data you are interested in tracking.
+Pathpoint is New Relic enterprise platform tracker that models system health in relation to actual user-impacting business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Pathpoints, to visually work with the data you are interested in tracking.
 
 
  ### <a id="Index"></a>Index ###
@@ -74,14 +74,17 @@ Pathpoint is an enterprise platform tracker that models system health in relatio
 
 ### <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
 
+Pathpoint will work in nearly any New Relic account. And each Pathpoing is divided into; Stages, steps and Pathpoints.
 
-Pathpoint will work in nearly any New Relic account. To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. 
+To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. 
 
 This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
 
-A common starting place for Pathpoint is APM Events and Logs, but it is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal disucssions with your stakeholders to understand how things really fit in.
+A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal disucssions with your stakeholders to understand how things really fit in.
 
-When you are ready to make some edits you can simply download the current version of the JSON config, edit and re-upload it. You can also use "right click" to adjust touchpoint configurations.
+When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, edit and re-upload it. 
+
+You can also manually "right click" to adjust each touchpoint configuration.
 
 
 
@@ -89,10 +92,15 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
-The stages of a Pathpoint, allow you to see the business processes at a high level, and for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
+The different stages of a Pathpoint, will allow you to see the business processes at a high level, and for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
-And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. In each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved.
+And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. 
 
+On the following graphic, you can see that this Pathpoint has 5 stages in process.
+
+![cambiar](screenshots/stagesb.png)
+
+And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved.
 
 
 
@@ -132,7 +140,11 @@ Line: Positions the row in which the task is located within the stage.
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a TouchPoint will be linked to the error rate and latency.
 
+The following graphic shows an example of a PCC touchpoint;
+
 ![cambiar](screenshots/Example_TP_PRC1.png)
+
+This touchpoint is very useful, for instance, to count people going into a business.
 
 ![cambiar](screenshots/Example_TP_PRC2.png)
 
@@ -287,7 +299,13 @@ Return to top of [Index](#Index)
 Return to top of [Index](#Index)
 ### <a id="Touchpoint_Types"></a>Touchpoint_Types ###
 
-Pathpoint offers different types of touchpoints, which are adapted according to the needs of the business. Below is the description and a brief example for each case:
+Pathpoint offers different types of touchpoints, which are adapted according to the needs of the business. 
+
+Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
+
+Below is the description and a brief example for each case:
+
+
 
 PRC (Person Count)
 ● Data:
