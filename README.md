@@ -1,8 +1,9 @@
 ![cambiar](screenshots/logo-pathpoint.png)           
            
-                   New Relic Pathpoint Documentation
+                   
 
-Pathpoint is New Relic enterprise platform tracker that models system health in relation to actual user-impacting business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Pathpoints, to visually work with the data you are interested in tracking.
+
+New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Pathpoints, to visually work with the data you are most interested in tracking.
 
 
  ### <a id="Index"></a>Index ###
@@ -68,23 +69,17 @@ Pathpoint is New Relic enterprise platform tracker that models system health in 
 
 
 
-
-
-
-
 ### <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
 
-Pathpoint will work in nearly any New Relic account. And each Pathpoing is divided into; Stages, steps and Pathpoints.
+Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
-To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. 
+Pathpoint will work in nearly any New Relic account. And each Pathpoing is divided into; Stages, Steps and Pathpoints.
 
-This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
+To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal disucssions with your stakeholders to understand how things really fit in.
 
-When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, edit and re-upload it. 
-
-You can also manually "right click" to adjust each touchpoint configuration.
+When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, edit it (if you wish to do so) and re-upload it. Alternatively you can also manually "right click" over the touchpoint you would like to work on, to adjust its configuration.
 
 
 
@@ -92,11 +87,11 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
-The different stages of a Pathpoint, will allow you to see the business processes at a high level, and for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
+The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
 And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. 
 
-On the following graphic, you can see that this Pathpoint has 5 stages in process.
+On the following graphic, you can see that this Pathpoint has five stages in process.
 
 ![cambiar](screenshots/stagesb.png)
 
@@ -231,8 +226,59 @@ SYN (Synthetic Check)
 
 ### <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
-JSON for its acronym (JavaScript Object Notation) is a data structure, whose basic function is to allow for the exchange of information. Through this structure it will be possible to identify each of the elements and components that will facilitate the implementation of Pathpoint, knowing the function of its attributes, queries and data output.
+JSON for its acronym (JavaScript Object Notation) is a data structure, whose basic function is to allow for the exchange of information. Through this structure it will be possible to identify each of the elements and components that will facilitate the implementation of Pathpoint, knowing the function of its attributes, queries and data output. To program new stages, path and Pathpoints, you upload a New JSON Configuration file.
 
+![cambiar](screenshots/jsonfile.png)
+
+Uploading a New JSON Config File
+
+Pathpoint offers the possibility to load the configuration file through the following option.
+
+![cambiar](screenshots/Menu_pathpoint.png)
+
+ 1 To begin click on the menu at the top left
+
+![cambiar](screenshots/Option_configuration.png)
+
+2 Select the option "JSON Configuration"
+
+![cambiar](screenshots/Option_update.png)
+
+ 
+3 Now, select "Update"
+
+
+![cambiar](screenshots/file_location.png)
+
+
+
+
+4 Next, locate the file you want to update and click on "open"
+
+![cambiar](screenshots/front_pathpoint.png)
+
+
+5 Finally the pathopint is displayed with the latest update loaded.
+
+Downloading the Currently Active Config File
+
+Similarly, Pathpoint offers the possibility of downloading the configuration file, if you wish for instance make changes to it. using the following steps;
+
+![cambiar](screenshots/Menu_pathpoint1.png)
+
+1 Click on the menu on the top left
+
+![cambiar](screenshots/Option_configuration2.png)
+
+2 Select the option "JSON Configuration"
+
+![cambiar](screenshots/pathpoint_jason_vx.png)
+
+3 Now, select the file available to download. On this example"Pathpoint_json_vX"
+
+![cambiar](screenshots/downloaded_file.png)
+
+4 Finally the file is downloaded so that you can work on it.
 
 ### <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ###
 
