@@ -351,11 +351,7 @@ ShortName: Corresponds to the short name of the KPI.
 
 
 Return to top of [Index](#Index)
-### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
-
-
-Return to top of [Index](#Index)
 ### <a id="Touchpoint_Types"></a>Touchpoint_Types ### 
 
 Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
@@ -392,6 +388,11 @@ Return to top of [Index](#Index)
 
 Return to top of [Index](#Index)
 ### <a id="SYN"></a>SYN (Synthetic Check) ###
+Return to top of [Index](#Index)
+
+
+### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
+
 
 
 
