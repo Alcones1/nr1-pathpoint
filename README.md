@@ -271,7 +271,7 @@ Pathpoint offers the possibility to load the configuration file using the follow
 ![cambiar](screenshots/front_pathpoint.png)
 
 
-5 Finally the pathopint is displayed with the latest update loaded.
+5 Finally the Pathpoint is displayed with the latest update loaded.
 
 How to download the Currently Active Config File.
 
