@@ -153,6 +153,10 @@ The following graphic shows an example of a PCC touchpoint;
 
 PCC (Process Count)
 
+![cambiar](screenshots/Example_TP_PCC1.png)
+
+![cambiar](screenshots/Example_TP_PCC2.png)
+
 ● Data:  
    ○ Transactions
 
@@ -164,65 +168,63 @@ PCC (Process Count)
 ○ Past Transactions  
 ○ Previous Week Comparison
 
-![cambiar](screenshots/Example_TP_PCC1.png)
 
-![cambiar](screenshots/Example_TP_PCC2.png)
 
 The following graphic shows an example of a APC touchpoint;
 
-APP (Application Health)
-● Data:
+APP (Application Health)  
+● Data:  
 ○ Transactions
 
-● Tunning:
-○ APDEX Response (Min)
-○ % Error (Max)
-○ Response Time (Max)
+● Tunning:  
+○ APDEX Response (Min)  
+○ % Error (Max)  
+○ Response Time (Max) 
 
-● Link: APM Transaction Dashboard
-○ APDEX
-○ Throughput
-○ Breakdown
+● Link: APM Transaction Dashboard  
+○ APDEX  
+○ Throughput  
+○ Breakdown  
 ○ Traces
 
 ![cambiar](screenshots/Example_TP_APP1.png)
 
 ![cambiar](screenshots/Example_TP_APP2.png)
 
-FRT (Front End Health)
-● Data:
+FRT (Front End Health)  
+● Data:  
 ○ Transactions
 
-● Tunning:
-○ APDEX Response (Min)
-○ % Error (Max)
-○ Response Time (Max)
+● Tunning:  
+○ APDEX Response (Min)  
+○ % Error (Max)  
+○ Response Time (Max)  
 
-● Link: Page View Transaction Dashboard
-○ APDEX
-○ Throughput
-○ Breakdown
+● Link: Page View Transaction Dashboard  
+○ APDEX  
+○ Throughput  
+○ Breakdown  
 ○ Traces
 
 ![cambiar](screenshots/Example_TP_FRT1.png)
 
 ![cambiar](screenshots/Example_TP_FRT2.png)
 
-SYN (Synthetic Check)
-● Data:
+SYN (Synthetic Check)  
+● Data:  
 ○ Synthetic Monitor Data
 
-● Tunning:
-○ Avg Request Time (Max)
-○ Total Check Time (Max)
-○ % Success Rate (Min)
+● Tunning:  
+○ Avg Request Time (Max)  
+○ Total Check Time (Max)  
+○ % Success Rate (Min)  
 
-● Link: Synthetic Monitor Results Dashboard
-○ Long Running Tasks
-○ Bytes Transferred
-○ Requests
-○ Total Time
-○ Requests Waterfall
+● Link: Synthetic Monitor Results Dashboard  
+○ Long Running Tasks  
+○ Bytes Transferred  
+○ Requests  
+○ Total Time  
+○ Requests Waterfall  
 
 ![cambiar](screenshots/Example_TP_SYN1.png)
 
