@@ -3,7 +3,7 @@
                    
 
 
-New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Pathpoints, to visually work with the data you are most interested in tracking.
+New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting the different business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Pathpoints, to visually work with the data you are most interested in tracking.
 
 
  ### <a id="Index"></a>Index ###
@@ -95,7 +95,7 @@ The different stages of a Pathpoint, will allow you to see the business processe
 
 And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. 
 
-On the following graphic, you can see that this Pathpoint has five stages in process.
+On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
 ![cambiar](screenshots/stagesb.png)
 
@@ -122,7 +122,7 @@ Line: Positions the row in which the task is located within the stage.
 ![cambiar](screenshots/Examples_Line_Step8.png)
 
 
-* Values: Indicate the parameters for each step. Currently the parameters "title" and "ID" are considered
+* Values: Indicate the parameters for each step. Currently the parameters "Web", "App", "Login"  and "Signup" are being considered
 * Title: Corresponds to the name with which the step is identified.
 
 
@@ -139,29 +139,36 @@ Line: Positions the row in which the task is located within the stage.
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a TouchPoint will be linked to the error rate and latency.
 
+The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
+
+* PRC are used to count people
+* PCC are used to count processes
+* APC are used to see the health of an application
+* FRT FRONT END HEALTH?
+* SYN are used for syntethic check what is this?
+
+Now, you will see some examples of each type of touchpoint;
+
 The following graphic shows an example of a PCC touchpoint;
 
-![cambiar](screenshots/Example_TP_PRC1.png)
-
-This touchpoint is very useful, for instance, to count people going into a business.
-
-![cambiar](screenshots/Example_TP_PRC2.png)
-
 PCC (Process Count)
-● Data:
-○ Transactions
 
-● Tunning:
-○ Transactions Count (Min)
+● Data:  
+   ○ Transactions
 
-● Link: PCC Touchpoint Flashboard
-○ Current Transactions
-○ Past Transactions
+● Tunning:  
+   ○ Transactions Count (Min)
+
+● Link: PCC Touchpoint Flashboard  
+○ Current Transactions  
+○ Past Transactions  
 ○ Previous Week Comparison
 
 ![cambiar](screenshots/Example_TP_PCC1.png)
 
 ![cambiar](screenshots/Example_TP_PCC2.png)
+
+The following graphic shows an example of a APC touchpoint;
 
 APP (Application Health)
 ● Data:
@@ -236,7 +243,7 @@ JSON for its acronym (JavaScript Object Notation) is a data structure, whose bas
 
 Uploading a New JSON Config File
 
-Pathpoint offers the possibility to load the configuration file through the following option.
+Pathpoint offers the possibility to load the configuration file using the following steps;
 
 ![cambiar](screenshots/Menu_pathpoint.png)
 
@@ -264,13 +271,13 @@ Pathpoint offers the possibility to load the configuration file through the foll
 
 5 Finally the pathopint is displayed with the latest update loaded.
 
-Downloading the Currently Active Config File
+How to download the Currently Active Config File.
 
-Similarly, Pathpoint offers the possibility of downloading the configuration file, if you wish for instance make changes to it. using the following steps;
+Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
 ![cambiar](screenshots/Menu_pathpoint1.png)
 
-1 Click on the menu on the top left
+1 Click on the menu on the top left (once you are on the New Relic Pathpoint  window)
 
 ![cambiar](screenshots/Option_configuration2.png)
 
@@ -351,28 +358,23 @@ Return to top of [Index](#Index)
 
 Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
 
-Below is the description and a brief example for each case:
-
-
-
-PRC (Person Count)
-● Data:
-○ User Sessions
-
-● Tunning:
-○ Session Count (Min)
-
-● Link: PRC Touchpoint Flashboards
-○ Current Sessions
-○ Past Sessions
-○ Previous Week Comparison
-
-
+Below is the description and a brief example for each type of Touchpoint:
 
 
 
 ### <a id="PCC"></a>PCC (Process Count) ###
 
+PRC (Person Count)
+● Data:
+○ User Sessions
+
+● Tunning:  
+○ Session Count (Min)
+
+● Link: PRC Touchpoint Flashboards  
+○ Current Sessions  
+○ Past Sessions  
+○ Previous Week Comparison
 
 
 Return to top of [Index](#Index)
@@ -442,5 +444,7 @@ Return to top of [Index](#Index)
 
 
 Return to top of [Index](#Index)
+
 ### <a id="Drop_Filter"></a>Drop Filter ###
 
+Return to top of [Index](#Index)
