@@ -273,8 +273,6 @@ Return to top of [Index](#Index)
 
 Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
 
-Below is the description and a brief example for each type of Touchpoint:
-
 Now, you will see some examples of each type of touchpoint;
 
 This is an example of a PCC touchpoint;
@@ -387,6 +385,14 @@ Return to top of [Index](#Index)
 
 Return to top of [Index](#Index)
 ### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
+
+You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
+
+
+![cambiar](screenshots/Touchpoints1.png)
+
+To disable a Touchpoint, right click on it. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint).
+
 
 
 
