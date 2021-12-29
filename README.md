@@ -97,7 +97,7 @@ And the information related to a particular stage, including the errors for each
 
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
-![cambiar](screenshots/stagesb.png)
+![Image](screenshots/stagesb.png)
 
 And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved.
 
@@ -112,25 +112,25 @@ These are "sub-stages" of a main stage and represent a certain degree of granula
 - Structure Steps
 
 
-![cambiar](screenshots/steps3.png)
+![image](screenshots/steps3.png)
 
 
 Where:
 
 Line: Positions the row in which the task is located within the stage.
 
-![cambiar](screenshots/Examples_Line_Step8.png)
+![image](screenshots/Examples_Line_Step8.png)
 
 
 * Values: Indicate the parameters for each step. Currently the parameters "Web", "App", "Login"  and "Signup" are being considered
 * Title: Corresponds to the name with which the step is identified.
 
 
-![cambiar](screenshots/Examples_Title_Step4.png)
+![image](screenshots/Examples_Title_Step4.png)
 
 * ID: Corresponds to the code that identifies the step in its order within the row that is located. For the example, in line 1 the "Web" step is assigned the order # 1, the "Mobile Web" step has the order # 2 assigned and the "App" step is assigned the order # 3 in its configuration.
 
-![cambiar](screenshots/Examples_ID_Step1.png)
+![image](screenshots/Examples_ID_Step1.png)
 
 
 
@@ -158,34 +158,34 @@ Pathpoint is configured using a JSON configuration file, which is writen to the 
 
 JSON for its acronym (JavaScript Object Notation) is a data structure, whose basic function is to allow for the exchange of information. Through this structure it will be possible to identify each of the elements and components that will facilitate the implementation of Pathpoint, knowing the function of its attributes, queries and data output. To program new stages, path and Pathpoints, you upload a New JSON Configuration file.
 
-![cambiar](screenshots/jsonfile.png)
+![image](screenshots/jsonfile.png)
 
 Uploading a New JSON Config File
 
 Pathpoint offers the possibility to load the configuration file using the following steps;
 
-![cambiar](screenshots/Menu_pathpoint.png)
+![imagecambiar](screenshots/Menu_pathpoint.png)
 
  1 To begin click on the menu at the top left
 
-![cambiar](screenshots/Option_configuration.png)
+![image](screenshots/Option_configuration.png)
 
 2 Select the option "JSON Configuration"
 
-![cambiar](screenshots/Option_update.png)
+![image](screenshots/Option_update.png)
 
  
 3 Now, select "Update"
 
 
-![cambiar](screenshots/file_location.png)
+![image](screenshots/file_location.png)
 
 
 
 
 4 Next, locate the file you want to update and click on "open"
 
-![cambiar](screenshots/front_pathpoint.png)
+![image](screenshots/front_pathpoint.png)
 
 
 5 Finally the Pathpoint is displayed with the latest update loaded.
@@ -194,19 +194,19 @@ How to download the Currently Active Config File.
 
 Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
-![cambiar](screenshots/Menu_pathpoint1.png)
+![image](screenshots/Menu_pathpoint1.png)
 
 1 Click on the menu on the top left (once you are on the New Relic Pathpoint  window)
 
-![cambiar](screenshots/Option_configuration2.png)
+![image](screenshots/Option_configuration2.png)
 
 2 Select the option "JSON Configuration"
 
-![cambiar](screenshots/pathpoint_jason_vx.png)
+![image](screenshots/pathpoint_jason_vx.png)
 
 3 Now, select the file available to download. On this example"Pathpoint_json_vX"
 
-![cambiar](screenshots/downloaded_file.png)
+![image](screenshots/downloaded_file.png)
 
 4 Finally the file is downloaded so that you can work on it.
 
@@ -218,7 +218,7 @@ In the case of Pathpoint, KPIs fulfill a fundamental function, which is the meas
 
 - Structure KPI
 
-![cambiar](screenshots/kpi.png)
+![image](screenshots/kpi.png)
 
 Where:
 
@@ -230,7 +230,7 @@ Name: Corresponds to the long name of the KPI.
 
 ShortName: Corresponds to the short name of the KPI.
 
-![cambiar](screenshots/KPI2.png)
+![image](screenshots/KPI2.png)
 
 ### <a id="Setting_up_Stages_Steps"></a>Setting up Stages & Steps ###
 
@@ -242,27 +242,27 @@ ShortName: Corresponds to the short name of the KPI.
 
 * Link: Corresponds to the link that directs to the KPI dashboard.
 
-![cambiar](screenshots/linkKPI.png)
+![image](screenshots/linkKPI.png)
 
 * Value_type: It can be an integer value "INT" (example: 100) or a decimal value "FLOAT" (example: 100,2).
 
-![cambiar](screenshots/value_type_KPI.png)
+![image](screenshots/value_type_KPI.png)
 
 * Prefix: It is used in the case in which you want to Identify the KPI by placing a symbol or letter at the beginning of the name. Example: USD 12000
 
 * Suffix: It is used in the case where you want to Identify the KPI by adding a symbol or letter at the end of the name. Example: 5%.
 
-![cambiar](screenshots/prefix_suffix_KPI.png)
+![image](screenshots/prefix_suffix_KPI.png)
 
 * Example KPI
 
-![cambiar](screenshots/Example_KPI.png)
+![image](screenshots/Example_KPI.png)
 
 * KPI Pathpoint Image
 
-![cambiar](screenshots/KPI5.png)
+![image](screenshots/KPI5.png)
 
-![cambiar](screenshots/KPI6.png)
+![image](screenshots/KPI6.png)
 
 
 
@@ -279,9 +279,9 @@ This is an example of a PCC touchpoint;
 
 PCC (Process Count)
 
-![cambiar](screenshots/Example_TP_PCC1.png)
+![image](screenshots/Example_TP_PCC1.png)
 
-![cambiar](screenshots/Example_TP_PCC2.png)
+![image](screenshots/Example_TP_PCC2.png)
 
 ● Data:  
    ○ Transactions
@@ -312,9 +312,9 @@ APP (Application Health)
 ○ Breakdown  
 ○ Traces
 
-![cambiar](screenshots/Example_TP_APP1.png)
+![image](screenshots/Example_TP_APP1.png)
 
-![cambiar](screenshots/Example_TP_APP2.png)
+![image](screenshots/Example_TP_APP2.png)
 
 
 This is an example of a FRT touchpoint;
@@ -334,9 +334,9 @@ FRT (Front End Health)
 ○ Breakdown  
 ○ Traces
 
-![cambiar](screenshots/Example_TP_FRT1.png)
+![image](screenshots/Example_TP_FRT1.png)
 
-![cambiar](screenshots/Example_TP_FRT2.png)
+![image](screenshots/Example_TP_FRT2.png)
 
 This is an example of a SYN touchpoint;
 
@@ -356,9 +356,9 @@ SYN (Synthetic Check)
 ○ Total Time  
 ○ Requests Waterfall  
 
-![cambiar](screenshots/Example_TP_SYN1.png)
+![image](screenshots/Example_TP_SYN1.png)
 
-![cambiar](screenshots/Example_TP_SYN2.png)
+![image](screenshots/Example_TP_SYN2.png)
 
 
 ### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
@@ -389,14 +389,14 @@ Return to top of [Index](#Index)
 You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
 
 
-![cambiar](screenshots/Touchpoints3.png)
+![image](screenshots/Touchpoints3.png)
 
 
 
 To disable a Touchpoint, right click on it. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint).
 
 
-![cambiar](screenshots/Touchpoints4.png)
+![image](screenshots/Touchpoints4.png)
 
 Now, on the pop-up window, click on the "On" symbol, to disable this particular Touchpoint. Later on you can right click on this Touchpoint, click on the "Off" symbol, to enable it again.
 
@@ -427,12 +427,12 @@ Return to top of [Index](#Index)
 
 The Canary filter, when activated, reset all the the different Steps, so that you can manually activate the Steps, which will help you troubleshoot a particular process.
 
-![cambiar](screenshots/canary2.png)
+![image](screenshots/canary2.png)
 
 
 To activate it, just click on the Canary Symbol, which now changes it color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
 
-![cambiar](screenshots/canary3.png)
+![image](screenshots/canary3.png)
 
 Now you see that the steps that were previously active, don't show any activity. Please notice that if you are running the Pathpoint background job the signals for non-visible touchpoints will still be available with the Flame view.
 
@@ -442,11 +442,11 @@ Return to top of [Index](#Index)
 
 The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. The filter will show the worst and percentile of touchpoints. 
 
-![cambiar](screenshots/flame2.png)
+![image](screenshots/flame2.png)
 
 To activate it, just click on the Flame Symbol, which now changes it color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
 
-![cambiar](screenshots/flame3.png)
+![image](screenshots/flame3.png)
 
 This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. Please not that to use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
 
