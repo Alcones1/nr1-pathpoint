@@ -374,7 +374,28 @@ Return to top of [Index](#Index)
 Return to top of [Index](#Index)
 ### <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
 
+This is a funtion that allows you to test the vaility or health of a particular Touchpoint.
 
+![image](screenshots/touch.png)
+
+To beging the process of testing a Touchpoint, right click on it, and then select Queries. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint), to test this particular Touchpoint..
+
+![image](screenshots/test_touchpoint.png)
+
+Now, on Dialog window that opens up, click on "Test", to test the Touchpoint, now notice on the right the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is correct.
+
+But lets say that you change some part of the given query, for instance to test another aspect of the Touchpoint, now you must test the Touchpoint again.
+
+
+![image](screenshots/touch_test1.png)
+
+Now, on this screen capture notice how I change the Query, in front of count(*), I added 3 000, and then I clicked on "Test", to test the Touchpoint, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now, and you must find out why, and fix it.
+
+
+![image](screenshots/test_pathpoint1.png)
+
+
+If you chose to change the given Query, and after validating, by testing the Touchpoint, that is right, you can save it by clicking on "Save/Update", on the right of the same dialog box window. Now the Touchpoint window, will close, saving the changes you made to the Touchpoint.
 
 
 
@@ -397,7 +418,7 @@ To disable a Touchpoint, right click on it. On this example I clicked on the Cus
 
  
 
-Now, on the pop-up window, click on the "On" symbol, to disable this particular Touchpoint. Later on you can right click on this Touchpoint, click on the "Off" symbol, to enable it again.
+Now, on the pop-up window, click on the "On" symbol, to disable the Touchpoint. Later on you can right click on the same Touchpoint, then on the "Off" symbol, to enable it again.
 
 
 Return to top of [Index](#Index)
