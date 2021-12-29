@@ -238,8 +238,7 @@ SYN (Synthetic Check)
 
 ### <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
-
-
+Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints, for instance to see the data that you are most concern at the moment.
 
 ### <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
