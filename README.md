@@ -147,92 +147,6 @@ The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 * FRT FRONT END HEALTH?
 * SYN are used for syntethic check what is this?
 
-Now, you will see some examples of each type of touchpoint;
-
-This is an example of a PCC touchpoint;
-
-PCC (Process Count)
-
-![cambiar](screenshots/Example_TP_PCC1.png)
-
-![cambiar](screenshots/Example_TP_PCC2.png)
-
-● Data:  
-   ○ Transactions
-
-● Tunning:  
-   ○ Transactions Count (Min)
-
-● Link: PCC Touchpoint Flashboard  
-○ Current Transactions  
-○ Past Transactions  
-○ Previous Week Comparison
-
-
-This is an example of a APP touchpoint;
-
-APP (Application Health)  
-● Data:  
-○ Transactions
-
-● Tunning:  
-○ APDEX Response (Min)  
-○ % Error (Max)  
-○ Response Time (Max) 
-
-● Link: APM Transaction Dashboard  
-○ APDEX  
-○ Throughput  
-○ Breakdown  
-○ Traces
-
-![cambiar](screenshots/Example_TP_APP1.png)
-
-![cambiar](screenshots/Example_TP_APP2.png)
-
-
-This is an example of a FRT touchpoint;
-
-FRT (Front End Health)  
-● Data:  
-○ Transactions
-
-● Tunning:  
-○ APDEX Response (Min)  
-○ % Error (Max)  
-○ Response Time (Max)  
-
-● Link: Page View Transaction Dashboard  
-○ APDEX  
-○ Throughput  
-○ Breakdown  
-○ Traces
-
-![cambiar](screenshots/Example_TP_FRT1.png)
-
-![cambiar](screenshots/Example_TP_FRT2.png)
-
-This is an example of a SYN touchpoint;
-
-SYN (Synthetic Check)  
-● Data:  
-○ Synthetic Monitor Data
-
-● Tunning:  
-○ Avg Request Time (Max)  
-○ Total Check Time (Max)  
-○ % Success Rate (Min)  
-
-● Link: Synthetic Monitor Results Dashboard  
-○ Long Running Tasks  
-○ Bytes Transferred  
-○ Requests  
-○ Total Time  
-○ Requests Waterfall  
-
-![cambiar](screenshots/Example_TP_SYN1.png)
-
-![cambiar](screenshots/Example_TP_SYN2.png)
 
 
 
@@ -355,43 +269,98 @@ ShortName: Corresponds to the short name of the KPI.
 
 Return to top of [Index](#Index)
 
-### <a id="Touchpoint_Types"></a>Touchpoint_Types ### 
+### <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
 Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
 
 Below is the description and a brief example for each type of Touchpoint:
 
+Now, you will see some examples of each type of touchpoint;
 
+This is an example of a PCC touchpoint;
 
-### <a id="PCC"></a>PCC (Process Count) ###
+PCC (Process Count)
 
-PRC (Person Count)
-● Data:
-○ User Sessions
+![cambiar](screenshots/Example_TP_PCC1.png)
+
+![cambiar](screenshots/Example_TP_PCC2.png)
+
+● Data:  
+   ○ Transactions
 
 ● Tunning:  
-○ Session Count (Min)
+   ○ Transactions Count (Min)
 
-● Link: PRC Touchpoint Flashboards  
-○ Current Sessions  
-○ Past Sessions  
+● Link: PCC Touchpoint Flashboard  
+○ Current Transactions  
+○ Past Transactions  
 ○ Previous Week Comparison
 
 
-Return to top of [Index](#Index)
+This is an example of a APP touchpoint;
 
-### <a id="APP"></a>APP (Application Health) ###
+APP (Application Health)  
+● Data:  
+○ Transactions
+
+● Tunning:  
+○ APDEX Response (Min)  
+○ % Error (Max)  
+○ Response Time (Max) 
+
+● Link: APM Transaction Dashboard  
+○ APDEX  
+○ Throughput  
+○ Breakdown  
+○ Traces
+
+![cambiar](screenshots/Example_TP_APP1.png)
+
+![cambiar](screenshots/Example_TP_APP2.png)
 
 
+This is an example of a FRT touchpoint;
 
-Return to top of [Index](#Index)
-### <a id="FRT"></a>FRT (Front End Health) ###
+FRT (Front End Health)  
+● Data:  
+○ Transactions
 
+● Tunning:  
+○ APDEX Response (Min)  
+○ % Error (Max)  
+○ Response Time (Max)  
 
+● Link: Page View Transaction Dashboard  
+○ APDEX  
+○ Throughput  
+○ Breakdown  
+○ Traces
 
-Return to top of [Index](#Index)
-### <a id="SYN"></a>SYN (Synthetic Check) ###
-Return to top of [Index](#Index)
+![cambiar](screenshots/Example_TP_FRT1.png)
+
+![cambiar](screenshots/Example_TP_FRT2.png)
+
+This is an example of a SYN touchpoint;
+
+SYN (Synthetic Check)  
+● Data:  
+○ Synthetic Monitor Data
+
+● Tunning:  
+○ Avg Request Time (Max)  
+○ Total Check Time (Max)  
+○ % Success Rate (Min)  
+
+● Link: Synthetic Monitor Results Dashboard  
+○ Long Running Tasks  
+○ Bytes Transferred  
+○ Requests  
+○ Total Time  
+○ Requests Waterfall  
+
+![cambiar](screenshots/Example_TP_SYN1.png)
+
+![cambiar](screenshots/Example_TP_SYN2.png)
 
 
 ### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
