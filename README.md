@@ -389,11 +389,14 @@ Return to top of [Index](#Index)
 You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
 
 
-![cambiar](screenshots/Touchpoints1.png)
+![cambiar](screenshots/Touchpoints3.png)
+
+
 
 To disable a Touchpoint, right click on it. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint).
 
-![cambiar](screenshots/Touchpoints2.png)
+
+![cambiar](screenshots/Touchpoints4.png)
 
 Now, on the pop-up window, click on the "On" symbol, to disable this particular Touchpoint. Later on you can right click on this Touchpoint, click on the "Off" symbol, to enable it again.
 
