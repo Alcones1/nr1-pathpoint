@@ -461,12 +461,32 @@ Now you see that the steps that were previously active, don't show any activity.
 Return to top of [Index](#Index)
 ### <a id="Flame_Filter"></a>Flame Filter ###
 
-The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. The filter will show the worst and percentile of touchpoints. This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
+The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. The filter will show the worst and percentile of touchpoints. 
+
+![cambiar](screenshots/flame2.png)
 
 To activate it, just click on the Flame Symbol, which now changes it color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+
+![cambiar](screenshots/flame3.png)
+
+This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. Please not that to use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
 
 Return to top of [Index](#Index)
 
 ### <a id="Drop_Filter"></a>Drop Filter ###
+
+Function: 
+
+ 
+Highlights Steps with Most Drops (Session Breaks or Abandonment) 
+
+Displays a Total Drop count per Stage
+Calculates the order or transaction loss by the drops
+
+
+Tunning: 
+Avg Order or Transaction Value
+Incident %
+Time Period
 
 Return to top of [Index](#Index)
