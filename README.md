@@ -149,7 +149,7 @@ The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 
 Now, you will see some examples of each type of touchpoint;
 
-The following graphic shows an example of a PCC touchpoint;
+This is an example of a PCC touchpoint;
 
 PCC (Process Count)
 
@@ -169,8 +169,7 @@ PCC (Process Count)
 ○ Previous Week Comparison
 
 
-
-The following graphic shows an example of a APC touchpoint;
+This is an example of a APP touchpoint;
 
 APP (Application Health)  
 ● Data:  
@@ -191,6 +190,9 @@ APP (Application Health)
 
 ![cambiar](screenshots/Example_TP_APP2.png)
 
+
+This is an example of a FRT touchpoint;
+
 FRT (Front End Health)  
 ● Data:  
 ○ Transactions
@@ -209,6 +211,8 @@ FRT (Front End Health)
 ![cambiar](screenshots/Example_TP_FRT1.png)
 
 ![cambiar](screenshots/Example_TP_FRT2.png)
+
+This is an example of a SYN touchpoint;
 
 SYN (Synthetic Check)  
 ● Data:  
@@ -406,6 +410,8 @@ Return to top of [Index](#Index)
 
 
 
+
+
 Return to top of [Index](#Index)
 ### <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
 
@@ -425,7 +431,6 @@ Return to top of [Index](#Index)
 ### <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
 
 
-
 Return to top of [Index](#Index)
 ### <a id="Flame_Filter_Script"></a>Flame Filter Script ###
 
@@ -441,10 +446,24 @@ Return to top of [Index](#Index)
 Return to top of [Index](#Index)
 ### <a id="Canary_Filter"></a>Canary Filter ###
 
+The Canary filter, when activated, reset all the the different Steps, so that you can manually activate the Steps, which will help you troubleshoot a particular process.
+
+![cambiar](screenshots/canary2.png)
+
+
+To activate it, just click on the Canary Symbol, which now changes it color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+
+![cambiar](screenshots/canary3.png)
+
+Now you see that the steps that were previously active, don't show any activity. Please notice that if you are running the Pathpoint background job the signals for non-visible touchpoints will still be available with the Flame view.
+
 
 Return to top of [Index](#Index)
 ### <a id="Flame_Filter"></a>Flame Filter ###
 
+The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. The filter will show the worst and percentile of touchpoints. This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
+
+To activate it, just click on the Flame Symbol, which now changes it color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
 
 Return to top of [Index](#Index)
 
