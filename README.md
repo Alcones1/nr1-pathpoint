@@ -400,7 +400,7 @@ Return to top of [Index](#Index)
 Return to top of [Index](#Index)
 ### <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
 
-This is a funtion that allows you to test the vaility or health of a particular Touchpoint.
+This is a function that allows you to test the vaility or health of a particular Touchpoint.
 
 ![image](screenshots/touch.png)
 
