@@ -301,6 +301,8 @@ This is an example of a PCC touchpoint;
 ○ Past Transactions  
 ○ Previous Week Comparison
 
+Return to top of [Index](#Index)
+
 
 This is an example of a APP touchpoint;
 
@@ -324,6 +326,7 @@ This is an example of a APP touchpoint;
 
 ![image](screenshots/Example_TP_APP2.png)
 
+Return to top of [Index](#Index)
 
 This is an example of a FRT touchpoint;
 
@@ -348,6 +351,8 @@ This is an example of a FRT touchpoint;
 
 ![image](screenshots/Example_TP_FRT2.png)
 
+Return to top of [Index](#Index)
+
 This is an example of a SYN touchpoint;
 
 ### <a id="SYN"></a>SYN (Synthetic Check)   ### 
@@ -370,6 +375,8 @@ This is an example of a SYN touchpoint;
 ![image](screenshots/Example_TP_SYN1.png)
 
 ![image](screenshots/Example_TP_SYN2.png)
+
+Return to top of [Index](#Index)
 
 
 ### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
