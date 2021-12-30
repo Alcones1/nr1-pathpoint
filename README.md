@@ -271,7 +271,12 @@ Return to top of [Index](#Index)
 
 ### <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
-Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; PRC (Person Count),PCC (Process Count), APP (Application Health), FRT (Front End Health), and SYN (Synthetic Check)
+Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; 
+* PRC (Person Count)  
+* PCC (Process Count)  
+* APP (Application Health)  
+* FRT (Front End Health)  
+* SYN (Synthetic Check)
 
 Now, you will see some examples of each type of touchpoint;
 
@@ -396,7 +401,6 @@ Now, on this screen capture notice how I change the Query, in front of count(*),
 
 
 If you chose to change the given Query, and after validating, by testing the Touchpoint, that is right, you can save it by clicking on "Save/Update", on the right of the same dialog box window. Now the Touchpoint window, will close, saving the changes you made to the Touchpoint.
-
 
 
 Return to top of [Index](#Index)
