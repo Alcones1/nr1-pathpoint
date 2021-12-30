@@ -30,7 +30,8 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
    
 
-      * [Touchpoint Types](#Touchpoint_Types)  
+      * [Touchpoint Types](#Touchpoint_Types)
+
          * [PCC (Process Count)](#PCC)  
 
          * [APP (Application Health)](#APP)
@@ -282,7 +283,8 @@ Now, you will see some examples of each type of touchpoint;
 
 This is an example of a PCC touchpoint;
 
-PCC (Process Count)
+
+### <a id="PCC"></a>PCC (Process Count) ### 
 
 ![image](screenshots/Example_TP_PCC1.png)
 
@@ -302,7 +304,8 @@ PCC (Process Count)
 
 This is an example of a APP touchpoint;
 
-APP (Application Health)  
+### <a id="APP"></a>APP (Application Health) ### 
+  
 ● Data:  
 ○ Transactions
 
@@ -324,7 +327,9 @@ APP (Application Health)
 
 This is an example of a FRT touchpoint;
 
-FRT (Front End Health)  
+### <a id="FRT"></a>FRT (Front End Health)  ### 
+
+ 
 ● Data:  
 ○ Transactions
 
@@ -345,7 +350,8 @@ FRT (Front End Health)
 
 This is an example of a SYN touchpoint;
 
-SYN (Synthetic Check)  
+### <a id="SYN"></a>SYN (Synthetic Check)   ### 
+
 ● Data:  
 ○ Synthetic Monitor Data
 
