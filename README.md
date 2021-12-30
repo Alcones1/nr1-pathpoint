@@ -92,6 +92,8 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
+Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and made to show the complete health, congestion, count and Infrastructure state.
+
 The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
 And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. 
@@ -106,6 +108,7 @@ And on each particular stage we can see first-hand if any of its associated touc
 
 ### <a id="Steps"></a>Steps ###
 
+Steps represent the various actions/events occurring throughout the stage. They can be placed in the traditional sequential manner of step 1,2,3.., But also in a parallel form to represent optional and simultaneous actions and activities. 
 
 These are "sub-stages" of a main stage and represent a certain degree of granularity in your services.
 
@@ -140,13 +143,18 @@ Line: Positions the row in which the task is located within the stage.
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a TouchPoint will be linked to the error rate and latency.
 
+Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
+
+And every Step is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of Pathpoint.
+
+
 The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 
 * PRC are used to count people
 * PCC are used to count processes
 * APC are used to see the health of an application
 * FRT FRONT END HEALTH?
-* SYN are used for syntethic check (what is this?
+* SYN are used to assess the health of a Syntethic monitor
 
 Note, there is a recomendation that when you name a Touchpoint, please, after the name, state the type of Touchpount it is, like for example; VTEX Do API (PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count people.
 
