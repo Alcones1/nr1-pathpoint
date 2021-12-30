@@ -145,9 +145,9 @@ The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 * PCC are used to count processes
 * APC are used to see the health of an application
 * FRT FRONT END HEALTH?
-* SYN are used for syntethic check what is this?
+* SYN are used for syntethic check (what is this?
 
-
+Note, there is a recomendation that when you name a Touchpoint, please, after the name, state the type of Touchpount it is, like for example; VTEX Do API (PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count people.
 
 
 ### <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
