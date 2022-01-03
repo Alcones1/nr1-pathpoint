@@ -179,7 +179,7 @@ To access this view, you just have to right click on the touchpoint and then cli
 
 ![image](screenshots/touchpoint5.png)
 
-     1 Type: Identify the right type of query. For the example, if it is a session count, then it will read PRC-People Count (please review section "Different Touchpoint Types Explained")
+     1 Type: Identify the right type of query. For this example, it is a PRC person count. (please review section "Different Touchpoint Types Explained")
      2 AccountID: Determines the account with which the query is identified.
      3 Query: Displays the actual query that determines the Touchpoint.
      4 Query_timeout: Determines the maximum time of activity in which the query will be executed.
