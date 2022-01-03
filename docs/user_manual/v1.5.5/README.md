@@ -175,17 +175,18 @@ Where:
 * Queries: Allow you to determine all the parameters that of a touchpoint. 
 
 ![image](screenshots/Examples_queries_TP_1.png)
-To access this view, you just have to right click on the touchpoint and then click on  "Queries"
+To access this view, you just have to right click on the touchpoint and then click on  "Queries"  
 
 ![image](screenshots/touchpoint5.png)
 
-         1 Type: Identify the type of query. For the example, it is a session count, hence the abbreviation PRC-People Count (Vew section "Different Touchpoint Types Explained")
-        2 AccountID: Determines the account with which the query is identified.
-        3 Query: Displays the query that actually determines the tocuhpoint.
-        4 Query_timeout: Determines the maximum time of activity in which the query will be executing.
-        5 Min_count: The query will present a minimum of 100 records.
-        6 Measure_time: Determines from when I want the query to collect information to perform the measurement.
-And these are 2 examples of Touchpoints;
+     1 Type: Identify the right type of query. For the example, if it is a session count, then it will read PRC-People Count (please review section "Different Touchpoint Types Explained")
+     2 AccountID: Determines the account with which the query is identified.
+     3 Query: Displays the actual query that determines the Touchpoint.
+     4 Query_timeout: Determines the maximum time of activity in which the query will be executed.
+     5 Min_count: The query will present a minimum of X number of records.
+     6 Measure_time: Determines the time from when I want the query to collect information to perform the measurement.
+
+And these are two examples of Touchpoints;
 
 Example 1
 
