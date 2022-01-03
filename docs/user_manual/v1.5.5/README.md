@@ -30,7 +30,9 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
    
 
-      * [Touchpoint Types](#Touchpoint_Types)
+      * [Touchpoint Types](#Touchpoint_Types)     
+
+         *  [PRC (Process Count)](#PRC)  
 
          * [PCC (Process Count)](#PCC)  
 
@@ -92,7 +94,7 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
-Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and made to show the complete health, congestion, count and Infrastructure state.
+Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and made to show the complete health, congestion, count and Infrastructure state of a Pathpoint.
 
 The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
@@ -126,7 +128,7 @@ Line: Positions the row in which the task is located within the stage.
 ![image](screenshots/Examples_Line_Step8.png)
 
 
-* Values: Indicate the parameters for each step. Currently the parameters "Web", "App", "Login"  and "Signup" are being considered
+* Values: Indicate the parameters for each step. Currently the parameters 1) "Web", "App","Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
 * Title: Corresponds to the name with which the step is identified.
 
 
@@ -147,7 +149,6 @@ Touchpoints do also hold individual Health, Status, Performance, Count and even 
 
 And every Step is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of Pathpoint.
 
-
 The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 
 * PRC are used to count people
@@ -155,6 +156,48 @@ The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 * APC are used to see the health of an application
 * FRT FRONT END HEALTH?
 * SYN are used to assess the health of a Syntethic monitor
+Where:
+
+* Title: Corresponds to the name that identifies the touchpoint.
+
+
+![image](screenshots/TP1.png)
+
+* Status_on_off: This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint and click on the option "on/off". 
+
+![image](screenshots/Example_status_on_off_TP_1.png)
+
+* Dashboard_url: Corresponds to the link that directs to the tochpoint dashboard.
+
+* Related_steps: Indicates the step to which a Touchpoint is associated. For the example, the "Login People" Touchpoint is linked to the "Login" step.
+
+![image](screenshots/Examples_related_steps_TP.png)
+* Queries: Allow you to determine all the parameters that of a touchpoint. 
+
+![image](screenshots/Examples_queries_TP_1.png)
+To access this view, you just have to right click on the touchpoint and then click on  "Queries"
+
+![image](screenshots/touchpoint5.png)
+
+         1 Type: Identify the type of query. For the example, it is a session count, hence the abbreviation PRC-People Count (Vew section "Different Touchpoint Types Explained")
+        2 AccountID: Determines the account with which the query is identified.
+        3 Query: Displays the query that actually determines the tocuhpoint.
+        4 Query_timeout: Determines the maximum time of activity in which the query will be executing.
+        5 Min_count: The query will present a minimum of 100 records.
+        6 Measure_time: Determines from when I want the query to collect information to perform the measurement.
+And these are 2 examples of Touchpoints;
+
+Example 1
+
+![image](screenshots/Example_Touchpoint1.png)
+
+Example 2
+
+![image](screenshots/Example_Touchpoint2.png)
+
+
+
+
 
 Note, there is a recomendation that when you name a Touchpoint, please, after the name, state the type of Touchpount it is, like for example; VTEX Do API (PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count people.
 
@@ -280,7 +323,7 @@ Return to top of [Index](#Index)
 
 ### <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
-Pathpoint offers different types of touchpoints, which are adapted according to the needs of each business, and they are; 
+As you saw before, New Relic Pathpoint offers different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
 * PRC (Person Count)  
 * PCC (Process Count)  
 * APP (Application Health)  
@@ -288,6 +331,36 @@ Pathpoint offers different types of touchpoints, which are adapted according to 
 * SYN (Synthetic Check)
 
 Now, you will see some examples of each type of touchpoint;
+
+This is an example of a PRC touchpoint;
+
+
+### <a id="PRC"></a>PRC (Person Count) ### 
+
+![image](screenshots/Example_TP_PRC1.png)
+
+
+![image](screenshots/Example_TP_PRC2.png)
+
+
+● Data:
+
+○ User Sessions
+
+● Tunning:
+
+○ Session Count (Min)
+
+● Link: PRC Touchpoint Flashboards
+
+○ Current Sessions
+
+○ Past Sessions
+
+○ Previous Week Comparison
+
+
+Return to top of [Index](#Index)
 
 This is an example of a PCC touchpoint;
 
@@ -415,13 +488,15 @@ But lets say that you change some part of the given query, for instance to test 
 
 ![image](screenshots/touch_test1.png)
 
-Now, on this screen capture notice how I change the Query, in front of count(*), I added 3 000, and then I clicked on "Test", to test the Touchpoint, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now, and you must find out why, and fix it.
+Now, on this screen capture notice how I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now, and you must find out why, and fix it.
 
 
 ![image](screenshots/test_pathpoint1.png)
 
 
-If you chose to change the given Query, and after validating, by testing the Touchpoint, that is right, you can save it by clicking on "Save/Update", on the right of the same dialog box window. Now the Touchpoint window, will close, saving the changes you made to the Touchpoint.
+If you chose to change the given Query, and after validating, by testing the Touchpoint (that is "healthy"), you can then save it by clicking on "Save/Update", on the right of the same dialog box window. Now the Touchpoint window, will close, saving the changes you made to the Touchpoint.
+
+
 
 
 Return to top of [Index](#Index)
@@ -514,5 +589,6 @@ Incident %
 Time Period
 
 Return to top of [Index](#Index)
+
 
 This is a test
