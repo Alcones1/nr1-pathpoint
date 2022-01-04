@@ -3,7 +3,7 @@
                    
 
 
-New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting the different business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Pathpoints, to visually work with the data you are most interested in tracking.
+New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting the different business stages, and on this documentation you will learn the different concepts of a Pathpoint, as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Touchpoints of a Pathpoint, to better visualize the data you are most interested in tracking.
 
 
  ### <a id="Index"></a>Index ###
@@ -80,13 +80,13 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
-Pathpoint will work in nearly any New Relic account. And each Pathpoing is divided into; Stages, Steps and Pathpoints.
+Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
 
 To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal disucssions with your stakeholders to understand how things really fit in.
 
-When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, edit it (if you wish to do so) and re-upload it. Alternatively you can also manually "right click" over the touchpoint you would like to work on, to adjust its configuration.
+When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, or edit it (if you wish to do so) and re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
 
 
 
@@ -94,7 +94,7 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
-Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and made to show the complete health, congestion, count and Infrastructure state of a Pathpoint.
+Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint.
 
 The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
