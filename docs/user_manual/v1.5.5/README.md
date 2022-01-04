@@ -32,7 +32,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
       * [Touchpoint Types](#Touchpoint_Types)     
 
-         *  [PRC (Process Count)](#PRC)  
+         *  [PRC (Used to count people)](#PRC)  
 
          * [PCC (Process Count)](#PCC)  
 
@@ -143,19 +143,20 @@ Line: Positions the row in which the task is located within the stage.
 
 ### <a id="Touchpoints"></a>Touchpoints ###
 
-Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a TouchPoint will be linked to the error rate and latency.
+Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a Touchpoint will be linked to the error rate and latency.
 
 Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
 
-And every Step is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of Pathpoint.
+And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of each Pathpoint.
 
 The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 
 * PRC are used to count people
 * PCC are used to count processes
 * APC are used to see the health of an application
-* FRT FRONT END HEALTH?
+* FRT FRONT END HEALTH????
 * SYN are used to assess the health of a Syntethic monitor
+
 Where:
 
 * Title: Corresponds to the name that identifies the touchpoint.
@@ -163,16 +164,21 @@ Where:
 
 ![image](screenshots/TP1.png)
 
-* Status_on_off: This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint and click on the option "on/off". 
+On this example the Touchpoint name is "Chat Throughput (PCC), which is the type of Touchpoint designed to count processes.
+
+* Status "On" or "Off": This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint and click on the option "ON/OFF". 
 
 ![image](screenshots/Example_status_on_off_TP_1.png)
 
-* Dashboard_url: Corresponds to the link that directs to the tochpoint dashboard.
+* Dashboard_url: Corresponds to the link that directs to the Touchpoint dashboard. ASK HOW TO GET THIS LINK
 
-* Related_steps: Indicates the step to which a Touchpoint is associated. For the example, the "Login People" Touchpoint is linked to the "Login" step.
+* Related_steps: Indicates the step to which a Touchpoint is associated with a Touchpoint. 
 
 ![image](screenshots/Examples_related_steps_TP.png)
-* Queries: Allow you to determine all the parameters that of a touchpoint. 
+
+For the example, the "Agents (PRC)" Touchpoint is linked to the "Call Pop" Step.
+
+* Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. 
 
 ![image](screenshots/Examples_queries_TP_1.png)
 To access this view, you just have to right click on the touchpoint and then click on  "Queries"  
@@ -181,7 +187,7 @@ To access this view, you just have to right click on the touchpoint and then cli
 
      1 Type: Identify the right type of query. For this example, it is a PRC person count. (please review section "Different Touchpoint Types Explained")
      2 AccountID: Determines the account with which the query is identified.
-     3 Query: Displays the actual query that determines the Touchpoint.
+     3 Query: Displays the actual query that determines the Touchpoint. THE QUERY'S ARE FIRST WRITEN ON THE JSON FILE.
      4 Query_timeout: Determines the maximum time of activity in which the query will be executed.
      5 Min_count: The query will present a minimum of X number of records.
      6 Measure_time: Determines the time from when I want the query to collect information to perform the measurement.
