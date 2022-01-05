@@ -94,7 +94,7 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
-Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint.
+Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. Please note that under a single Stage you should only count either Persons (PRC Touchpoint) or Processes (PCC Touchpoint).
 
 The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
@@ -206,7 +206,7 @@ Example 2
 
 
 
-Note, there is a recomendation that when you name a Touchpoint, please, after the name, state the type of Touchpount it is, like for example; VTEX Do API (PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count people.
+Note, there is a recomendation that when you name a Touchpoint, its name, state the type of Touchpount it is, like for example; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
 
 ### <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
@@ -242,7 +242,7 @@ Pathpoint offers the possibility to load the configuration file using the follow
 
 
 
-4 Next, locate the file you want to update and click on "open"
+4 Next, locate the file you want to update on this dialog window that opens up and click on "open"
 
 ![image](screenshots/front_pathpoint.png)
 
@@ -495,20 +495,20 @@ But lets say that you change some part of the given query, for instance to test 
 
 ![image](screenshots/touch_test1.png)
 
-Now, on this screen capture notice how I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now, and you must find out why, and fix it.
+Now, on this screen capture notice how I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. If you test a Touchpoint, and the validation fails, find out why, and fix it.
 
 
 ![image](screenshots/test_pathpoint1.png)
 
 
-If you chose to change the given Query, and after validating, by testing the Touchpoint (that is "healthy"), you can then save it by clicking on "Save/Update", on the right of the same dialog box window. Now the Touchpoint window, will close, saving the changes you made to the Touchpoint.
+If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them by clicking on "Save/Update" (if not find out what is the issue with the query and fix it), on the right of the same dialog box window, now the Touchpoint window will close, saving the changes you made to the Touchpoint. 
+
 
 
 
 
 Return to top of [Index](#Index)
 ### <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
-
 
 
 Return to top of [Index](#Index)
