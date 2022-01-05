@@ -546,8 +546,12 @@ Subscriptions API (SYNC)
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
+App Backend Health (APP)
 
-SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
+SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
+
+
+
 
 
 
@@ -618,14 +622,25 @@ Return to top of [Index](#Index)
 
 The Canary filter, when activated, reset all the the different Steps, so that you can manually activate the Steps, which will help you troubleshoot a particular process.
 
+![image](screenshots/steps5.png)
+
+On this Pathpoint, you can see all the different Steps that are active right now, to troubleshoot this Pathpoint, you can turn off all of the Steps, and then enable them one by one, using the Canary filter.
+
+
 ![image](screenshots/canary2.png)
 
 
-To activate it, just click on the Canary Symbol, which now changes it color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+To activate it, just click on the Canary Symbol (on the top right part of the Pathpoint window), which now changes its color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
 
-![image](screenshots/canary3.png)
+![image](screenshots/steps8.png)
 
-Now you see that the steps that were previously active, don't show any activity. Please notice that if you are running the Pathpoint background job the signals for non-visible touchpoints will still be available with the Flame view.
+Now, you can see that the steps that were previously active, don't show any activity. 
+
+![image](screenshots/steps10.png)
+
+Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
+
+Please notice that if you are running the Pathpoint background job the signals for non-visible touchpoints will still be available with the Flame view.
 
 
 Return to top of [Index](#Index)
