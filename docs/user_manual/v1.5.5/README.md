@@ -558,6 +558,9 @@ Return to top of [Index](#Index)
 ### <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
 
 
+LOGIN PEOPLE PRC
+
+
 Return to top of [Index](#Index)
 ### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
 
@@ -578,7 +581,9 @@ Now, on the pop-up window, click on the "On" symbol, to disable the Touchpoint. 
 Return to top of [Index](#Index)
 ### <a id="Configure_Logging"></a>Configure Logging###
 
+![image](screenshots/LOGIN.png)
 
+LOOKING FOR THE SIGN UP WITH MIN AND MAX
 
 Return to top of [Index](#Index)
 ### <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
@@ -588,8 +593,16 @@ Return to top of [Index](#Index)
 ### <a id="Flame_Filter_Script"></a>Flame Filter Script ###
 
 
+
+
 Return to top of [Index](#Index)
 ### <a id="Drop_Filter_Script"></a>Drop Filter Script ###
+
+Drop Touchpoint (DRP)
+
+SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='ACME Banking'
+
+
 
 
 Return to top of [Index](#Index)
