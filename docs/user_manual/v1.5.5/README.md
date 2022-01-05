@@ -624,7 +624,7 @@ The Canary filter, when activated, reset all the the different Steps, so that yo
 
 ![image](screenshots/steps5.png)
 
-On this Pathpoint, you can see all the different Steps that are active right now, to troubleshoot this Pathpoint, you can turn off all of the Steps, and then enable them one by one, using the Canary filter.
+On this Pathpoint, you can see all the different Steps that are active right now, to troubleshoot this Pathpoint, you can turn off all of the Steps, and then enable them one by one, after turning on the Canary filter.
 
 
 ![image](screenshots/canary2.png)
