@@ -110,7 +110,7 @@ And on each particular stage we can see first-hand if any of its associated touc
 
 ![Image](screenshots/stages4.png)
 
-Please note that under a single Stage you should only count either Persons (PRC Touchpoint) or Processes (PCC Touchpoint), on the graphic above you can see the symbols for the two types of Stages;  
+Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint), on the graphic above you can see the symbols for the two types of Stages;  
 
     A Processes  
     B People
@@ -519,6 +519,37 @@ Now, on this screen capture notice how I changed the Query, in front of count(*)
 
 If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them by clicking on "Save/Update" (if not find out what is the issue with the query and fix it), on the right of the same dialog box window, now the Touchpoint window will close, saving the changes you made to the Touchpoint. 
 
+
+QUERY'S
+
+SYNTHETIC MONITOR QUERY
+
+SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
+
+PCC QUERY
+
+SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
+
+PRC QUERY
+
+SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
+
+MASTER DATA API QUERY  (FRT)
+
+SELECT filter(apdex(duration, t:1), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from PageView WHERE appName='QS'
+
+Workload (WLD)
+
+SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
+
+
+
+
+
+
+
+
+ 
 
 
 
