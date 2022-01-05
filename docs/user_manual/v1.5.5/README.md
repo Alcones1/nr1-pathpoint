@@ -46,7 +46,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
          	
 
-    *  [In App Tuning](#In_App_Tuning) 
+    *  [App Touchpoint Tuning](#In_App_Tuning) 
 
 
          *[Test a Touchpoint](#Test_a_Touchpoint)  
@@ -94,7 +94,8 @@ Return to top of [Index](#Index)
 
 ### <a id="Stages"></a>Stages ###
 
-Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. Please note that under a single Stage you should only count either Persons (PRC Touchpoint) or Processes (PCC Touchpoint).
+Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
+
 
 The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
@@ -107,6 +108,12 @@ On the following graphic, you can see that this particular Pathpoint has five st
 And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved.
 
 
+![Image](screenshots/stages4.png)
+
+Please note that under a single Stage you should only count either Persons (PRC Touchpoint) or Processes (PCC Touchpoint), on the graphic above you can see the symbols for the two types of Stages;  
+
+    A Processes  
+    B People
 
 ### <a id="Steps"></a>Steps ###
 
@@ -473,7 +480,16 @@ Return to top of [Index](#Index)
 
 
 Return to top of [Index](#Index)
-### <a id="In_App_Tuning"></a>In App Tuning ###
+### <a id="In_App_Tuning"></a>App Touchpoint Tuning ###
+
+This type of Touchpoint has 3 values;
+
+* APDEX Responce (Min)  
+* Response time (Max)  
+* % Error (Max)
+
+
+
 
 
 
