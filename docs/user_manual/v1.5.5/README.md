@@ -192,14 +192,15 @@ For the example, the "Agents (PRC)" Touchpoint is linked to the "Call Pop" Step.
 
 * Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. 
 
-![image](screenshots/Examples_queries_TP_1.png)
-To access this view, you just have to right click on the touchpoint and then click on  "Queries"  
+![image](screenshots/Examples_queries_TP_1.png) 
+
+To access this view, you just have to right click on the particular Touchpoint you want to work with and then click on  "Queries"  
 
 ![image](screenshots/touchpoint5.png)
 
      1 Type: Identify the right type of query. For this example, it is a PRC person count. (please review section "Different Touchpoint Types Explained")
      2 AccountID: Determines the account with which the query is identified.
-     3 Query: Displays the actual query that determines the Touchpoint. THE QUERY'S ARE FIRST WRITEN ON THE JSON FILE.
+     3 Query: Displays the actual query that determines the Touchpoint.
      4 Query_timeout: Determines the maximum time of activity in which the query will be executed.
      5 Min_count: The query will present a minimum of X number of records.
      6 Measure_time: Determines the time from when I want the query to collect information to perform the measurement.
@@ -215,15 +216,12 @@ Example 2
 ![image](screenshots/Example_Touchpoint2.png)
 
 
-
-
-
-Note, there is a recomendation that when you name a Touchpoint, its name, state the type of Touchpount it is, like for example; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
+Note, there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
 
 ### <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
-Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints, for instance to see the data that you are most concern at the moment.
+Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
 
 ### <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
@@ -233,15 +231,15 @@ JSON for its acronym (JavaScript Object Notation) is a data structure, whose bas
 
 Uploading a New JSON Config File
 
-Pathpoint offers the possibility to load the configuration file using the following steps;
+To load a JSON configuration file use the following steps;
 
 ![imagecambiar](screenshots/Menu_pathpoint.png)
 
- 1 To begin click on the menu at the top left
+ 1 To begin, once you are on the Pathpoint screen, click on the menu on the top left part of the window.
 
 ![image](screenshots/Option_configuration.png)
 
-2 Select the option "JSON Configuration"
+2 Now, select the option "JSON Configuration".
 
 ![image](screenshots/Option_update.png)
 
@@ -252,14 +250,12 @@ Pathpoint offers the possibility to load the configuration file using the follow
 ![image](screenshots/file_location.png)
 
 
-
-
-4 Next, locate the file you want to update on this dialog window that opens up and click on "open"
+4 Next, locate the file you want to update on the dialog Box window that opens up and click on "open"
 
 ![image](screenshots/front_pathpoint.png)
 
 
-5 Finally the Pathpoint is displayed with the latest update loaded.
+5 Finally, the Pathpoint is displayed with the updates of the particular JSON file you chose.
 
 How to download the Currently Active Config File.
 
@@ -509,14 +505,14 @@ To beging the process of testing a Touchpoint, right click on it, and then selec
 
 ![image](screenshots/test_touchpoint.png)
 
-Now, on Dialog window that opens up, click on "Test", to test the Touchpoint, now notice on the right the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is correct.
+Now, on the Dialog box window that opens up, click on "Test", to test the Touchpoint, now notice on the right the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is correct.
 
 But lets say that you change some part of the given query, for instance to test another aspect of the Touchpoint, now you must test the Touchpoint again.
 
 
 ![image](screenshots/touch_test1.png)
 
-Now, on this screen capture notice how I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. If you test a Touchpoint, and the validation fails, find out why, and fix it.
+Notice how on this example I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint. Now, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. If you test a Touchpoint, and the validation fails, find out why, and fix it.
 
 
 ![image](screenshots/test_pathpoint1.png)
@@ -645,13 +641,13 @@ Now, you can see that the steps that were previously active, don't show any acti
 
 Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
 
-Please notice that if you are running the Pathpoint background job the signals for non-visible touchpoints will still be available with the Flame view.
+Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
 
 
 Return to top of [Index](#Index)
 ### <a id="Flame_Filter"></a>Flame Filter ###
 
-The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. The filter will show the worst and percentile of touchpoints. 
+The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints, as well the ones that are not behaving well, like for instance the ones that are not meeting the threshold as the percentage is concern. 
 
 ![image](screenshots/flame2.png)
 
