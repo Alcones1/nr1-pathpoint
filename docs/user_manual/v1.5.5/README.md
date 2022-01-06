@@ -529,9 +529,9 @@ SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as suc
 
 Has 3 variables;
 
-* SUCCESS
-* DURATION 
-* REQUEST
+* SUCCESS (percentage)
+* DURATION (time)
+* REQUEST (time)
 
 PCC QUERY
 
