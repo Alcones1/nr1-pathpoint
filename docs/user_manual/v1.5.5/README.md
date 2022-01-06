@@ -157,7 +157,7 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 ![image](screenshots/alltouchpoints.png)
 
-If you can see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
+If you can't see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
 
 These are the different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 
