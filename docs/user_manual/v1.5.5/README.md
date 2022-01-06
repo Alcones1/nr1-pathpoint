@@ -84,9 +84,9 @@ Pathpoint will work in nearly any New Relic account. And each Pathpoint is divid
 
 To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
 
-A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal disucssions with your stakeholders to understand how things really fit in.
+A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
-When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, or edit it (if you wish to do so) and re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
+When you are ready to make some edits you can simply download the current version of the JSON config that was writen for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
 
 
 
@@ -97,7 +97,7 @@ Return to top of [Index](#Index)
 Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
 
 
-The different stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
+The different Stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
 And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. 
 
@@ -110,7 +110,7 @@ And on each particular stage we can see first-hand if any of its associated touc
 
 ![Image](screenshots/stages4.png)
 
-Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint), on the graphic above you can see the symbols for the two types of Stages;  
+Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint). On the graphic above you can see the symbols for the two types of Stages;  
 
     A Processes  
     B People
@@ -143,25 +143,28 @@ Line: Positions the row in which the task is located within the stage.
 
 * ID: Corresponds to the code that identifies the step in its order within the row that is located. For the example, in line 1 the "Web" step is assigned the order # 1, the "Mobile Web" step has the order # 2 assigned and the "App" step is assigned the order # 3 in its configuration.
 
-![image](screenshots/Examples_ID_Step1.png)
 
 
 
 
 ### <a id="Touchpoints"></a>Touchpoints ###
 
-Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a Touchpoint will be linked to the error rate and latency.
+Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a Touchpoint will be linked to its error rate and latency.
 
 Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
 
 And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of each Pathpoint.
 
-The different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
+![image](screenshots/alltouchpoints.png)
+
+If you can see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
+
+These are the different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
 
 * PRC are used to count people
 * PCC are used to count processes
 * APC are used to see the health of an application
-* FRT FRONT END HEALTH????
+* FRT measures the health of the Front End of your APP
 * SYN are used to assess the health of a Syntethic monitor
 
 Where:
@@ -171,11 +174,13 @@ Where:
 
 ![image](screenshots/TP1.png)
 
-On this example the Touchpoint name is "Chat Throughput (PCC), which is the type of Touchpoint designed to count processes.
+On this example the Touchpoint name is "Chat Throughput (PCC), and the PCC means that this is the type of Touchpoint designed to count processes. 
 
-* Status "On" or "Off": This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint and click on the option "ON/OFF". 
+* Status "On" or "Off": This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint you want to work with and click on the option "ON/OFF". 
 
 ![image](screenshots/Example_status_on_off_TP_1.png)
+
+To turn Off the Touchpoint, click on the On button, and to turn it back ON again, right click on the Touchpoint again and click on the OFF button.
 
 * Dashboard_url: Corresponds to the link that directs to the Touchpoint dashboard. ASK HOW TO GET THIS LINK
 
