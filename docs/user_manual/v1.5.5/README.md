@@ -527,9 +527,17 @@ SYNTHETIC MONITOR QUERY
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
+Has 3 variables;
+
+* SUCCESS
+* DURATION 
+* REQUEST
+
 PCC QUERY
 
 SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
+
+Wait for a value on a variable called "Count"
 
 PRC QUERY
 
@@ -551,16 +559,13 @@ App Backend Health (APP)
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
 
+Has 3 variables;
 
+* APDEX
 
+* RESPONSE, which measures the duration of a process
 
-
-
-
-
- 
-
-
+* Error
 
 
 Return to top of [Index](#Index)
@@ -584,7 +589,7 @@ To disable a Touchpoint, right click on it. On this example I clicked on the Cus
 
  
 
-Now, on the pop-up window, click on the "On" symbol, to disable the Touchpoint. Later on you can right click on the same Touchpoint, then on the "Off" symbol, to enable it again.
+Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoint. Later on you can right click on the same Touchpoint, then on the "Off" symbol, to enable it again.
 
 
 Return to top of [Index](#Index)
@@ -677,5 +682,3 @@ Time Period
 
 Return to top of [Index](#Index)
 
-
-This is a test
