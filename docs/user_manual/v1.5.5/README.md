@@ -159,7 +159,7 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 If you can't see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
 
-These are the different types of touchpoints are; PRC, PCC, APC, FRT, and SYN.
+These are the different types of touchpoints, and their business purpose;
 
 * PRC are used to count people
 * PCC are used to count processes
@@ -180,7 +180,7 @@ On this example the Touchpoint name is "Chat Throughput (PCC), and the PCC means
 
 ![image](screenshots/Example_status_on_off_TP_1.png)
 
-To turn Off the Touchpoint, click on the On button, and to turn it back ON again, right click on the Touchpoint again and click on the OFF button.
+To turn Off a Touchpoint, right click on its name, then click on the On button. To turn it back ON again, right click on the Touchpoint again and click on the OFF button.
 
 * Dashboard_url: Corresponds to the link that directs to the Touchpoint dashboard. ASK HOW TO GET THIS LINK
 
