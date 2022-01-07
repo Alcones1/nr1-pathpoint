@@ -159,6 +159,12 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 If you can't see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
 
+There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
+
+* Greeen, the Touchpoint is healthy
+* Gray, the Touchpoint needs attention
+* Red, the Touchpoint is in a fail state.
+
 These are the different types of touchpoints, and their business purpose;
 
 * PRC are used to count people
@@ -551,6 +557,8 @@ Workload (WLD)
 
 SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
 
+The only thing that can be changed on this query, is the entity name.
+
 Subscriptions API (SYNC)
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
@@ -574,9 +582,21 @@ Return to top of [Index](#Index)
 
 LOGIN PEOPLE PRC
 
+SELECT count(*) as session FROM Public_APICall WHERE awsRegion='queue'
+
+There are two important values on this Touchpoint;
+
+* Session count (Min), if the value (under "Configured"), is  for example set at 10000, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red
+* Session count (Max), if the value (under "Configured"), is  for example set at 10000, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red
+
+These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
+
+![image](screenshots/loginprc.png)
+
 
 Return to top of [Index](#Index)
 ### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
+
 
 You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
 
@@ -595,9 +615,8 @@ Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoi
 Return to top of [Index](#Index)
 ### <a id="Configure_Logging"></a>Configure Logging###
 
-![image](screenshots/LOGIN.png)
 
-LOOKING FOR THE SIGN UP WITH MIN AND MAX
+
 
 Return to top of [Index](#Index)
 ### <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
