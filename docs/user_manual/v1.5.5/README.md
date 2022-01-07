@@ -580,19 +580,34 @@ Return to top of [Index](#Index)
 ### <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
 
 
-LOGIN PEOPLE PRC
+* LOGIN PEOPLE PRC
 
-SELECT count(*) as session FROM Public_APICall WHERE awsRegion='queue'
 
-There are two important values on this Touchpoint;
-
-* Session count (Min), if the value (under "Configured"), is  for example set at 10000, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red
-* Session count (Max), if the value (under "Configured"), is  for example set at 10000, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red
-
-These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
 
 ![image](screenshots/loginprc.png)
 
+These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
+
+
+There are two important values on this Touchpoint;
+
+* Session count (Min), if the value (under "Configured"), is  for example set at 10, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.
+* Session count (Max), if the value (under "Configured"), is  for example set at 110, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will see the color of the Stage label turn, from blue, to white.
+
+
+Subscriptions API (PCC)
+
+![image](screenshots/subscriptionspcc.png)
+
+
+
+These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
+
+
+There are two important values on this Touchpoint;
+
+* Transactions count (Min), if the value (under "Configured"), is  for example set at 36, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.
+* Transactions count (Max), if the value (under "Configured"), is  for example set at 136, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will see the color of the Stage label turn, from blue, to white.
 
 Return to top of [Index](#Index)
 ### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
