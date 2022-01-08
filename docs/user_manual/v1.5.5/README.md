@@ -97,7 +97,7 @@ Return to top of [Index](#Index)
 Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
 
 
-The different Stages of a Pathpoint, will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
+The different Stages of a Pathpoint (five for now), will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
 And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. 
 
@@ -562,6 +562,8 @@ The only thing that can be changed on this query, is the entity name.
 Subscriptions API (SYNC)
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
+
+
 
 App Backend Health (APP)
 
