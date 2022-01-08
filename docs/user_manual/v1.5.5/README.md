@@ -105,7 +105,7 @@ On the following graphic, you can see that this particular Pathpoint has five st
 
 And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. 
 ![Image](screenshots/stagesb.png)
-Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and the color of the stage is white, it means is free of congestion.
+Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage is white, it means is free of congestion.
 
 
 ![Image](screenshots/stages4.png)
