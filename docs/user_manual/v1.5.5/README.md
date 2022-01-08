@@ -103,9 +103,9 @@ And the information related to a particular stage, including the errors for each
 
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
+And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. 
 ![Image](screenshots/stagesb.png)
-
-And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and the white, free of congestion.
+Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and the color of the stage is white, it means is free of congestion.
 
 
 ![Image](screenshots/stages4.png)
@@ -164,7 +164,7 @@ If you can't see a particular Touchpoint you are looking for, click on "View all
 
 There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
 
-* Greeen, the Touchpoint is healthy
+* Green, the Touchpoint is healthy
 * Gray, the Touchpoint needs attention
 * Red, the Touchpoint is in a fail state.
 
