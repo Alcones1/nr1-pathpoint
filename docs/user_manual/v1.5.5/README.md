@@ -136,7 +136,10 @@ Line: Positions the row in which the task is located within the stage.
 
 
 * Values: Indicate the parameters for each step. Currently the parameters 1) "Web", "App","Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
-* Title: Corresponds to the name with which the step is identified.
+
+![image](screenshots/steps_name.png)
+
+* Title: Corresponds to the name with which the Step is identified. On this example; "Customer info."
 
 
 ![image](screenshots/Examples_Title_Step4.png)
