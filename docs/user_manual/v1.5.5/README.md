@@ -246,14 +246,12 @@ To load a JSON configuration file use the following steps;
 
  1 To begin, once you are on the Pathpoint screen, click on the menu on the top left part of the window.
 
-![image](screenshots/Option_configuration.png)
-
 2 Now, select the option "JSON Configuration".
 
 ![image](screenshots/Option_update.png)
 
  
-3 Now, select "Update"
+3 Next, select "From file"
 
 
 ![image](screenshots/file_location.png)
