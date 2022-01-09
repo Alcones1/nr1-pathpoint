@@ -276,17 +276,17 @@ Similarly, Pathpoint offers you the possibility of downloading the current confi
 
 ![image](screenshots/Option_configuration2.png)
 
-2 Select the option "JSON Configuration"
+2 Select the option "JSON Configuration".
 
 ![image](screenshots/pathpoint_jason_vx.png)
 
-3 Now, select the file available to download. On this example"Pathpoint_json_vX"
+3 Now, select the file available to download. On this example"Pathpoint_json_vX".
 
 ![image](screenshots/downloaded_file.png)
 
-4 Finally the file is downloaded so that you can work on it.
+4 Finally the file is downloaded to your computer, and now you can make the changes to it.
 
-### <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ###
+### <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ##
 
 KPI by its acronym (Key Performance Indicator), are normally known as key indicators, which allow you to see the performance of a process. 
 
