@@ -720,6 +720,8 @@ Function:
 
 Displays a Total Drop count per Stage
 
+ ![image](screenshots/drop2.png)
+
 
 Calculates the order or transaction loss by the drops
 
