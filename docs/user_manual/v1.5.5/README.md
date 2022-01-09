@@ -696,11 +696,11 @@ Please note that when you are running the Pathpoint background job, the signals 
 Return to top of [Index](#Index)
 ### <a id="Flame_Filter"></a>Flame Filter ###
 
-The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints, as well the ones that are not behaving well, like for instance the ones that are not meeting the threshold as the percentage is concern. 
+The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints (the status of the Touchpoint will turn red), as well the ones that are not behaving well (the status of the Touchpoint will turn green), like for instance the ones that are not meeting the threshold as the percentage is concern. 
 
 ![image](screenshots/flame2.png)
 
-To activate it, just click on the Flame Symbol, which now changes it color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+To activate it, just click on the Flame Symbol, which now changes its color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
 
 ![image](screenshots/flame3.png)
 
@@ -712,10 +712,15 @@ Return to top of [Index](#Index)
 
 Function: 
 
- 
-Highlights Steps with Most Drops (Session Breaks or Abandonment) 
+ Highlights Steps with Most Drops (Session Breaks or Abandonment) 
+
+ ![image](screenshots/drop1.png)
+
+ To activate it, just click on the tear-drop Symbol, which now changes its color, to black. 
 
 Displays a Total Drop count per Stage
+
+
 Calculates the order or transaction loss by the drops
 
 
