@@ -412,6 +412,11 @@ Return to top of [Index](#Index)
 This is an example of a APP touchpoint;
 
 ### <a id="APP"></a>APP (Application Health) ### 
+
+
+![image](screenshots/Example_TP_APP1.png)
+
+![image](screenshots/Example_TP_APP2.png)
   
 ● Data:  
 ○ Transactions
@@ -427,9 +432,7 @@ This is an example of a APP touchpoint;
 ○ Breakdown  
 ○ Traces
 
-![image](screenshots/Example_TP_APP1.png)
 
-![image](screenshots/Example_TP_APP2.png)
 
 Return to top of [Index](#Index)
 
@@ -437,7 +440,7 @@ This is an example of a FRT touchpoint;
 
 ### <a id="FRT"></a>FRT (Front End Health)  ### 
 
- 
+ ![image](screenshots/Example_TP_FRT1.png)
 ● Data:  
 ○ Transactions
 
@@ -452,7 +455,7 @@ This is an example of a FRT touchpoint;
 ○ Breakdown  
 ○ Traces
 
-![image](screenshots/Example_TP_FRT1.png)
+
 
 ![image](screenshots/Example_TP_FRT2.png)
 
@@ -460,7 +463,10 @@ Return to top of [Index](#Index)
 
 This is an example of a SYN touchpoint;
 
-### <a id="SYN"></a>SYN (Synthetic Check)   ### 
+### <a id="SYN"></a>SYN (Synthetic Check)   ###
+
+
+![image](screenshots/Example_TP_SYN1.png)
 
 ● Data:  
 ○ Synthetic Monitor Data
@@ -477,7 +483,6 @@ This is an example of a SYN touchpoint;
 ○ Total Time  
 ○ Requests Waterfall  
 
-![image](screenshots/Example_TP_SYN1.png)
 
 ![image](screenshots/Example_TP_SYN2.png)
 
