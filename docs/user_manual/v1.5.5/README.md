@@ -521,13 +521,13 @@ But lets say that you change some part of the given query, for instance to test 
 
 ![image](screenshots/touch_test1.png)
 
-Notice how on this example I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint. Now, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. If you test a Touchpoint, and the validation fails, find out why, and fix it.
+Notice how on this example I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint. Now, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. 
 
 
 ![image](screenshots/test_pathpoint1.png)
 
 
-If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them by clicking on "Save/Update" (if not find out what is the issue with the query and fix it), on the right of the same dialog box window, now the Touchpoint window will close, saving the changes you made to the Touchpoint. 
+If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). If is not find out why, and fix it. Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
 
 
 QUERY'S
