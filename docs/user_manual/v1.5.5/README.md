@@ -302,11 +302,11 @@ Type: Defines the type of measurement to be performed, which can be:
 -- "100" returns the current measurement value.
 -- "101" returns the current value and compares it with the value of "X" previous days
 
-Name: Corresponds to the long name of the KPI.
+* Name: Corresponds to the long name of the KPI.
 
-ShortName: Corresponds to the short name of the KPI.
+* ShortName: Corresponds to the short name of the KPI.
 
-![image](screenshots/KPI2.png)
+![image](screenshots/kpi1.png)
 
 ### <a id="Setting_up_Stages_Steps"></a>Setting up Stages & Steps ###
 
