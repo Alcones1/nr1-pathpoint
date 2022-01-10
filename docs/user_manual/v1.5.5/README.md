@@ -622,11 +622,15 @@ Login Check (SYN)
 
 ![image](screenshots/login_check_syn.png)
 
-* Avg Response Time (Max)
+There are three important values on this Touchpoint;
 
-* Total Check Time (Max)
+* Avg response time (MAX), if the value (under "Configured"), is  for example set at .07, and the value of sessions, on the last 5 minutes, is higher than this number, the status of the Touchpoint will turn red.
+* Total Check Time (Max), if the value (under "Configured"), is  for example set at 1.25, and this value on the last 5 minutes, is above this number, the status of the Touchpoint will turn red.  
+* %Success Rate (Min), if the value (under "Configured"), is  for example set at 98, and this value on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.  
 
-* %Success Rate (Min)
+
+
+
 
 Return to top of [Index](#Index)
 ### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
