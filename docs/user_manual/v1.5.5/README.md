@@ -151,7 +151,7 @@ Line: Positions the row in which the task is located within the stage.
 
 ### <a id="Touchpoints"></a>Touchpoints ###
 
-Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). The health status of a Touchpoint will be linked to its error rate and latency.
+Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). 
 
 Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
 
