@@ -268,11 +268,9 @@ How to download the Currently Active Config File.
 
 Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
-![image](screenshots/Menu_pathpoint1.png)
+![imagecambiar](screenshots/Menu_pathpoint.png)
 
-1 Click on the menu on the top left (once you are on the New Relic Pathpoint  window)
-
-![image](screenshots/Option_configuration2.png)
+1 Click on the menu on the top left (once you are on the New Relic Pathpoint  window).
 
 2 Select the option "JSON Configuration".
 
