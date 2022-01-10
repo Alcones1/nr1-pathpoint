@@ -617,6 +617,19 @@ There are two important values on this Touchpoint;
 * Transactions count (Min), if the value (under "Configured"), is  for example set at 36, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.
 * Transactions count (Max), if the value (under "Configured"), is  for example set at 136, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will see the color of the Stage label turn, from blue, to white.
 
+
+
+Login Check (SYN)
+
+
+![image](screenshots/login_check_syn.png)
+
+* Avg Response Time (Max)
+
+* Total Check Time (Max)
+
+* %Success Rate (Min)
+
 Return to top of [Index](#Index)
 ### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
 
