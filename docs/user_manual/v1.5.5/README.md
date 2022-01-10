@@ -651,7 +651,7 @@ Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoi
 Return to top of [Index](#Index)
 ### <a id="Configure_Logging"></a>Configure Logging###
 
-
+Ask Jim Hagan about this
 
 
 Return to top of [Index](#Index)
@@ -715,7 +715,7 @@ To activate it, just click on the Flame Symbol, which now changes its color, to 
 
 ![image](screenshots/flame3.png)
 
-This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. Please not that to use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
+This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
 
 Return to top of [Index](#Index)
 
