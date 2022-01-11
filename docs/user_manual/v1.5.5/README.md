@@ -139,16 +139,12 @@ Values: Indicate the parameters for each step;
 
 ![image](screenshots/steps_name.png)
 
-* Title: Corresponds to the name with which the Step is identified. On this example; "Customer info."
+Title: Corresponds to the name with which the Step is identified. On this example; "Customer info."
 
 
 ![image](screenshots/Examples_Title_Step4.png)
 
-* ID: Corresponds to the code that identifies the step in its order within the row that is located. For the example, in line 1 the "Web" step is assigned the order # 1, the "Mobile Web" step has the order # 2 assigned and the "App" step is assigned the order # 3 in its configuration.
-
-
-
-
+ID: Corresponds to the code that identifies the step in its order within the row that is located. For the example, in line 1 the "Web" step is assigned the order # 1, the "Mobile Web" step has the order # 2 assigned and the "App" step is assigned the order # 3 in its configuration.
 
 ### <a id="Touchpoints"></a>Touchpoints ###
 
@@ -162,12 +158,6 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 If you can't see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
 
-There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
-
-* Green, the Touchpoint is healthy
-* Gray, the Touchpoint needs attention
-* Red, the Touchpoint is in a fail state.
-
 These are the different types of touchpoints, and their business purpose;
 
 * PRC are used to count people
@@ -175,6 +165,14 @@ These are the different types of touchpoints, and their business purpose;
 * APC are used to see the health of an application
 * FRT measures the health of the Front End of your APP
 * SYN are used to assess the health of a Syntethic monitor
+
+There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
+
+* Green, the Touchpoint is healthy
+* Gray, the Touchpoint needs attention
+* Red, the Touchpoint is in a fail state.
+
+
 
 Where:
 
