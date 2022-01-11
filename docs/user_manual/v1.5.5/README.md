@@ -212,7 +212,7 @@ These are the different parts of the Query window, of a Touchpoint;
      3 Query: Displays the actual query that determines the Touchpoint.
      4 Query_timeout: Determines the maximum time of activity in which the query will be executed.
      5 Min_count: The query will present a minimum of X number of records.
-     6 Measure_time: Determines the time from when I want the query to collect information to perform the measurement.
+     6 Measure_time: Determines the time from when you want the query to collect information to perform the measurement.
 
 And these are two examples of Touchpoints;
 
