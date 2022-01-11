@@ -116,26 +116,15 @@ Please note that under a single Stage you should only count either persons (PRC 
 
 ### <a id="Steps"></a>Steps ###
 
-Steps represent the various actions/events occurring throughout the stage. They can be placed in the traditional sequential manner of step 1,2,3.., But also in a parallel form to represent optional and simultaneous actions and activities. 
-
-These are "sub-stages" of a main stage and represent a certain degree of granularity in your services.
+Steps represent the various actions/events occurring throughout the stage. They can be placed in the traditional sequential manner of step 1,2,3.., but also in a parallel form to represent optional and simultaneous actions and activities. 
 
 
-- Structure Steps
-
-
-![image](screenshots/steps3.png)
-
-
-Where:
-
-Line: Positions the row in which the task is located within the stage. On the example graphic above; line 1.
+On the next example graphic you can see the row in which each task is located within the Step.
 
 ![image](screenshots/Examples_Line_Step8.png)
 
-
 Values: Indicate the parameters for each step;  
-* Currently the parameters 1) "Web", "App", 2)"Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
+* Currently in line 1) "Web", "App", and in line 2)"Login"  and "Signup" are being considered, and in line 3) Search, Menu, Gift Card, and Rewards aren't being considered.
 
 ![image](screenshots/steps_name.png)
 
@@ -195,7 +184,7 @@ To turn Off a Touchpoint, right click on its name, then click on the On button. 
 
 ![image](screenshots/Examples_related_steps_TP.png)
 
-For the example, the "Agents (PRC)" Touchpoint is linked to the "Call Pop" Step.
+For the example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove Item" Step.
 
 * Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. 
 
@@ -746,4 +735,3 @@ Time Period
 
 Return to top of [Index](#Index)
 
-Test
