@@ -238,6 +238,8 @@ JSON for its acronym (JavaScript Object Notation) is a data structure, whose bas
 
 ![image](screenshots/jsonfile.png)
 
+The graphic above shows you how each Step is tied to a Touchpoint (this is configured on the JSON file), or to a few Touchpoints.
+
 Uploading a New JSON Config File
 
 To load a JSON configuration file use the following steps;
