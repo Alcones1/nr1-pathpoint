@@ -145,7 +145,7 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 ![image](screenshots/alltouchpoints.png)
 
-If you can't see a particular Touchpoint you are looking for, click on "View all", to find it, under the particular Stage, and Step associated with it.
+Please note that if you can't see a particular Touchpoint you are looking for, that you can click on "View all", to see it, under the particular Stage, and Step associated with it.
 
 These are the different types of touchpoints, and their business purpose;
 
@@ -162,13 +162,12 @@ There are three diferent colors, for a Touchpoint state (on the left of the Touc
 * Red, the Touchpoint is in a fail state.
 
 
-
-Where:
+On the next example graphic you can see a Touchpoint.
 
 * Title: Corresponds to the name that identifies the touchpoint.
 
-
 ![image](screenshots/TP1.png)
+
 
 On this example the Touchpoint name is "Chat Throughput (PCC), and the PCC means that this is the type of Touchpoint designed to count processes. 
 
@@ -178,15 +177,13 @@ On this example the Touchpoint name is "Chat Throughput (PCC), and the PCC means
 
 To turn Off a Touchpoint, right click on its name, then click on the On button. To turn it back ON again, right click on the Touchpoint again and click on the OFF button.
 
-* Dashboard_url: Corresponds to the link that directs to the Touchpoint dashboard. ASK HOW TO GET THIS LINK
-
 * Related_steps: Indicates the step to which a Touchpoint is associated with a Touchpoint. 
 
 ![image](screenshots/Examples_related_steps_TP.png)
 
 For the example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove Item" Step.
 
-* Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. 
+* Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. They are pre-programmed on a file called JSON configuration file, and you can also manually tweek them, to tune a Touchpoint.
 
 ![image](screenshots/Examples_queries_TP_1.png) 
 
@@ -194,7 +191,7 @@ To access this view, right click on the particular Touchpoint you want to work w
 
 ![image](screenshots/touchpoint5.png)
 
-These are the different parts of the Query window, of a Touchpoint;
+These are the different parts of the Query box window, of a Touchpoint;
 
      1 Type: Identify the right type of query. For this example, it is a PRC person count. (please review section "Different Touchpoint Types Explained")
      2 AccountID: Determines the account with which the query is identified.
@@ -203,7 +200,7 @@ These are the different parts of the Query window, of a Touchpoint;
      5 Min_count: The query will present a minimum of X number of records.
      6 Measure_time: Determines the time from when you want the query to collect information to perform the measurement.
 
-And these are two examples of Touchpoints;
+And these are two examples of the configuration fo a Touchpoint;
 
 Example 1
 
@@ -341,7 +338,7 @@ As you saw before, New Relic Pathpoint offers different types of Touchpoints, wh
 * FRT (Front End Health)  
 * SYN (Synthetic Check)
 
-Now, you will see some examples of each type of touchpoint;
+Now, you will see some examples of each type of touchpoint, and to what Steps they are tied to;
 
 ### <a id="PRC"></a>PRC (Person Count) ### 
 
@@ -349,9 +346,7 @@ This is an example of a PRC touchpoint;
 
 ![image](screenshots/Example_TP_PRC1.png)
 
-
-![image](screenshots/Example_TP_PRC2.png)
-
+And these are some of the configuration details, of this particular type of Touchpoint;
 
 ● Data:
 
@@ -368,6 +363,17 @@ This is an example of a PRC touchpoint;
 ○ Past Sessions
 
 ○ Previous Week Comparison
+
+
+
+On the next graphic you can see how a Touchpoint is related to a particular Step.
+
+
+![image](screenshots/Example_TP_PRC21.png)
+
+On the this Example, the "Login" Step is related to two Touchpoints;
+* Login People (PRC) 
+* Login Check (SYN)
 
 
 Return to top of [Index](#Index)
