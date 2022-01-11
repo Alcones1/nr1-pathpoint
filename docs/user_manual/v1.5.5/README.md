@@ -201,9 +201,11 @@ For the example, the "Agents (PRC)" Touchpoint is linked to the "Call Pop" Step.
 
 ![image](screenshots/Examples_queries_TP_1.png) 
 
-To access this view, you just have to right click on the particular Touchpoint you want to work with and then click on  "Queries"  
+To access this view, right click on the particular Touchpoint you want to work with and then click on  "Queries"  
 
 ![image](screenshots/touchpoint5.png)
+
+These are the different parts of the Query window, of a Touchpoint;
 
      1 Type: Identify the right type of query. For this example, it is a PRC person count. (please review section "Different Touchpoint Types Explained")
      2 AccountID: Determines the account with which the query is identified.
