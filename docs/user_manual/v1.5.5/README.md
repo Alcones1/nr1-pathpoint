@@ -354,10 +354,9 @@ As you saw before, New Relic Pathpoint offers different types of Touchpoints, wh
 
 Now, you will see some examples of each type of touchpoint;
 
-This is an example of a PRC touchpoint;
-
-
 ### <a id="PRC"></a>PRC (Person Count) ### 
+
+This is an example of a PRC touchpoint;
 
 ![image](screenshots/Example_TP_PRC1.png)
 
@@ -384,10 +383,8 @@ This is an example of a PRC touchpoint;
 
 Return to top of [Index](#Index)
 
-This is an example of a PCC touchpoint;
-
-
 ### <a id="PCC"></a>PCC (Process Count) ### 
+This is an example of a PCC touchpoint;
 
 ![image](screenshots/Example_TP_PCC1.png)
 
@@ -406,10 +403,9 @@ This is an example of a PCC touchpoint;
 
 Return to top of [Index](#Index)
 
+### <a id="APP"></a>APP (Application Health) ### 
 
 This is an example of a APP touchpoint;
-
-### <a id="APP"></a>APP (Application Health) ### 
 
 
 ![image](screenshots/Example_TP_APP1.png)
@@ -434,9 +430,10 @@ This is an example of a APP touchpoint;
 
 Return to top of [Index](#Index)
 
-This is an example of a FRT touchpoint;
 
 ### <a id="FRT"></a>FRT (Front End Health)  ### 
+
+This is an example of a FRT touchpoint;
 
  ![image](screenshots/Example_TP_FRT1.png)
 ● Data:  
@@ -459,9 +456,9 @@ This is an example of a FRT touchpoint;
 
 Return to top of [Index](#Index)
 
-This is an example of a SYN touchpoint;
-
 ### <a id="SYN"></a>SYN (Synthetic Check)   ###
+
+This is an example of a SYN touchpoint;
 
 
 ![image](screenshots/Example_TP_SYN1.png)
