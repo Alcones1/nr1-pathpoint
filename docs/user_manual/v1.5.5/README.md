@@ -134,8 +134,8 @@ Line: Positions the row in which the task is located within the stage. On the ex
 ![image](screenshots/Examples_Line_Step8.png)
 
 
-* Values: Indicate the parameters for each step. 
-Currently the parameters 1) "Web", "App",2) "Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
+Values: Indicate the parameters for each step;  
+* Currently the parameters 1) "Web", "App", 2)"Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
 
 ![image](screenshots/steps_name.png)
 
