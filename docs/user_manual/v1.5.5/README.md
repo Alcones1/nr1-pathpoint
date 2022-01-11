@@ -248,18 +248,18 @@ To load a JSON configuration file use the following steps;
 
  1 To begin, once you are on the Pathpoint screen, click on the menu on the top left part of the window.
 
-2 Now, select the option "JSON Configuration".
+2 Now, click on the option "JSON Configuration".
 
 ![image](screenshots/Option_update.png)
 
  
-3 Next, select "From file"
+3 Next, select "Update"
 
 
 ![image](screenshots/file_location.png)
 
 
-4 Next, locate the file you want to update on the dialog Box window that opens up and click on "open"
+4 Next, locate the file you want to update on the dialog box window that opens up and click on "Open"
 
 ![image](screenshots/front_pathpoint.png)
 
@@ -282,7 +282,7 @@ Similarly, Pathpoint offers you the possibility of downloading the current confi
 
 ![image](screenshots/downloaded_file.png)
 
-4 Finally the file is downloaded to your computer, and now you can make the changes to it.
+4 Finally the file is downloaded to your computer (in Google Chrome you will see the file at the bottom of the browser), and now you can make the changes to it.
 
 ### <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ##
 
@@ -459,6 +459,7 @@ Return to top of [Index](#Index)
 ### <a id="SYN"></a>SYN (Synthetic Check)   ###
 
 This is an example of a SYN touchpoint;
+
 
 
 ![image](screenshots/Example_TP_SYN1.png)
