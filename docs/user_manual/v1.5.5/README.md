@@ -86,7 +86,7 @@ To get started setting up Pathpoint you'll need some telemetry in the account th
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
-To configure your Pathpoint simply download the current version of the JSON config that was writen for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
+To configure your own Pathpoint simply download the current version of the JSON config that was writen for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
 
 
 
@@ -104,7 +104,7 @@ And the information related to a particular stage, including the errors for each
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
 ![Image](screenshots/stagesb.png)
-Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage is white, it means is free of congestion.
+Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage turns white, it means is free of congestion.
 
 
 ![Image](screenshots/stages4.png)
@@ -129,12 +129,13 @@ These are "sub-stages" of a main stage and represent a certain degree of granula
 
 Where:
 
-Line: Positions the row in which the task is located within the stage.
+Line: Positions the row in which the task is located within the stage. On the example graphic above; line 1.
 
 ![image](screenshots/Examples_Line_Step8.png)
 
 
-* Values: Indicate the parameters for each step. Currently the parameters 1) "Web", "App","Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
+* Values: Indicate the parameters for each step. 
+Currently the parameters 1) "Web", "App",2) "Login"  and "Signup" are being considered. 3) Search, Menu, Gift Card, and Rewards aren't being considered.
 
 ![image](screenshots/steps_name.png)
 
