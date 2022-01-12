@@ -64,7 +64,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
        * [Flame Filter Script](#Flame_Filter_Script)
 
 
-      * [Drop Filter Script](#Drop_Filter_Script)
+      * [Drop Filter Background Script](#Drop_Filter_Script)
 
 * [Using Special Filters](#Using_Special_Filters)
 
@@ -663,14 +663,24 @@ Return to top of [Index](#Index)
 
 
 Return to top of [Index](#Index)
-### <a id="Drop_Filter_Script"></a>Drop Filter Script ###
+### <a id="Drop_Filter_Script"></a>Drop Filter Background Script ###
 
-Drop Touchpoint (DRP)
+To use this special filter you must had enable the Backgrond script option, under "Credentials and general configuration".
 
-SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='ACME Banking'
+![image](screenshots/Flame_background.png)
 
+1 To enable this filter, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.
 
+2 Now, click on the option ""Credentials and general configuration"".
 
+![image](screenshots/Flame_background1.png)
+
+On the next dialgo box window you can see a few options, quering you for data, and also options that you have to check;
+
+   A To enable this filter you must get an "Ingest License" key, as well as a "User API Key"    
+   B Once you get that information, you will be able to select these two options; "Enable Pathpoing Logging", and "Enable Flame Filter Background Script".
+
+  These are the steps to get the "Ingest License" key, as well as a "User API Key".   
 
 Return to top of [Index](#Index)
 ### <a id="Using_Special_Filters"></a>Using Special Filters ###
@@ -732,7 +742,7 @@ Displays a Total Drop count per Stage
  ![image](screenshots/drop2.png)
 
 
-Calculates the order or transaction loss by the drops
+* This filter calculates the order or transaction loss by the drops
 
 
 Tunning: 
