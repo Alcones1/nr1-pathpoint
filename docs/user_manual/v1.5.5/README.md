@@ -148,19 +148,6 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 Please note that if you can't see a particular Touchpoint you are looking for, that you can click on "View all", to see it, under the particular Stage, and Step associated with it.
 
-These are the different types of touchpoints, and their business purpose;
-
-* PRC are used to count people
-* PCC are used to count processes
-* APC are used to see the health of an application
-* FRT measures the health of the Front End of your APP
-* SYN are used to assess the health of a Syntethic monitor
-
-There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
-
-* Green, the Touchpoint is healthy
-* Gray, the Touchpoint needs attention
-* Red, the Touchpoint is in a fail state.
 
 
 On the next example graphic you can see a Touchpoint.
@@ -201,7 +188,7 @@ These are the different parts of the Query box window, of a Touchpoint;
      5 Min_count: The query will present a minimum of X number of records.
      6 Measure_time: Determines the time from when you want the query to collect information to perform the measurement.
 
-And these are two examples of a typical Touchpoint congiguration;
+And these are two examples of a typical Touchpoint configuration, as is writen on the JSON file;
 
 Example 1
 
@@ -330,11 +317,19 @@ Return to top of [Index](#Index)
 ### <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
 As you saw before, New Relic Pathpoint offers different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
-* PRC (Person Count)  
-* PCC (Process Count)  
-* APP (Application Health)  
-* FRT (Front End Health)  
-* SYN (Synthetic Check)
+
+* PRC (Person Count) are used to count people
+* PCC (Process Count)  are used to count processes
+* APC (Application Health)  are used to see the health of an application
+* FRT (Front End Health)measures the health of the Front End of your APP
+* SYN are used to assess the health of a Syntethic monitor
+
+There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
+
+* Green, the Touchpoint is healthy
+* Gray, the Touchpoint needs attention
+* Red, the Touchpoint is in a fail state.
+
 
 Now, you will see some examples of each type of touchpoint, and what Steps they are tied to;
 
