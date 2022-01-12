@@ -240,7 +240,7 @@ To load a JSON configuration file use the following steps;
 
 ![image](screenshots/Option_update.png)
 
-3 On the dialog box window that opens up, type under "Descripcion:) a memo that will remind you later why you chose to upload a new JSON configuration file. There is also a space for a Note, write the current date. Now, to start this process, click on "From File".
+3 On the dialog box window that opens up, type under "Description" a memo that will remind you later why you chose to upload a new JSON configuration file. There is also a space for a Note, write the current date. Now, to start this process, click on "From File".
 
 ![image](screenshots/file_location.png)
 
