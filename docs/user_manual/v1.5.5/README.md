@@ -357,9 +357,7 @@ And these are some of the configuration details, of this particular type of Touc
 
 ○ Previous Week Comparison
 
-
-
-On the next graphic you can see how a Touchpoint is related to a particular Step.
+And on the next graphic you can see how these two Touchpoint, Login People (PRC) and Login Check (SYN) are related to a particular Step, in this example; "Login".
 
 
 ![image](screenshots/Example_TP_PRC21.png)
