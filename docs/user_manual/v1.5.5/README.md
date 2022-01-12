@@ -200,7 +200,7 @@ These are the different parts of the Query box window, of a Touchpoint;
      5 Min_count: The query will present a minimum of X number of records.
      6 Measure_time: Determines the time from when you want the query to collect information to perform the measurement.
 
-And these are two examples of the configuration fo a Touchpoint;
+And these are two examples of a typical Touchpoint congiguration;
 
 Example 1
 
@@ -230,22 +230,22 @@ Uploading a New JSON Config File
 
 To load a JSON configuration file use the following steps;
 
-![imagecambiar](screenshots/Menu_pathpoint.png)
 
- 1 To begin, once you are on the Pathpoint screen, click on the menu on the top left part of the window.
+
+ ![imagecambiar](screenshots/New_Jason.png)
+
+  1 To begin, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.
 
 2 Now, click on the option "JSON Configuration".
 
 ![image](screenshots/Option_update.png)
 
- 
-3 Next, select "Update"
-
+3 On the dialog box window that opens up, type under "Descripcion:) a memo that will remind you later why you chose to upload a new JSON configuration file. There is also a space for a Note, write the current date. Now, to start this process, click on "From File".
 
 ![image](screenshots/file_location.png)
 
 
-4 Next, locate the file you want to update on the dialog box window that opens up and click on "Open"
+4 Next, locate the file you want to update and click on "Open"
 
 ![image](screenshots/front_pathpoint.png)
 
@@ -256,19 +256,19 @@ How to download the Currently Active Config File.
 
 Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
-![imagecambiar](screenshots/Menu_pathpoint.png)
+![imagecambiar](screenshots/New_Jason.png)
 
-1 Click on the menu on the top left (once you are on the New Relic Pathpoint  window).
+1 To begin, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.
 
-2 Select the option "JSON Configuration".
+2 Now, select the option "JSON Configuration".
 
-![image](screenshots/pathpoint_jason_vx.png)
+![image](screenshots/pathpoint_jason_vx1.png)
 
-3 Now, select the file available to download. On this example"Pathpoint_json_vX".
+3 Next, click on the arrow down, to download the current JSON configuration file.
 
 ![image](screenshots/downloaded_file.png)
 
-4 Finally the file is downloaded to your computer (in Google Chrome you will see the file at the bottom of the browser), and now you can make the changes to it.
+4 Finally the file is downloaded to your computer (in Google Chrome you will see the file at the bottom of the browser), and now you can work on it.
 
 ### <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ##
 
@@ -323,9 +323,6 @@ Type: Defines the type of measurement to be performed, which can be:
 ![image](screenshots/KPI5.png)
 
 ![image](screenshots/KPI6.png)
-
-
-
 
 Return to top of [Index](#Index)
 
