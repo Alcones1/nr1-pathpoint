@@ -376,6 +376,8 @@ This is an example of a PCC touchpoint;
 
 ![image](screenshots/Example_TP_PCC2.png)
 
+And these are some of the configuration details, of this particular type of Touchpoint;
+
 ● Data:  
    ○ Transactions
 
@@ -398,6 +400,8 @@ This is an example of a APP touchpoint;
 
 ![image](screenshots/Example_TP_APP2.png)
   
+
+And these are some of the configuration details, of this particular type of Touchpoint;
 ● Data:  
 ○ Transactions
 
@@ -422,6 +426,8 @@ Return to top of [Index](#Index)
 This is an example of a FRT touchpoint;
 
  ![image](screenshots/Example_TP_FRT1.png)
+
+ And these are some of the configuration details, of this particular type of Touchpoint;
 ● Data:  
 ○ Transactions
 
@@ -450,6 +456,8 @@ This is an example of a SYN touchpoint;
 
 ![image](screenshots/Example_TP_SYN1.png)
 
+And these are some of the configuration details, of this particular type of Touchpoint;
+
 ● Data:  
 ○ Synthetic Monitor Data
 
@@ -473,7 +481,9 @@ Return to top of [Index](#Index)
 
 ### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
+This is done using the JSON configuration file, which is taylor writen to the needs of your business.
 
+[JSON Configuration File](#JSON_Configuration_File)
 
 
 Return to top of [Index](#Index)
