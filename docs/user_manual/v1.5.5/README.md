@@ -680,7 +680,15 @@ On the next dialgo box window you can see a few options, quering you for data, a
    A To enable this filter you must get an "Ingest License" key, as well as a "User API Key"    
    B Once you get that information, you will be able to select these two options; "Enable Pathpoing Logging", and "Enable Flame Filter Background Script".
 
-  These are the steps to get the "Ingest License" key, as well as a "User API Key".   
+ 
+
+  ![image](screenshots/Flame_background2.png)
+
+These are the steps to get the "Ingest License" key, as well as a "User API Key";
+
+1  Click on the Power button, on the upper right hand of the Pathpoint window.  
+2 Next click on the "API Keys" option.
+
 
 Return to top of [Index](#Index)
 ### <a id="Using_Special_Filters"></a>Using Special Filters ###
