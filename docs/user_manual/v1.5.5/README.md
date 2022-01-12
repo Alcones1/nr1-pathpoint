@@ -118,6 +118,10 @@ Please note that under a single Stage you should only count either persons (PRC 
 
 Steps represent the various actions/events occurring throughout the stage. They can be placed in the traditional sequential manner of step 1,2,3.., but also in a parallel form to represent optional and simultaneous actions and activities. 
 
+![image](screenshots/steps_name.png)
+
+Title: Corresponds to the name with which the Step is identified. On this example; "Customer info."
+
 
 On the next example graphic you can see the row in which each task is located within the Step.
 
@@ -126,9 +130,6 @@ On the next example graphic you can see the row in which each task is located wi
 Values: Indicate the parameters for each step;  
 * Currently in line 1) "Web", "App", and in line 2)"Login"  and "Signup" are being considered, and in line 3) Search, Menu, Gift Card, and Rewards aren't being considered.
 
-![image](screenshots/steps_name.png)
-
-Title: Corresponds to the name with which the Step is identified. On this example; "Customer info."
 
 
 ![image](screenshots/Examples_Title_Step4.png)
@@ -252,7 +253,7 @@ To load a JSON configuration file use the following steps;
 
 5 Finally, the Pathpoint is displayed with the updates of the particular JSON file you chose.
 
-How to download the Currently Active Config File.
+How to download the Currently Active Config File
 
 Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
@@ -335,7 +336,7 @@ As you saw before, New Relic Pathpoint offers different types of Touchpoints, wh
 * FRT (Front End Health)  
 * SYN (Synthetic Check)
 
-Now, you will see some examples of each type of touchpoint, and to what Steps they are tied to;
+Now, you will see some examples of each type of touchpoint, and what Steps they are tied to;
 
 ### <a id="PRC"></a>PRC (Person Count) ### 
 
