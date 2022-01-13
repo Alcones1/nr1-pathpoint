@@ -36,7 +36,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
     * ##  [App Touchpoint Tuning](#In_App_Tuning) 
          * [Test a Touchpoint](#Test_a_Touchpoint)  
        * [Tune Touchpoint Thresholds](#Tune_Touchpoint_Thresholds)
-       * [Disable a Touchpoint](#Disable_a_Touchpoint) 
+       * [How to disable a Touchpoint](#Disable_a_Touchpoint) 
 
    * ## [Configure Logging](#Configure_Logging)
 
@@ -49,13 +49,13 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
 * ##  [Using Special Filters](#Using_Special_Filters)
 
-   *  [Canary Filter](#Canary_Filter)
+   *   [Canary Filter](#Canary_Filter)
    *  [Flame Filter](#Flame_Filter)
    *  [Drop Filter](#Drop_Filter)
 
 
 
-### <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
+## <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
@@ -71,7 +71,7 @@ To configure your own Pathpoint simply download the current version of the JSON 
 
 Return to top of [Index](#Index)
 
-### <a id="Stages"></a>Stages ###
+## <a id="Stages"></a>Stages ###
 
 Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
 
@@ -93,7 +93,7 @@ Please note that under a single Stage you should only count either persons (PRC 
     A Processes  
     B People
 
-### <a id="Steps"></a>Steps ###
+## <a id="Steps"></a>Steps ###
 
 Steps represent the various actions/events occurring throughout the stage. They can be placed in the traditional sequential manner of step 1,2,3.., but also in a parallel form to represent optional and simultaneous actions and activities. 
 
@@ -115,7 +115,7 @@ Values: Indicate the parameters for each step;
 
 ID: Corresponds to the code that identifies the step in its order within the row that is located. For the example, in line 1 the "Web" step is assigned the order # 1, the "Mobile Web" step has the order # 2 assigned and the "App" step is assigned the order # 3 in its configuration.
 
-### <a id="Touchpoints"></a>Touchpoints ###
+## <a id="Touchpoints"></a>Touchpoints ###
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). 
 
@@ -181,7 +181,7 @@ Example 2
 Note, there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
 
-### <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
+## <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
 Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
 
@@ -237,7 +237,7 @@ Similarly, Pathpoint offers you the possibility of downloading the current confi
 
 4 Finally the file is downloaded to your computer (in Google Chrome you will see the file at the bottom of the browser), and now you can work on it.
 
-### <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ##
+## <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ##
 
 KPI by its acronym (Key Performance Indicator), are normally known as key indicators, which allow you to see the performance of a process. 
 
@@ -259,7 +259,7 @@ Type: Defines the type of measurement to be performed, which can be:
 
 ![image](screenshots/kpi1.png)
 
-### <a id="Setting_up_Stages_Steps"></a>Setting up Stages & Steps ###
+## <a id="Setting_up_Stages_Steps"></a>Setting up Stages & Steps ###
 
 * Measure: The data that allow the measurement to be made is displayed.
 
@@ -293,7 +293,7 @@ Type: Defines the type of measurement to be performed, which can be:
 
 Return to top of [Index](#Index)
 
-### <a id="Touchpoint_Types"></a>Touchpoint Types ### 
+## <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
 As you saw before, New Relic Pathpoint offers different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
 
@@ -312,7 +312,7 @@ There are three diferent colors, for a Touchpoint state (on the left of the Touc
 
 Now, you will see some examples of each type of touchpoint, and what Steps they are tied to;
 
-### <a id="PRC"></a>PRC (Person Count) ### 
+## <a id="PRC"></a>PRC (Person Count) ### 
 
 This is an example of a PRC touchpoint;
 
@@ -370,7 +370,7 @@ And these are some of the configuration details, of this particular type of Touc
 
 Return to top of [Index](#Index)
 
-### <a id="APP"></a>APP (Application Health) ### 
+## <a id="APP"></a>APP (Application Health) ### 
 
 This is an example of a APP touchpoint;
 
@@ -400,7 +400,7 @@ And these are some of the configuration details, of this particular type of Touc
 Return to top of [Index](#Index)
 
 
-### <a id="FRT"></a>FRT (Front End Health)  ### 
+## <a id="FRT"></a>FRT (Front End Health)  ### 
 
 This is an example of a FRT touchpoint;
 
@@ -427,7 +427,7 @@ This is an example of a FRT touchpoint;
 
 Return to top of [Index](#Index)
 
-### <a id="SYN"></a>SYN (Synthetic Check)   ###
+## <a id="SYN"></a>SYN (Synthetic Check)   ###
 
 This is an example of a SYN touchpoint;
 
@@ -458,7 +458,7 @@ And these are some of the configuration details, of this particular type of Touc
 Return to top of [Index](#Index)
 
 
-### <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
+## <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
 This is done using the JSON configuration file, which is taylor writen to the needs of your business.
 
@@ -480,7 +480,7 @@ This type of Touchpoint has 3 values;
 
 
 Return to top of [Index](#Index)
-### <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
+## <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
 
 This is a function that allows you to test the vaility or health of a particular Touchpoint.
 
@@ -542,8 +542,6 @@ Subscriptions API (SYNC)
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
-
-
 App Backend Health (APP)
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
@@ -551,9 +549,7 @@ SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duratio
 Has 3 variables;
 
 * APDEX
-
 * RESPONSE, which measures the duration of a process
-
 * Error
 
 
@@ -608,7 +604,7 @@ There are three important values on this Touchpoint;
 
 
 Return to top of [Index](#Index)
-### <a id="Disable_a_Touchpoint"></a>Disable a Touchpoint ###
+## <a id="Disable_a_Touchpoint"></a>How to disable a Touchpoint ###
 
 
 You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
@@ -626,23 +622,23 @@ Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoi
 
 
 Return to top of [Index](#Index)
-### <a id="Configure_Logging"></a>Configure Logging###
+## <a id="Configure_Logging"></a>Configure Logging###
 
 Ask Jim Hagan about this
 
 
 Return to top of [Index](#Index)
-### <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
+## <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
 
 
 Return to top of [Index](#Index)
-### <a id="Flame_Filter_Script"></a>Flame Filter Script ###
+## <a id="Flame_Filter_Script"></a>Flame Filter Script ###
 
 
 
 
 Return to top of [Index](#Index)
-### <a id="Drop_Filter_Script"></a>Drop Filter Background Script ###
+## <a id="Drop_Filter_Script"></a>Drop Filter Background Script ###
 
 To use this special filter you must had enable the Backgrond script option, under "Credentials and general configuration".
 
@@ -673,11 +669,11 @@ These are the steps to get the "Ingest License" key, as well as a "User API Key"
 Now you can see both of the Keys you need, to enable "Pathpoing Logging", and "Flame Filter Background Script".
 
 Return to top of [Index](#Index)
-### <a id="Using_Special_Filters"></a>Using Special Filters ###
+## <a id="Using_Special_Filters"></a>Using Special Filters ###
 
 
 Return to top of [Index](#Index)
-### <a id="Canary_Filter"></a>Canary Filter ###
+## <a id="Canary_Filter"></a>Canary Filter ###
 
 The Canary filter, when activated, reset all the the different Steps, so that you can manually activate the Steps, which will help you troubleshoot a particular process.
 
@@ -703,7 +699,7 @@ Please note that when you are running the Pathpoint background job, the signals 
 
 
 Return to top of [Index](#Index)
-### <a id="Flame_Filter"></a>Flame Filter ###
+## <a id="Flame_Filter"></a>Flame Filter ###
 
 The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints (the status of the Touchpoint will turn red), as well the ones that are not behaving well (the status of the Touchpoint will turn green), like for instance the ones that are not meeting the threshold as the percentage is concern. 
 
@@ -717,7 +713,7 @@ This is very useful in situations where things look okay now but may have had a 
 
 Return to top of [Index](#Index)
 
-### <a id="Drop_Filter"></a>Drop Filter ###
+## <a id="Drop_Filter"></a>Drop Filter ###
 
 Function: 
 
