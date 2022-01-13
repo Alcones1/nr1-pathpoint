@@ -1,4 +1,4 @@
-![cambiar](screenshots/logo-pathpoint.png)           
+![cambiar](screenshots/pathpoint_logo.png)           
            
                    
 
