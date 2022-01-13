@@ -23,8 +23,8 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
         * [Setting up KPI queries](#Setting_up_KPI_queries)
       * [Setting up Stages & Steps](#Setting_up_Stages_Steps)
- 
-   
+
+
     * ## [Touchpoint Types](#Touchpoint_Types)     
 
          *  [PRC (Used to count people)](#PRC)  
@@ -74,7 +74,6 @@ Return to top of [Index](#Index)
 ## <a id="Stages"></a>Stages ###
 
 Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
-
 
 The different Stages of a Pathpoint (five for now), will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators. 
 
@@ -179,8 +178,6 @@ Example 2
 
 
 Note, there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
-
-
 ## <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
 Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
@@ -196,7 +193,6 @@ The graphic above shows you how each Step is tied to a Touchpoint (this is confi
 Uploading a New JSON Config File
 
 To load a JSON configuration file use the following steps;
-
 
 
  ![imagecambiar](screenshots/New_Jason.png)
@@ -215,7 +211,6 @@ To load a JSON configuration file use the following steps;
 4 Next, locate the file you want to update and click on "Open"
 
 ![image](screenshots/front_pathpoint.png)
-
 
 5 Finally, the Pathpoint is displayed with the updates of the particular JSON file you chose.
 
@@ -254,7 +249,6 @@ Type: Defines the type of measurement to be performed, which can be:
 -- "101" returns the current value and compares it with the value of "X" previous days
 
 * Name: Corresponds to the long name of the KPI.
-
 * ShortName: Corresponds to the short name of the KPI.
 
 ![image](screenshots/kpi1.png)
@@ -262,11 +256,8 @@ Type: Defines the type of measurement to be performed, which can be:
 ## <a id="Setting_up_Stages_Steps"></a>Setting up Stages & Steps ###
 
 * Measure: The data that allow the measurement to be made is displayed.
-
 * accountID: Corresponds to the number that identifies the measurement performed.
-
 * Query: Corresponds to the query that is used to perform the measurement.
-
 * Link: Corresponds to the link that directs to the KPI dashboard.
 
 ![image](screenshots/linkKPI.png)
@@ -276,7 +267,6 @@ Type: Defines the type of measurement to be performed, which can be:
 ![image](screenshots/value_type_KPI.png)
 
 * Prefix: It is used in the case in which you want to Identify the KPI by placing a symbol or letter at the beginning of the name. Example: USD 12000
-
 * Suffix: It is used in the case where you want to Identify the KPI by adding a symbol or letter at the end of the name. Example: 5%.
 
 ![image](screenshots/prefix_suffix_KPI.png)
@@ -431,8 +421,6 @@ Return to top of [Index](#Index)
 
 This is an example of a SYN touchpoint;
 
-
-
 ![image](screenshots/Example_TP_SYN1.png)
 
 And these are some of the configuration details, of this particular type of Touchpoint;
@@ -456,8 +444,6 @@ And these are some of the configuration details, of this particular type of Touc
 ![image](screenshots/Example_TP_SYN2.png)
 
 Return to top of [Index](#Index)
-
-
 ## <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
 This is done using the JSON configuration file, which is taylor writen to the needs of your business.
@@ -600,15 +586,11 @@ There are three important values on this Touchpoint;
 * %Success Rate (Min), if the value (under "Configured"), is  for example set at 98, and this value on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.  
 
 
-
-
-
 Return to top of [Index](#Index)
 ## <a id="Disable_a_Touchpoint"></a>How to disable a Touchpoint ###
 
 
 You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
-
 
 ![image](screenshots/touch.png)
 
