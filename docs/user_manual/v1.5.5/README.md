@@ -9,69 +9,48 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
  ### <a id="Index"></a>Index ###
  
 
- * [Pathpoint Concepts](#Pathpoint_Concepts)
+ * ## [Pathpoint Concepts](#Pathpoint_Concepts)
 
      *   [Stages](#Stages) 
-
    *   [Steps](#Steps)
-
    *   [Touchpoints](#Touchpoints)
 
-* [Pathpoint Configuration](#Pathpoint_Configuration)
+* ## [Pathpoint Configuration](#Pathpoint_Configuration)
 
-   *  [JSON Configuration File](#JSON_Configuration_File)
+   * ## [JSON Configuration File](#JSON_Configuration_File)
 
      
 
-      *[Setting up KPI queries](#Setting_up_KPI_queries)
-
-
-      *[Setting up Stages & Steps](#Setting_up_Stages_Steps)
-
+        * [Setting up KPI queries](#Setting_up_KPI_queries)
+      * [Setting up Stages & Steps](#Setting_up_Stages_Steps)
+ 
    
-
-      * [Touchpoint Types](#Touchpoint_Types)     
+    * ## [Touchpoint Types](#Touchpoint_Types)     
 
          *  [PRC (Used to count people)](#PRC)  
-
          * [PCC (Process Count)](#PCC)  
-
          * [APP (Application Health)](#APP)
-
          * [FRT (Front End Health)](#FRT)
-
          * [SYN (Synthetic Check)](#SYN)
+      *    [Setting up Touchpoints](#Setting_up_Touchpoints)     	
+    * ##  [App Touchpoint Tuning](#In_App_Tuning) 
+         * [Test a Touchpoint](#Test_a_Touchpoint)  
+       * [Tune Touchpoint Thresholds](#Tune_Touchpoint_Thresholds)
+       * [Disable a Touchpoint](#Disable_a_Touchpoint) 
 
-      *    [Setting up Touchpoints](#Setting_up_Touchpoints)
-
-         	
-
-    *  [App Touchpoint Tuning](#In_App_Tuning) 
-
-
-         *[Test a Touchpoint](#Test_a_Touchpoint)  
-
-       *[Tune Touchpoint Thresholds](#Tune_Touchpoint_Thresholds)
-
-       *[Disable a Touchpoint](#Disable_a_Touchpoint) 
-
-   *  [Configure Logging](#Configure_Logging)
+   * ## [Configure Logging](#Configure_Logging)
 
 
-   *  [Configure Background Jobs](#Configure_Background_Jobs)
+   * ## [Configure Background Jobs](#Configure_Background_Jobs)
 
 
        * [Flame Filter Script](#Flame_Filter_Script)
-
-
       * [Drop Filter Background Script](#Drop_Filter_Script)
 
-* [Using Special Filters](#Using_Special_Filters)
+* ##  [Using Special Filters](#Using_Special_Filters)
 
    *  [Canary Filter](#Canary_Filter)
-
    *  [Flame Filter](#Flame_Filter)
-
    *  [Drop Filter](#Drop_Filter)
 
 
