@@ -675,7 +675,7 @@ To use this special filter you must had enable the Backgrond script option, unde
 
 ![image](screenshots/Flame_background1.png)
 
-On the next dialgo box window you can see a few options, quering you for data, and also options that you have to check;
+On the next dialog box window you will see a few options, asking you to fill some data, and also options that you have to check;
 
    A To enable this filter you must get an "Ingest License" key, as well as a "User API Key"    
    B Once you get that information, you will be able to select these two options; "Pathpoing Logging", and "Flame Filter Background Script".
