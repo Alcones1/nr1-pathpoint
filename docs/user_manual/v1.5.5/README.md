@@ -1,4 +1,4 @@
-![cambiar](screenshots/pathpoint_logo.png)           
+   ![cambiar](screenshots/pathpoint_logo.png)           
            
                    
 
@@ -86,7 +86,7 @@ On the following graphic, you can see that this particular Pathpoint has five st
 Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage turns white, it means is free of congestion.
 
 
-![Image](screenshots/stages4.png)
+![Image](screenshots/stage5.png)
 
 Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint). On the graphic above you can see the symbols for the two types of Stages;  
 
