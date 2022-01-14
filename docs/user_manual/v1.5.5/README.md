@@ -76,9 +76,9 @@ Return to top of [Index](#Index)
 ## <a id="Stages"></a>Stages ###
 
 Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
-```diff
-+ The different Stages of a Pathpoint (five for now), will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators.
-```
+
+The different Stages of a Pathpoint (five for now), will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators.
+
 And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. 
 
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
@@ -121,10 +121,8 @@ ID: Corresponds to the code that identifies the step in its order within the row
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). 
 
-```diff
-+ Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
+Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
 
-```
 And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of each Pathpoint.
 
 ![image](screenshots/alltouchpoints.png)
@@ -181,10 +179,9 @@ Example 2
 
 ![image](screenshots/Example_Touchpoint2.png)
 
-```diff
-+ Note, there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
-```
+Please note, that there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
+
 ## <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
 Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
@@ -310,6 +307,7 @@ There are three diferent colors, for a Touchpoint state (on the left of the Touc
 Now, you will see some examples of each type of touchpoint, and what Steps they are tied to;
 
 ## <a id="PRC"></a>PRC (Person Count) ### 
+
 
 This is an example of a PRC touchpoint;
 
@@ -467,11 +465,6 @@ This type of Touchpoint has 3 values;
 * Response time (Max)  
 * % Error (Max)
 
-
-
-
-
-
 Return to top of [Index](#Index)
 ## <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
 
@@ -479,9 +472,8 @@ This is a function that allows you to test the vaility or health of a particular
 
 ![image](screenshots/touch.png)
 
-```diff
-+ To beging the process of testing a Touchpoint, right click on it, and then select Queries. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint), to test this particular Touchpoint.
-```
+To beging the process of testing a Touchpoint, right click on it, and then select Queries. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint), to test this particular Touchpoint.
+
 ![image](screenshots/test_touchpoint.png)
 
 Now, on the Dialog box window that opens up, click on "Test", to test the Touchpoint, now notice on the right the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is correct.
@@ -689,9 +681,9 @@ Now, you can see that the steps that were previously active, don't show any acti
 ![image](screenshots/steps10.png)
 
 Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
-```diff
-+ Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
-```
+
+Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
+
 Return to top of [Index](#Index)
 ## <a id="Flame_Filter"></a>Flame Filter ###
 
