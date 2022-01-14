@@ -6,8 +6,9 @@
 New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting the different business stages, and on this documentation you will learn the different concepts of a Pathpoint,  as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Touchpoints of a Pathpoint, to better visualize the data you are most interested in tracking.
 
 
- ### <a id="Index"></a>Index ###
+ ## <a id="Index"></a>Main Index ###
  
+
 
  * ## [Pathpoint Concepts](#Pathpoint_Concepts)
 
@@ -60,6 +61,11 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
 Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
+
+ ```diff
+- Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
+
+```
 
 To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
 
@@ -713,10 +719,19 @@ Displays a Total Drop count per Stage
 * This filter calculates the order or transaction loss by the drops
 
 
-Tunning: 
+-Tunning: 
 Avg Order or Transaction Value
 Incident %
 Time Period
 
 Return to top of [Index](#Index)
 
+test 
+
+```diff
+- Pathpoint
+
+```
+
+```diff
+- Pathpoint
