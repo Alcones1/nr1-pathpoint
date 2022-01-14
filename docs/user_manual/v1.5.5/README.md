@@ -668,12 +668,12 @@ And these are the steps to copy those two API Keys, to the " Credentials and Gen
 
 ![image](screenshots/url_address_bar.png)
 
-Now, return to the main Pathpoing One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then press on Enter, to load the main Pathpoint page.
+Now, return to the main Pathpoing One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then pressing on Enter, to load the main Pathpoint page.
 
 
 ![image](screenshots/Flame_background.png)
 
-To install thse API Keys, return to the ""Credentials and general configuration"".  
+To install thse API Keys, return to the "Credentials and general configuration";  
 
 1 Again, click on the three lines on the top left part of the window.  
 2 Now, click on the option ""Credentials and general configuration"".  
