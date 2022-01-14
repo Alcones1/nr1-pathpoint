@@ -6,7 +6,7 @@
 New Relic Pathpoint is an enterprise platform tracker that models system health in relation to actual user-impacting the different business stages, and on this documentation you will learn the different concepts of a Pathpoint,  as well as how to interact with the Pathpoint configuration, like for example how to tweak the different Touchpoints of a Pathpoint, to better visualize the data you are most interested in tracking.
 
 
- ## <a id="Index"></a>Index ###
+ # <a id="Index"></a>Main Index ###
  
 
  * ## [Pathpoint Concepts](#Pathpoint_Concepts)
@@ -59,8 +59,10 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
-Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
+```diff
++ Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
 
+```
 To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types: Metrics, Events, Logs and Traces. 
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
@@ -84,10 +86,11 @@ On the following graphic, you can see that this particular Pathpoint has five st
 ![Image](screenshots/stagesb.png)
 Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage turns white, it means is free of congestion.
 
-
+```diff
+- Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint).
+```
 ![Image](screenshots/stage5.png)
-
-Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint). On the graphic above you can see the symbols for the two types of Stages;  
+ On the graphic above you can see the symbols for the two types of Stages;  
 
     A Processes  
     B People
