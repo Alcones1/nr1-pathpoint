@@ -480,14 +480,11 @@ Now, on the Dialog box window that opens up, click on "Test", to test the Touchp
 
 But lets say that you change some part of the given query, for instance to test another aspect of the Touchpoint, now you must test the Touchpoint again.
 
-
 ![image](screenshots/touch_test1.png)
 
 Notice how on this example I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint. Now, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. 
 
-
 ![image](screenshots/test_pathpoint1.png)
-
 
 If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). If is not find out why, and fix it. Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
 
@@ -609,9 +606,16 @@ Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoi
 
 
 Return to top of [Index](#Index)
-## <a id="Configure_Logging"></a>Configure Logging###
+## <a id="Configure_Logging"></a>Configure Logging
 
-Ask Jim Hagan about this
+The steps to do this are similar than the steps to configure the Drop filter background script.
+
+* [Drop Filter Background Script](#Drop_Filter_Script)
+
+![image](screenshots/pathpoint_login.png)
+
+And when you apply the Ingest License, and the User API Key, select "Enable Pathpoint Logging.
+
 
 
 Return to top of [Index](#Index)
@@ -633,27 +637,54 @@ To use this special filter you must had enable the Backgrond script option, unde
 
 1 To enable this filter, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.
 
-2 Now, click on the option ""Credentials and general configuration"".
+2 Now, click on the option ""Credentials and general configuration"".  
 
 ![image](screenshots/Flame_background1.png)
 
-On the next dialog box window you will see a few options, asking you to fill some data, and also options that you have to check;
+On this dialog box window you will see a few options, asking you to fill some data, and also options that you have to check;
 
    A To enable this filter you must get an "Ingest License" key, as well as a "User API Key"    
    B Once you get that information, you will be able to select these two options; "Pathpoing Logging", and "Flame Filter Background Script".
 
- 
+ If when, you open the ""Credentials and general configuration"" dialog box window, the Ingest License key and the User API Kay and both of the options; "Enable Pathpoing Logging" and "Enable Flame Filter Background Script" are checked, then just click on "Save/Update, or the "X" on the upper right hand of that window, to close it.
 
   ![image](screenshots/Flame_background2.png)
 
-These are the steps to get the "Ingest License" key, as well as a "User API Key";
-
+These are the steps to get the "Ingest License" key, as well as a "User API Key";  
 1  Click on the Power button, on the upper right hand of the Pathpoint window.  
 2 Next click on the "API Keys" option.
 
   ![image](screenshots/API_Keys.png)
 
 Now you can see both of the Keys you need, to enable "Pathpoing Logging", and "Flame Filter Background Script".
+
+
+
+ ![image](screenshots/API_Keys1.png)
+
+And these are the steps to copy those two API Keys, to the " Credentials and General Configuration" dialog box window;  
+1 Click on the 3 dots, on the right of the user name, first for the Insaller API Key.  
+2 Now, click on "Copy key".
+
+![image](screenshots/url_address_bar.png)
+
+Now, return to the main Pathpoing One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then press on Enter, to load the main Pathpoint page.
+
+
+![image](screenshots/Flame_background.png)
+
+To install thse API Keys, return to the ""Credentials and general configuration"".  
+
+1 Again, click on the three lines on the top left part of the window.  
+2 Now, click on the option ""Credentials and general configuration"".  
+
+![image](screenshots/ingest_license.png)
+
+These are the steps, once you check that the Account ID is the right one, to apply both of those API Keys;  
+1 Right click on the white space of the correspoing API you got, if for instance you copied the "Ingest License" Key, right click on the empty cell, and then select Paste to copy the key there. CTRL + V also works. Repeat the previous steps to get the other key you need, for instance the "User API Key", and right click on the white space under the "User API Key", and then select Paste, to copy it there. 
+2 Finally, click on "Install/Update Job", then on "Save/Update".
+
+Now, both Pathpoint Logging, and Flame Filter Background Script will be enabled.
 
 Return to top of [Index](#Index)
 ## <a id="Using_Special_Filters"></a>Using Special Filters ###
@@ -695,9 +726,8 @@ To activate it, just click on the Flame Symbol, which now changes its color, to 
 
 ![image](screenshots/flame3.png)
 
-```diff
-! This is very useful in situations where things look okay now, but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
-```
+This is very useful in situations where things look okay now, but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
+
 Return to top of [Index](#Index)
 
 ## <a id="Drop_Filter"></a>Drop Filter ###
