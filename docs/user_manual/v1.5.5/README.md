@@ -196,13 +196,13 @@ The graphic above shows you how each Step is tied to a Touchpoint (this is confi
 
 ## Uploading a New JSON Config File
 
-To load a JSON configuration file use the following steps;
+Once you are given the JSON configuration file, you can Upload it to your Pathpoint.
 
+  ![imagecambiar](screenshots/New_Jason.png)
 
- ![imagecambiar](screenshots/New_Jason.png)
+ To load a new JSON configuration file use the following steps;
 
-  1 To begin, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.
-
+  1 To begin, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.  
 2 Now, click on the option "JSON Configuration".
 
 ![image](screenshots/Option_update.png)
