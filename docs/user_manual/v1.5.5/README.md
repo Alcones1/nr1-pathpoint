@@ -121,8 +121,10 @@ ID: Corresponds to the code that identifies the step in its order within the row
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). 
 
-Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
+```diff
++ Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
 
+```
 And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of each Pathpoint.
 
 ![image](screenshots/alltouchpoints.png)
@@ -179,8 +181,10 @@ Example 2
 
 ![image](screenshots/Example_Touchpoint2.png)
 
+```diff
++ Note, there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
-Note, there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
+```
 ## <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
 Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
@@ -193,7 +197,7 @@ JSON for its acronym (JavaScript Object Notation) is a data structure, whose bas
 
 The graphic above shows you how each Step is tied to a Touchpoint (this is configured on the JSON file), or to a few Touchpoints.
 
-Uploading a New JSON Config File
+## Uploading a New JSON Config File
 
 To load a JSON configuration file use the following steps;
 
@@ -217,7 +221,7 @@ To load a JSON configuration file use the following steps;
 
 5 Finally, the Pathpoint is displayed with the updates of the particular JSON file you chose.
 
-How to download the Currently Active Config File
+## How to download the Currently Active Config File
 
 Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
