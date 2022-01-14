@@ -459,7 +459,7 @@ This is done using the JSON configuration file, which is taylor writen to the ne
 
 
 Return to top of [Index](#Index)
-### <a id="In_App_Tuning"></a>App Touchpoint Tuning ###
+## <a id="In_App_Tuning"></a>App Touchpoint Tuning ###
 
 This type of Touchpoint has 3 values;
 
@@ -479,8 +479,9 @@ This is a function that allows you to test the vaility or health of a particular
 
 ![image](screenshots/touch.png)
 
-To beging the process of testing a Touchpoint, right click on it, and then select Queries. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint), to test this particular Touchpoint..
-
+```diff
++ To beging the process of testing a Touchpoint, right click on it, and then select Queries. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint), to test this particular Touchpoint.
+```
 ![image](screenshots/test_touchpoint.png)
 
 Now, on the Dialog box window that opens up, click on "Test", to test the Touchpoint, now notice on the right the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is correct.
@@ -499,9 +500,12 @@ Notice how on this example I changed the Query, in front of count(*), I added th
 If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). If is not find out why, and fix it. Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
 
 
-QUERY'S
+## HOW TO WORK WITH TOUCHPOINT QUERIES  
 
-SYNTHETIC MONITOR QUERY
+To beging the process of working with a Touchpoint Query, right click on it, and then select Queries.
+
+
+## SYNTHETIC MONITOR QUERY
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
@@ -511,31 +515,31 @@ Has 3 variables;
 * DURATION (time)
 * REQUEST (time)
 
-PCC QUERY
+## PCC QUERY
 
 SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
 
 Wait for a value on a variable called "Count"
 
-PRC QUERY
+## PRC QUERY
 
 SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
 
-MASTER DATA API QUERY  (FRT)
+## MASTER DATA API QUERY  (FRT)
 
 SELECT filter(apdex(duration, t:1), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from PageView WHERE appName='QS'
 
-Workload (WLD)
+## Workload (WLD)
 
 SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
 
 The only thing that can be changed on this query, is the entity name.
 
-Subscriptions API (SYNC)
+## Subscriptions API (SYNC)
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
-App Backend Health (APP)
+## App Backend Health (APP)
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
 
@@ -547,7 +551,9 @@ Has 3 variables;
 
 
 Return to top of [Index](#Index)
-### <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
+## <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
+
+One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin, right click on the Touchpoint you want to Tune, and then select "Tune".
 
 
 * LOGIN PEOPLE PRC
@@ -683,10 +689,9 @@ Now, you can see that the steps that were previously active, don't show any acti
 ![image](screenshots/steps10.png)
 
 Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
-
-Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
-
-
+```diff
++ Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
+```
 Return to top of [Index](#Index)
 ## <a id="Flame_Filter"></a>Flame Filter ###
 
@@ -698,8 +703,9 @@ To activate it, just click on the Flame Symbol, which now changes its color, to 
 
 ![image](screenshots/flame3.png)
 
-This is very useful in situations where things look okay now but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
-
+```diff
+! This is very useful in situations where things look okay now, but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
+```
 Return to top of [Index](#Index)
 
 ## <a id="Drop_Filter"></a>Drop Filter ###
@@ -727,42 +733,4 @@ Time Period
 
 Return to top of [Index](#Index)
 
-test 
-
-```diff
-- Pathpoint
-+ text in green
-! text in orange
-# text in gray
-@@ This is an example (and bold)
-```
-
-```diff
-- Pathpoint
-
-
-```diff
-- Pathpoint
-```
-
-```diff
-+ text in green
-
-```
-
-```diff
-! text in orange
-```
-
-```diff
-
-# text in gray
-
-```
-
-```diff
-
-@@ This is an example (and bold)
-
-```
 
