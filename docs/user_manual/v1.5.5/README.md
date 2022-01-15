@@ -44,7 +44,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
    * ## [Configure Background Jobs](#Configure_Background_Jobs)
 
 
-       * [Flame Filter Script](#Flame_Filter_Script)
+       * [Flame Filter Background Script](#Flame_Filter_Script)
       * [Drop Filter Background Script](#Drop_Filter_Script)
 
 * ##  [Using Special Filters](#Using_Special_Filters)
@@ -52,7 +52,6 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
    *   [Canary Filter](#Canary_Filter)
    *  [Flame Filter](#Flame_Filter)
    *  [Drop Filter](#Drop_Filter)
-
 
 
 ## <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
@@ -71,8 +70,6 @@ To get started setting up Pathpoint you'll need some telemetry in the account th
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
 To configure your own Pathpoint simply download the current version of the JSON config that was writen for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
-
-
 
 Return to top of [Index](#Index)
 
@@ -501,7 +498,7 @@ If you chose to change the given Query, test your changes by clicking on "Test",
 
 ## HOW TO WORK WITH TOUCHPOINT QUERIES  
 
-To beging the process of working with a Touchpoint Query, right click on it, and then select Queries.
+To beging the process of working with a Touchpoint Query, right click on it, and then select Queries, now you can modify them, to get different resutls from the Touchpoint.
 
 
 ## SYNTHETIC MONITOR QUERY
