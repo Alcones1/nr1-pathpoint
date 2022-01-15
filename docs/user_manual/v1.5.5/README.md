@@ -292,7 +292,7 @@ Return to top of [Index](#Index)
 
 ## <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
-As you saw before, New Relic Pathpoint offers different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
+As you saw before, New Relic Pathpoint is comprised of  different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
 
 * PRC (Person Count) are used to count people
 * PCC (Process Count)  are used to count processes
@@ -334,7 +334,7 @@ And these are some of the configuration details, of this particular type of Touc
 
 ○ Previous Week Comparison
 
-And on the next graphic you can see how these two Touchpoint, Login People (PRC) and Login Check (SYN) are related to a particular Step, in this example; "Login".
+And on the next graphic you can see how the relationship of two Touchpoint, to a particular Step, in this example; "Login".
 
 
 ![image](screenshots/Example_TP_PRC21.png)
@@ -351,8 +351,6 @@ This is an example of a PCC touchpoint;
 
 ![image](screenshots/Example_TP_PCC1.png)
 
-![image](screenshots/Example_TP_PCC2.png)
-
 And these are some of the configuration details, of this particular type of Touchpoint;
 
 ● Data:  
@@ -366,18 +364,24 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Past Transactions  
 ○ Previous Week Comparison
 
+And on the next graphic you can see how one Touchpoint, Subscription API (PCC) is related to a particular Step, in this example; "Checkout".
+
+
+![image](screenshots/pcc_step.png)
+
+
+On the this Example, the "Checkout" Step is related to one Touchpoint; Subscriptions API (PCC) 
+ 
+
+
 Return to top of [Index](#Index)
 
 ## <a id="APP"></a>APP (Application Health) ### 
 
 This is an example of a APP touchpoint;
 
-
 ![image](screenshots/Example_TP_APP1.png)
-
-![image](screenshots/Example_TP_APP2.png)
   
-
 And these are some of the configuration details, of this particular type of Touchpoint;
 ● Data:  
 ○ Transactions
@@ -393,10 +397,11 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Breakdown  
 ○ Traces
 
+![image](screenshots/app_step.png)
 
+On this example, the "Add/remove item" Step is related to one Touchpoint; Pricing API (APP) 
 
 Return to top of [Index](#Index)
-
 
 ## <a id="FRT"></a>FRT (Front End Health)  ### 
 
