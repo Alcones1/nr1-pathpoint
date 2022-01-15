@@ -555,7 +555,7 @@ Return to top of [Index](#Index)
 One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin, right click on the Touchpoint you want to Tune, and then select "Tune".
 
 
-* LOGIN PEOPLE PRC
+## LOGIN PEOPLE PRC
 
 
 
@@ -570,7 +570,7 @@ There are two important values on this Touchpoint;
 * Session count (Max), if the value (under "Configured"), is  for example set at 110, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will see the color of the Stage label turn, from blue, to white.
 
 
-Subscriptions API (PCC)
+## Subscriptions API (PCC)
 
 ![image](screenshots/subscriptionspcc.png)
 
@@ -584,9 +584,7 @@ There are two important values on this Touchpoint;
 * Transactions count (Min), if the value (under "Configured"), is  for example set at 36, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.
 * Transactions count (Max), if the value (under "Configured"), is  for example set at 136, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will see the color of the Stage label turn, from blue, to white.
 
-
-
-Login Check (SYN)
+## Login Check (SYN)
 
 
 ![image](screenshots/login_check_syn.png)
@@ -596,7 +594,6 @@ There are three important values on this Touchpoint;
 * Avg response time (MAX), if the value (under "Configured"), is  for example set at .07, and the value of sessions, on the last 5 minutes, is higher than this number, the status of the Touchpoint will turn red.
 * Total Check Time (Max), if the value (under "Configured"), is  for example set at 1.25, and this value on the last 5 minutes, is above this number, the status of the Touchpoint will turn red.  
 * %Success Rate (Min), if the value (under "Configured"), is  for example set at 98, and this value on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.  
-
 
 Return to top of [Index](#Index)
 ## <a id="Disable_a_Touchpoint"></a>How to disable a Touchpoint ###
@@ -610,38 +607,27 @@ To disable a Touchpoint, right click on it. On this example I clicked on the Cus
 
 ![image](screenshots/touch1.png)
 
- 
-
 Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoint. Later on you can right click on the same Touchpoint, then on the "Off" symbol, to enable it again.
 
 
 Return to top of [Index](#Index)
 ## <a id="Configure_Logging"></a>Configure Logging
 
-The steps to do this are similar than the steps to configure the Drop filter background script.
+The steps to do this are similar than the steps to configure the Flame Filter background script.
 
-* [Drop Filter Background Script](#Drop_Filter_Script)
+* [Drop Filter Background Script](#Flame_Filter_Script)
 
 ![image](screenshots/pathpoint_login.png)
 
 And when you apply the Ingest License, and the User API Key, select "Enable Pathpoint Logging.
 
-
-
 Return to top of [Index](#Index)
 ## <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
-
 
 Return to top of [Index](#Index)
 ## <a id="Flame_Filter_Script"></a>Flame Filter Script ###
 
-
-
-
-Return to top of [Index](#Index)
-## <a id="Drop_Filter_Script"></a>Drop Filter Background Script ###
-
-To use this special filter you must had enable the Backgrond script option, under "Credentials and general configuration".
+To use this special filter you must had enable the Flame Filter Backgrond script option, under "Credentials and general configuration".
 
 ![image](screenshots/Flame_background.png)
 
@@ -668,8 +654,6 @@ These are the steps to get the "Ingest License" key, as well as a "User API Key"
 
 Now you can see both of the Keys you need, to enable "Pathpoing Logging", and "Flame Filter Background Script".
 
-
-
  ![image](screenshots/API_Keys1.png)
 
 And these are the steps to copy those two API Keys, to the " Credentials and General Configuration" dialog box window;  
@@ -679,7 +663,6 @@ And these are the steps to copy those two API Keys, to the " Credentials and Gen
 ![image](screenshots/url_address_bar.png)
 
 Now, return to the main Pathpoing One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then pressing on Enter, to load the main Pathpoint page.
-
 
 ![image](screenshots/Flame_background.png)
 
@@ -697,8 +680,10 @@ These are the steps, once you check that the Account ID is the right one, to app
 Now, both Pathpoint Logging, and Flame Filter Background Script will be enabled.
 
 Return to top of [Index](#Index)
-## <a id="Using_Special_Filters"></a>Using Special Filters ###
+## <a id="Drop_Filter_Script"></a>Drop Filter Background Script ###
 
+Return to top of [Index](#Index)
+## <a id="Using_Special_Filters"></a>Using Special Filters ###
 
 Return to top of [Index](#Index)
 ## <a id="Canary_Filter"></a>Canary Filter ###
