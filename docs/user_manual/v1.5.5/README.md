@@ -424,9 +424,9 @@ This is an example of a FRT touchpoint;
 ○ Breakdown  
 ○ Traces
 
+![image](screenshots/frt_step.png)
 
-
-![image](screenshots/Example_TP_FRT2.png)
+On this example, the "Add/remove item" Step is related to one Touchpoint; Master Data API (FRT) 
 
 Return to top of [Index](#Index)
 
@@ -454,7 +454,9 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Requests Waterfall  
 
 
-![image](screenshots/Example_TP_SYN2.png)
+![image](screenshots/syn_step.png)
+
+On this example, the "Order Tracking #" Step is related to one Touchpoint; Gift Card Hub API(SYN) 
 
 Return to top of [Index](#Index)
 ## <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
