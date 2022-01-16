@@ -495,7 +495,7 @@ Notice how on this example I changed the Query, in front of count(*), I added th
 
 If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). If is not find out why, and fix it. Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
 
-Please note that if you get a "Incorrect validated" error, when testing a Touchpoint, is because you might be running the Query on the wrong AccountID.
+Please note that if you get a "Incorrect validated" error, when testing a Touchpoint, it might be because you are running the Query on the wrong AccountID.
 
 ![image](screenshots/test_touchpoint1.png)
 To change it, to the right AccountID;  
