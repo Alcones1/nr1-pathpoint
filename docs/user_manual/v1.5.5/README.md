@@ -32,11 +32,13 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
          * [APP (Application Health)](#APP)
          * [FRT (Front End Health)](#FRT)
          * [SYN (Synthetic Check)](#SYN)
-      *    [Setting up Touchpoints](#Setting_up_Touchpoints)     	
-    * ##  [App Touchpoint Tuning](#In_App_Tuning) 
+       	
+    * ##  [Working with Touchpoints](#Working_with_touchpoints) 
          * [Test a Touchpoint](#Test_a_Touchpoint)  
+      * [Setting up Touchpoints](#Setting_up_Touchpoints)   
        * [Tune Touchpoint Thresholds](#Tune_Touchpoint_Thresholds)
        * [How to disable a Touchpoint](#Disable_a_Touchpoint) 
+       * [How to run Touchpoint Queries](#How_to_run_touchpoing_queries)
 
    * ## [Configure Logging](#Configure_Logging)
 
@@ -456,21 +458,10 @@ And these are some of the configuration details, of this particular type of Touc
 On this example, the "Order Tracking #" Step is related to one Touchpoint; Gift Card Hub API(SYN) 
 
 Return to top of [Index](#Index)
-## <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
-This is done using the JSON configuration file, which is taylor writen to the needs of your business.
-
-[JSON Configuration File](#JSON_Configuration_File)
+## <a id="Working_with_touchpoints)"></a>Working with Touchpoints ###
 
 
-Return to top of [Index](#Index)
-## <a id="In_App_Tuning"></a>App Touchpoint Tuning ###
-
-This type of Touchpoint has 3 values;
-
-* APDEX Responce (Min)  
-* Response time (Max)  
-* % Error (Max)
 
 Return to top of [Index](#Index)
 ## <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
@@ -502,55 +493,16 @@ To change it, to the right AccountID;
 1 Click on the AccountID field, and select the right AccountID.  
 2 Now, test it again. If the asnswer is "Successfully validated", the AccountID was the issue.
 
+Return to top of [Index](#Index)
 
-## HOW TO WORK WITH TOUCHPOINT QUERIES  
+## <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
-To beging the process of working with a Touchpoint Query, right click on it, and then select Queries, now you can modify them, to get different resutls from the Touchpoint.
+This is done using the JSON configuration file, which is taylor writen to the needs of your business.
+
+[JSON Configuration File](#JSON_Configuration_File)
 
 
-## SYNTHETIC MONITOR QUERY
-
-SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
-
-Has 3 variables;
-
-* SUCCESS (percentage)
-* DURATION (time)
-* REQUEST (time)
-
-## PCC QUERY
-
-SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
-
-Wait for a value on a variable called "Count"
-
-## PRC QUERY
-
-SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
-
-## MASTER DATA API QUERY  (FRT)
-
-SELECT filter(apdex(duration, t:1), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from PageView WHERE appName='QS'
-
-## Workload (WLD)
-
-SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
-
-The only thing that can be changed on this query, is the entity name.
-
-## Subscriptions API (SYNC)
-
-SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
-
-## App Backend Health (APP)
-
-SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
-
-Has 3 variables;
-
-* APDEX
-* RESPONSE, which measures the duration of a process
-* Error
+Return to top of [Index](#Index)
 
 
 Return to top of [Index](#Index)
@@ -614,7 +566,64 @@ To disable a Touchpoint, right click on it. On this example I clicked on the Cus
 Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoint. Later on you can right click on the same Touchpoint, then on the "Off" symbol, to enable it again.
 
 
+Return to top of [Index](#Index)  
+
+
+## [How to run Touchpoint Queries](#How_to_run_touchpoing_queries)
+
+To beging the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different resutls from the Touchpoint.
+
+
+## SYNTHETIC MONITOR QUERY
+
+SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
+
+Has 3 variables;
+
+* SUCCESS (percentage)
+* DURATION (time)
+* REQUEST (time)
+
+## PCC QUERY
+
+SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
+
+Wait for a value on a variable called "Count"
+
+## PRC QUERY
+
+SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
+
+## MASTER DATA API QUERY  (FRT)
+
+SELECT filter(apdex(duration, t:1), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from PageView WHERE appName='QS'
+
+## Workload (WLD)
+
+SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
+
+The only thing that can be changed on this query, is the entity name.
+
+## Subscriptions API (SYNC)
+
+SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
+
+## App Backend Health (APP)
+
+SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
+
+Has 3 variables;
+
+* APDEX
+* RESPONSE, which measures the duration of a process
+* Error
+
+
+
+
 Return to top of [Index](#Index)
+
+
 ## <a id="Configure_Logging"></a>Configure Logging
 
 The steps to do this are similar than the steps to configure the Flame Filter background script.
