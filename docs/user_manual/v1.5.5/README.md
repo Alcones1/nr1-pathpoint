@@ -645,7 +645,17 @@ Has 3 variables;
 * RESPONSE, which measures the duration of a process in seconds.
 * Error, which is a percentage between 0 and 100.
 
-# SHOW THAT ONCE A QUERY IS CHANGED, YOU CAN SAVE IT!
+## Once a query is changed, you can save the changes, on the Touchpoint configuration.
+
+![image](screenshots/touchpoint_save.png)
+
+On this example, on a query on a WLD type touchpoint, I changed the entity name;
+
+1- I began by selecting the second part of the current entity name; "Acme telco", after I erased "Telco", I replaced it with "Maritime".  
+2 Finally, to save this change I clicked on "Save/Update".
+
+The next time, after making a change and saving it, you re-open the query on a Touchpoint, the Query will be as you save it.
+
 Return to top of [Index](#Index)
 
 ## <a id="Configure_Logging"></a>Configure Logging
