@@ -576,8 +576,11 @@ Return to top of [Index](#Index)
 
 # <a id="How_to_run_touchpoing_queries"></a>How to run Touchpoint Queries ###
 
-To beging the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different resutls from the Touchpoint.
+Touchpoint queries are writen in NRQL, which is New Relic's SQL-like query language. In general NRQL allows you to retrieve detailed New Relic data and get insight into your applications, hosts, and business-important activity.
 
+Using this guide you will learn how to run queries, on your Touchpoints, using basic commands.
+
+To begin the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different results from the particular Touchpoint you select to work with.
 
 ## SYNTHETIC MONITOR QUERY
 
@@ -622,9 +625,6 @@ Has 3 variables;
 * APDEX
 * RESPONSE, which measures the duration of a process
 * Error
-
-
-
 
 Return to top of [Index](#Index)
 
