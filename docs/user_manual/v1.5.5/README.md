@@ -578,9 +578,13 @@ Return to top of [Index](#Index)
 
 Touchpoint queries are writen in NRQL, which is New Relic's SQL-like query language. In general NRQL allows you to retrieve detailed New Relic data and get insight into your applications, hosts, and business-important activity.
 
-Using this guide you will learn how to run queries, on your Touchpoints, using basic commands.
+Using this guide you will learn how to tweek your queries (they are pre-writen by the JSON file you uploaded to your Pathpoint), on your Touchpoints, using basic commands.
 
 To begin the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different results from the particular Touchpoint you select to work with.
+
+![image](screenshots/prc_query.png)
+
+On this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "count".
 
 ## SYNTHETIC MONITOR QUERY
 
