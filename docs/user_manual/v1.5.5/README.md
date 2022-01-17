@@ -633,10 +633,6 @@ SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name=
 
 The only thing that can be changed on this query, is the entity name, on this exaple "Acme Dev".
 
-### Subscriptions API (SYNC)
-
-SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
-
 ###  App Backend Health (APP)
 
 This query purpuse is to measure the health of the back end of your aplication.
