@@ -487,9 +487,9 @@ Notice how on this example I changed the Query, in front of count(*), I added th
 
 ![image](screenshots/test_pathpoint1.png)
 
-If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). If is not find out why, and fix it. Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
+If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
 
-Please note that if you get a "Incorrect validated" error, when testing a Touchpoint, it might be because you are running the Query on the wrong AccountID.
+Please note that if you get a "Incorrect validated" error, when testing a Touchpoint, it might be something as simple as  because you are running the Query on the wrong AccountID.
 
 ![image](screenshots/test_touchpoint1.png)
 To change it, to the right AccountID;  
@@ -504,23 +504,16 @@ This is done using the JSON configuration file, which is taylor writen to the ne
 
 [JSON Configuration File](#JSON_Configuration_File)
 
-
-
-
-
 Return to top of [Index](#Index)
-## <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
+# <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
 
 One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin, right click on the Touchpoint you want to Tune, and then select "Tune".
 
-
 ## LOGIN PEOPLE PRC
-
-
 
 ![image](screenshots/loginprc.png)
 
-These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
+These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Tune.
 
 
 There are two important values on this Touchpoint;
@@ -533,10 +526,7 @@ There are two important values on this Touchpoint;
 
 ![image](screenshots/subscriptionspcc.png)
 
-
-
 These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
-
 
 There are two important values on this Touchpoint;
 
@@ -645,7 +635,8 @@ Has 3 variables;
 * RESPONSE, which measures the duration of a process in seconds.
 * Error, which is a percentage between 0 and 100.
 
-## Once a query is changed, you can save the changes, on the Touchpoint configuration.
+### Plase keep in mind that once you manually change a query, that you can save the changes you made, on the Touchpoint configuration.
+
 
 ![image](screenshots/touchpoint_save.png)
 
