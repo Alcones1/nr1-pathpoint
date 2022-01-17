@@ -33,8 +33,9 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
          * [FRT (Front End Health)](#FRT)
          * [SYN (Synthetic Check)](#SYN)
        	
-    * ##  [Working with Touchpoints](#Working_with_touchpoints) 
-         * [Test a Touchpoint](#Test_a_Touchpoint)  
+    * ## [Working with Touchpoints](#working_with_touchpoints)
+
+         * [How to test a Touchpoint](#Test_a_Touchpoint)  
       * [Setting up Touchpoints](#Setting_up_Touchpoints)   
        * [Tune Touchpoint Thresholds](#Tune_Touchpoint_Thresholds)
        * [How to disable a Touchpoint](#Disable_a_Touchpoint) 
@@ -56,7 +57,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
    *  [Drop Filter](#Drop_Filter)
 
 
-## <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
+# <a id="Pathpoint_Concepts"></a>Pathpoint Concepts ###
 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
@@ -184,11 +185,11 @@ Example 2
 
 Please note, that there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
-## <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
+# <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
 Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
 
-### <a id="JSON_Configuration_File"></a>JSON Configuration File ###
+## <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
 JSON for its acronym (JavaScript Object Notation) is a data structure, whose basic function is to allow for the exchange of information. Through this structure it will be possible to identify each of the elements and components that will facilitate the implementation of Pathpoint, knowing the function of its attributes, queries and data output. To program new stages, path and Pathpoints, you upload a New JSON Configuration file.
 
@@ -289,7 +290,7 @@ Type: Defines the type of measurement to be performed, which can be:
 
 Return to top of [Index](#Index)
 
-## <a id="Touchpoint_Types"></a>Touchpoint Types ### 
+# <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
 As you saw before, New Relic Pathpoint is comprised of  different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
 
@@ -459,12 +460,14 @@ On this example, the "Order Tracking #" Step is related to one Touchpoint; Gift 
 
 Return to top of [Index](#Index)
 
-## <a id="Working_with_touchpoints)"></a>Working with Touchpoints ###
+# <a id="working_with_touchpoints"></a>Working with Touchpoints ###
 
+As you read before Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. 
 
+And every since a Touchpoint is the pulse of each Pathpoint, your ability to test, tune, and work with the Touchpoint Queries are very important to getting the right data you seek.
 
 Return to top of [Index](#Index)
-## <a id="Test_a_Touchpoint"></a>Test a Touchpoint ###
+## <a id="Test_a_Touchpoint"></a>How to test a Touchpoint ###
 
 This is a function that allows you to test the vaility or health of a particular Touchpoint.
 
@@ -502,7 +505,7 @@ This is done using the JSON configuration file, which is taylor writen to the ne
 [JSON Configuration File](#JSON_Configuration_File)
 
 
-Return to top of [Index](#Index)
+
 
 
 Return to top of [Index](#Index)
@@ -569,7 +572,9 @@ Now, on the pop-up box window, click on the "On" symbol, to disable the Touchpoi
 Return to top of [Index](#Index)  
 
 
-## [How to run Touchpoint Queries](#How_to_run_touchpoing_queries)
+
+
+# <a id="How_to_run_touchpoing_queries"></a>How to run Touchpoint Queries ###
 
 To beging the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different resutls from the Touchpoint.
 
