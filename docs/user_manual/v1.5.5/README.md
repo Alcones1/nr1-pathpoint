@@ -292,7 +292,7 @@ Return to top of [Index](#Index)
 
 # <a id="Touchpoint_Types"></a>Touchpoint Types ### 
 
-As you saw before, New Relic Pathpoint is comprised of  different types of Touchpoints, which are adapted according to the needs of each business, and they are; 
+As you saw before, New Relic Pathpoint is comprised of  different types of Touchpoints, for now five, which are adapted according to the needs of each business, and they are; 
 
 * PRC (Person Count) are used to count people
 * PCC (Process Count)  are used to count processes
@@ -586,52 +586,71 @@ To begin the process of working with a Touchpoint Query, right click on the part
 
 On this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "count".
 
-## SYNTHETIC MONITOR QUERY
+### SYNTHETIC MONITOR QUERY
+
+This query purpuse is to get the health status of a Synthetic monitor.
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
 Has 3 variables;
 
-* SUCCESS (percentage)
-* DURATION (time)
+* SUCCESS, which waits for a percentage between 0 and 100
+* DURATION, duration of a process.
 * REQUEST (time)
 
-## PCC QUERY
+### PCC QUERY
+This query purpuse is to count processes.
 
 SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
 
 Wait for a value on a variable called "Count"
 
-## PRC QUERY
+### PRC QUERY
 
-SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
+This query purpuse is to count people.
 
-## MASTER DATA API QUERY  (FRT)
+SELECT count(*) as session FROM Public_APICall WHERE awsRegion='queue'
+
+Expects a value on a variable called "session"
+
+### MASTER DATA API QUERY  (FRT)
+
+This query purpuse is to measure the health of the front end of your aplication.
 
 SELECT filter(apdex(duration, t:1), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from PageView WHERE appName='QS'
 
-## Workload (WLD)
+Has 3 variables;
+
+* APDEX, which is the result of an APDEX formula (value between 0 and 1)
+* RESPONSE, which measures the duration of a process in seconds.
+* Error, which is a percentage between 0 and 100.
+
+### Workload (WLD)
+
+This query purpuse is to get the latest statue value of a Touchpoint.
 
 SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
 
-The only thing that can be changed on this query, is the entity name.
+The only thing that can be changed on this query, is the entity name, on this exaple "Acme Dev".
 
-## Subscriptions API (SYNC)
+### Subscriptions API (SYNC)
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
-## App Backend Health (APP)
+###  App Backend Health (APP)
+
+This query purpuse is to measure the health of the back end of your aplication.
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
 
 Has 3 variables;
 
-* APDEX
-* RESPONSE, which measures the duration of a process
-* Error
+* APDEX, which is the result of an APDEX formula (value between 0 and 1)
+* RESPONSE, which measures the duration of a process in seconds.
+* Error, which is a percentage between 0 and 100.
 
+# SHOW THAT ONCE A QUERY IS CHANGED, YOU CAN SAVE IT!
 Return to top of [Index](#Index)
-
 
 ## <a id="Configure_Logging"></a>Configure Logging
 
