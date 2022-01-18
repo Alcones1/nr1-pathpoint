@@ -474,11 +474,11 @@ This is a function, of a Pathpoint, that allows you to test the validity or heal
 
 ![image](screenshots/basic_queries.png)
 
-To begin the process of testing a Touchpoint, right click on it, and then select Queries. On this example I right clicked on the Customer credit API (which is a PCC type of Touchpoint), and then on "Queries", to test this particular Touchpoint.
+To begin the process of testing a Touchpoint, right click on it, and then select Queries. On this example I right clicked on the "Customer credit API" (which is a PCC type of Touchpoint), and then on "Queries", to test this particular Touchpoint.
 
 ![image](screenshots/test_touchpoint.png)
 
-Now, on the Dialog box window that opens up, click on "Test", to test the Touchpoint, now notice on the right the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is correct.
+To begin testing a Touchpoint, on the Dialog box window that opens up, click on "Test", now you will see the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is healthy.
 
 But lets say that you change some part of the given query, for instance to test another aspect of the Touchpoint, now you must test the Touchpoint again.
 
