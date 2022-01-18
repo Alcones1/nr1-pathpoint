@@ -470,11 +470,11 @@ And every since a Touchpoint is the pulse of each Pathpoint, your ability to tes
 Return to top of [Index](#Index)
 ## <a id="Test_a_Touchpoint"></a>How to test a Touchpoint ###
 
-This is a function that allows you to test the vaility or health of a particular Touchpoint.
+This is a function, of a Pathpoint, that allows you to test the validity or health of a particular Touchpoint.
 
-![image](screenshots/touch.png)
+![image](screenshots/basic_queries.png)
 
-To beging the process of testing a Touchpoint, right click on it, and then select Queries. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint), to test this particular Touchpoint.
+To begin the process of testing a Touchpoint, right click on it, and then select Queries. On this example I right clicked on the Customer credit API (which is a PCC type of Touchpoint), and then on "Queries", to test this particular Touchpoint.
 
 ![image](screenshots/test_touchpoint.png)
 
