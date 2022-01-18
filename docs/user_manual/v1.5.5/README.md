@@ -334,7 +334,7 @@ And these are some of the configuration details, of this particular type of Touc
 
 ○ Previous Week Comparison
 
-And on the next graphic you can see how the relationship of two Touchpoint, to a particular Step, in this example; "Login".
+And on the next graphic you can see the relationship of two Touchpoints, to a particular Step, on this example; "Login".
 
 
 ![image](screenshots/Example_TP_PRC21.png)
@@ -364,13 +364,13 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Past Transactions  
 ○ Previous Week Comparison
 
-And on the next graphic you can see how one Touchpoint, Subscription API (PCC) is related to a particular Step, in this example; "Checkout".
+And on the next graphic you can see how this Touchpoint; "Subscription API (PCC)" is related to a particular Step, in this example; "Checkout".
 
 
 ![image](screenshots/pcc_step.png)
 
 
-On the this Example, the "Checkout" Step is related to one Touchpoint; Subscriptions API (PCC) 
+On the this Example, the "Checkout" Step is related to one Touchpoint; "Subscriptions API (PCC)".
  
 
 
@@ -397,9 +397,12 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Breakdown  
 ○ Traces
 
+And on the next graphic you can see how this Touchpoint; "Pricing API (APP)" is related to a particular Step, on this example; "Add/remove item".
+
 ![image](screenshots/app_step.png)
 
-On this example, the "Add/remove item" Step is related to one Touchpoint; Pricing API (APP) 
+
+
 
 Return to top of [Index](#Index)
 
