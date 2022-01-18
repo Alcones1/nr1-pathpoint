@@ -364,15 +364,11 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Past Transactions  
 ○ Previous Week Comparison
 
-And on the next graphic you can see how this Touchpoint; "Subscription API (PCC)" is related to a particular Step, in this example; "Checkout".
-
+And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Checkout".
 
 ![image](screenshots/pcc_step.png)
 
-
-On the this Example, the "Checkout" Step is related to one Touchpoint; "Subscriptions API (PCC)".
- 
-
+On this Example, the "Checkout" Step is related to just one Touchpoint; "Subscriptions API (PCC)".
 
 Return to top of [Index](#Index)
 
@@ -397,12 +393,11 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Breakdown  
 ○ Traces
 
-And on the next graphic you can see how this Touchpoint; "Pricing API (APP)" is related to a particular Step, on this example; "Add/remove item".
+And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Add/remove item".
 
 ![image](screenshots/app_step.png)
 
-
-
+On this Example, the "Add/remove item" Step is related to one Touchpoint; "Pricing API (APP)".
 
 Return to top of [Index](#Index)
 
@@ -427,9 +422,11 @@ This is an example of a FRT touchpoint;
 ○ Breakdown  
 ○ Traces
 
+And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Pay calculation".
+
 ![image](screenshots/frt_step.png)
 
-On this example, the "Add/remove item" Step is related to one Touchpoint; Master Data API (FRT) 
+On this example, the "Pay calculation" Step is related to one Touchpoint; Master Data API (FRT) 
 
 Return to top of [Index](#Index)
 
@@ -456,10 +453,11 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Total Time  
 ○ Requests Waterfall  
 
+And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Order Tracking #".
 
 ![image](screenshots/syn_step.png)
 
-On this example, the "Order Tracking #" Step is related to one Touchpoint; Gift Card Hub API(SYN) 
+On this example, the "Order Tracking #" Step is related to one Touchpoint; "Gift Card Hub API(SYN)". 
 
 Return to top of [Index](#Index)
 
