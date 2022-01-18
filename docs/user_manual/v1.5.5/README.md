@@ -87,7 +87,7 @@ And the information related to a particular stage, including the errors for each
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
 ![Image](screenshots/stagesb.png)
-Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage turns white, it means is free of congestion.
+Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage is white, it means is free of congestion.
 
 ```diff
 - Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint).
@@ -141,21 +141,21 @@ On the next example graphic you can see a Touchpoint.
 ![image](screenshots/TP1.png)
 
 
-On this example the Touchpoint name is "Chat Throughput (PCC), and the PCC means that this is the type of Touchpoint designed to count processes. 
+On this example the Touchpoint name is "Chat Throughput (PCC)", and the PCC means that this is the type of Touchpoint designed to count processes. 
 
 * Status "On" or "Off": This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint you want to work with and click on the option "ON/OFF". 
 
 ![image](screenshots/Example_status_on_off_TP_1.png)
 
-To turn Off a Touchpoint, right click on its name, then click on the On button. To turn it back ON again, right click on the Touchpoint again and click on the OFF button.
+To turn Off a Touchpoint (for instace to troubleshoot it), right click on its name, then click on the On button. To turn it back ON again, right click on the Touchpoint again and click on the OFF button.
 
 * Related_steps: Indicates the step to which a Touchpoint is associated with a Touchpoint. 
 
 ![image](screenshots/Examples_related_steps_TP.png)
 
-For the example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove Item" Step.
+On this example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove Item" Step.
 
-* Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. They are pre-programmed on a file called JSON configuration file, and you can also manually tweek them, to tune a Touchpoint.
+* Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. They are pre-programmed on a file called JSON configuration file, and you can also manually tweek them to fit a specific journey’s goal.
 
 ![image](screenshots/Examples_queries_TP_1.png) 
 
@@ -187,7 +187,7 @@ Please note, that there is a recomendation that when you give a Touchpoint its n
 
 # <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
-Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints (for instance to see the data that you are most concern at the moment).
+Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints, tuning them, or working with their queries. This information will be shown to you, on this Readme file.
 
 ## <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
@@ -788,5 +788,3 @@ Time Period
 
 Return to top of [Index](#Index)
 
-
-test
