@@ -595,7 +595,7 @@ Has 3 variables;
 ### PCC QUERY
 This query purpuse is to count processes.
 
-SELECT count(*) from Transaction WHERE appName='QS' AND name='WebTransaction/Action/login'
+SELECT count(*) FROM Public_APICall WHERE awsRegion='us-east-1'
 
 Wait for a value on a variable called "Count"
 
@@ -603,7 +603,7 @@ Wait for a value on a variable called "Count"
 
 This query purpuse is to count people.
 
-SELECT count(*) as session FROM Public_APICall WHERE awsRegion='queue'
+SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
 
 Expects a value on a variable called "session".
 
