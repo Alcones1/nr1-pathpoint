@@ -493,14 +493,14 @@ Please note that if you get a "Incorrect validated" error, when testing a Touchp
 
 ![image](screenshots/test_touchpoint1.png)
 To change it, to the right AccountID;  
-1 Click on the AccountID field, and select the right AccountID.  
+1 Click on the AccountID field, and then select the right AccountID.  
 2 Now, test it again. If the asnswer is "Successfully validated", the AccountID was the issue.
 
 Return to top of [Index](#Index)
 
 ## <a id="Setting_up_Touchpoints"></a>Setting up Touchpoints ###
 
-This is done using the JSON configuration file, which is taylor writen to the needs of your business.
+This is done using the JSON configuration file, which is taylor writen to the needs of your particular business.
 
 [JSON Configuration File](#JSON_Configuration_File)
 
@@ -509,7 +509,7 @@ Return to top of [Index](#Index)
 
 One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin this process, right click on the Touchpoint you want to Tune, and then select "Tune".
 
-The values you will see at the beginning of the tuning process were defined on the JSON file uploaded to your Pathpoing, and you can also change them, manually by right clicking on the Touchpoint, and selecting Tune. You can also "Save/Update". the new values.
+The values you will see at the beginning of the tuning process were defined on the JSON file uploaded to your Pathpoing, and you can also change them, manually by right clicking on the Touchpoint, and selecting Tune. Once you change the values of the tuning, you can save them by clicking on "Save/Update".
 
 ## LOGIN PEOPLE PRC
 
@@ -520,8 +520,8 @@ On the next graphic you can see the tuning dialog box window of a Touchpoint of 
 
 There are two important values on this Touchpoint;
 
-* Session count (Min), if the value (under "Configured"), is  for example set at 10, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red.
-* Session count (Max), if the value (under "Configured"), is  for example set at 110, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will see the color of the Stage label turn, from blue, to white.
+* Session count (Min), if the value (under "Configured"), is  for example set at 10, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red. You can change this #, for instance to 20, as your business needs require.
+* Session count (Max), if the value (under "Configured"), is  for example set at 110, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will also see the color of the Stage label turn, from blue, to white.
 
 
 ## Subscriptions API (PCC)
@@ -551,7 +551,7 @@ Return to top of [Index](#Index)
 ## <a id="Disable_a_Touchpoint"></a>How to disable a Touchpoint ###
 
 
-You can manually work with a particular Touchpoint, by disabling it, and later on you can also turn it back on.
+You can manually work/troubleshoot a particular Touchpoint, by disabling it, and later on you can also turn it back on.
 
 ![image](screenshots/touch.png)
 
@@ -571,7 +571,7 @@ Return to top of [Index](#Index)
 
 Touchpoint queries are writen in NRQL, which is New Relic's SQL-like query language. In general NRQL allows you to retrieve detailed New Relic data and get insight into your applications, hosts, and business-important activity.
 
-Using this guide you will learn how to tweek your queries (they are pre-writen by the JSON file you uploaded to your Pathpoint), on your Touchpoints, using basic commands.
+Using this guide you will learn about each Touchpoint Query (which are pre-writen by the JSON file you uploaded to your Pathpoint).
 
 To begin the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different results from the particular Touchpoint you select to work with.
 
