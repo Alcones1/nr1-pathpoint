@@ -61,15 +61,13 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
-```diff
-+ Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
 
-```
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
+
 To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types; 
 
-```diff
-! Metrics, Events, Logs and Traces. 
-```
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Metrics, Events, Logs and Traces. 
+
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
 To configure your own Pathpoint simply download the current version of the JSON config that was writen for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
