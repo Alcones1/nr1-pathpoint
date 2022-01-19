@@ -145,7 +145,7 @@ On this example the Touchpoint name is "Chat Throughput (PCC)", and the PCC mean
 
 To turn Off a Touchpoint (for instace to troubleshoot it), right click on its name, then click on the On button. To turn it back ON again, right click on the Touchpoint again and click on the OFF button.
 
-* Related_steps: Indicates the step to which a Touchpoint is associated with a Touchpoint. 
+* Related_steps: Indicates the Step to which a Touchpoint is associated with. 
 
 ![image](screenshots/Examples_related_steps_TP.png)
 
@@ -155,18 +155,21 @@ On this example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove
 
 ![image](screenshots/Examples_queries_TP_1.png) 
 
-To access this view, right click on the particular Touchpoint you want to work with and then click on  "Queries"  
+To see a particular Touchpoint query, right click on the particular Touchpoint you want to work with, and then click on  "Queries"  
 
 ![image](screenshots/touchpoint5.png)
 
-These are the different parts of the Query box window, of a Touchpoint;
+These are the different parts of the query box window, of a PRC person count Touchpoint;
 
-     1 Type: Identify the right type of query. For this example, it is a PRC person count. (please review section "Different Touchpoint Types Explained")
+     1 Type: Identify the right type of query, according to the type of Touchpoint.
      2 AccountID: Determines the account with which the query is identified.
-     3 Query: Displays the actual query that determines the Touchpoint.
+     3 Query: Displays the actual query that determines the behavior of the Touchpoint. 
      4 Query_timeout: Determines the maximum time of activity in which the query will be executed.
      5 Min_count: The query will present a minimum of X number of records.
      6 Measure_time: Determines the time from when you want the query to collect information to perform the measurement.
+
+
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) On this Readme file you will learn more about the different types of queries, for the different types of Touchpoints.   
 
 And these are two examples of a typical Touchpoint configuration, as is writen on the JSON file;
 
@@ -179,11 +182,11 @@ Example 2
 ![image](screenshots/Example_Touchpoint2.png)
 
 
-Please note, that there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpount it is, like for example; the Touchpoint; VTEX Do API, name it like this; VTEX Do API(PCC), which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
+Please note, that there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpoint it is, like for example the Touchpoint VTEX Do API, name it like this; "VTEX Do API(PCC)", which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
 # <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
-Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints, tuning them, or working with their queries. This information will be shown to you, on this Readme file.
+Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints, tuning them, or working with their queries. This information will be shown to you further down on this Readme file.
 
 ## <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
@@ -191,7 +194,7 @@ JSON for its acronym (JavaScript Object Notation) is a data structure, whose bas
 
 ![image](screenshots/jsonfile.png)
 
-The graphic above shows you how each Step is tied to a single Touchpoint, or to a few Touchpoints (this is configured in the JSON file).
+The graphic above shows you how each Step is tied to a single Touchpoint, or to a few Touchpoints.
 
 ## Uploading a New JSON Config File
 
@@ -217,9 +220,9 @@ Once you are given the JSON configuration file, you can Upload it to your Pathpo
 
 5 Finally, the Pathpoint is displayed with the updates of the particular JSON file you chose.
 
-## How to download the Currently Active Config File
+## How to download the Currently Active JSON Config File
 
-Similarly, Pathpoint offers you the possibility of downloading the current configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
+Similarly, Pathpoint offers you the possibility of downloading the current JSON configuration file, if for instance you wish to make changes to it, which can be done using the following steps;
 
 ![imagecambiar](screenshots/New_Jason.png)
 
@@ -233,7 +236,7 @@ Similarly, Pathpoint offers you the possibility of downloading the current confi
 
 ![image](screenshots/downloaded_file.png)
 
-4 Finally the file is downloaded to your computer (in Google Chrome you will see the file at the bottom of the browser), and now you can work on it.
+4 Finally the JSON configuration file is downloaded to your computer (in Google Chrome you will see the file at the bottom of the browser), and now you can work on it.
 
 ## <a id="Setting_up_KPI_queries"></a>Setting up KPI queries ##
 
