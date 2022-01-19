@@ -578,7 +578,7 @@ To begin the process of working with a Touchpoint Query, right click on the part
 
 ![image](screenshots/prc_query.png)
 
-On this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "count".
+On this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "session".
 
 ### SYNTHETIC MONITOR QUERY
 
@@ -605,7 +605,7 @@ This query purpuse is to count people.
 
 SELECT count(*) as session FROM Public_APICall WHERE awsRegion='queue'
 
-Expects a value on a variable called "session"
+Expects a value on a variable called "session".
 
 ### MASTER DATA API QUERY  (FRT)
 
