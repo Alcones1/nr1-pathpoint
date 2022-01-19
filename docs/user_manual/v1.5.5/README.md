@@ -508,13 +508,15 @@ This is done using the JSON configuration file, which is taylor writen to the ne
 Return to top of [Index](#Index)
 # <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
 
-One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin, right click on the Touchpoint you want to Tune, and then select "Tune".
+One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin this process, right click on the Touchpoint you want to Tune, and then select "Tune".
+
+The values you will see at the beginning of the tuning process were defined on the JSON file uploaded to your Pathpoing, and you can also change them, manually by right clicking on the Touchpoint, and selecting Tune. You can also "Save/Update". the new values.
 
 ## LOGIN PEOPLE PRC
 
-![image](screenshots/loginprc.png)
+On the next graphic you can see the tuning dialog box window of a Touchpoint of the PRC type.
 
-These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Tune.
+![image](screenshots/loginprc.png)
 
 
 There are two important values on this Touchpoint;
@@ -525,9 +527,9 @@ There are two important values on this Touchpoint;
 
 ## Subscriptions API (PCC)
 
-![image](screenshots/subscriptionspcc.png)
+On the next graphic you can see the tuning dialog box window of a Touchpoint of the PCC type.
 
-These valued are defined on the JSON file, and you can also change them, manually by right clicking on the Touchpoint, and selecting Query.
+![image](screenshots/subscriptionspcc.png)
 
 There are two important values on this Touchpoint;
 
@@ -536,6 +538,7 @@ There are two important values on this Touchpoint;
 
 ## Login Check (SYN)
 
+On the next graphic you can see the tuning dialog box window of a Touchpoint of the SYN type.
 
 ![image](screenshots/login_check_syn.png)
 
