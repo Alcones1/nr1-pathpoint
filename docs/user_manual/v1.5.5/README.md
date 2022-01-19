@@ -580,7 +580,7 @@ To begin the process of working with a Touchpoint Query, right click on the part
 
 On this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "session".
 
-### SYNTHETIC MONITOR QUERY
+### SYNTHETIC CHECK (SYN)
 
 This query purpuse is to get the health status of a Synthetic monitor.
 
@@ -590,16 +590,16 @@ Has 3 variables;
 
 * SUCCESS, which waits for a percentage between 0 and 100
 * DURATION, duration of a process.
-* REQUEST (time)
+* REQUEST, how long it took to respond to a request.
 
-### PCC QUERY
+### PROCESS COUNT (PCC)
 This query purpuse is to count processes.
 
 SELECT count(*) FROM Public_APICall WHERE awsRegion='us-east-1'
 
-Wait for a value on a variable called "Count"
+Wait for a value on a variable called "count"
 
-### PRC QUERY
+### PERSON COUNT (PRC)
 
 This query purpuse is to count people.
 
@@ -607,7 +607,7 @@ SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
 
 Expects a value on a variable called "session".
 
-### MASTER DATA API QUERY  (FRT)
+### FRONT END HEALTH (FRT)
 
 This query purpuse is to measure the health of the front end of your aplication.
 
@@ -619,17 +619,17 @@ Has 3 variables;
 * RESPONSE, which measures the duration of a process in seconds.
 * Error, which is a percentage between 0 and 100.
 
-### Workload (WLD)
+### INFRA WORKLOAD (WLD)
 
-This query purpuse is to get the latest statue value of a Touchpoint.
+This query purpuse is to get the latest workload status value.
 
 SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
 
-The only thing that can be changed on this query, is the entity name, on this exaple "Acme Dev".
+The only thing that can be changed on this query, is the entity name, on this exaple 'Demotron V2 - Acme Dev'.
 
-###  App Backend Health (APP)
+### APLICATION HEALTH (APP)
 
-This query purpuse is to measure the health of the back end of your aplication.
+This query purpuse is to measure your aplication backend health.
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
 
@@ -646,7 +646,7 @@ Has 3 variables;
 
 On this example, on a query on a WLD type touchpoint, I changed the entity name;
 
-1- I began by selecting the second part of the current entity name; "Acme telco", after I erased "Telco", I replaced it with "Maritime".  
+1 I began by selecting the second part of the current entity name; "Acme telco", after I erased "Telco", I replaced it with "Maritime".  
 2 Finally, to save this change I clicked on "Save/Update".
 
 The next time, after making a change and saving it, you re-open the query on a Touchpoint, the Query will be as you save it.
@@ -664,9 +664,10 @@ The steps to do this are similar than the steps to configure the Flame Filter ba
 And when you apply the Ingest License, and the User API Key, select "Enable Pathpoint Logging.
 
 Return to top of [Index](#Index)
-## <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
+# <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
 
-Return to top of [Index](#Index)
+Pathpoint allows you execute  different tasks using New Relic synthetic monitors, which allow you to run those tasks in the background.
+
 ## <a id="Flame_Filter_Script"></a>Flame Filter Script ###
 
 To use this special filter you must had enable the Flame Filter Backgrond script option, under "Credentials and general configuration".
@@ -722,12 +723,9 @@ These are the steps, once you check that the Account ID is the right one, to app
 Now, both Pathpoint Logging, and Flame Filter Background Script will be enabled.
 
 Return to top of [Index](#Index)
-## <a id="Drop_Filter_Script"></a>Drop Filter Background Script ###
 
-Return to top of [Index](#Index)
-## <a id="Using_Special_Filters"></a>Using Special Filters ###
+# <a id="Using_Special_Filters"></a>Using Special Filters ###
 
-Return to top of [Index](#Index)
 ## <a id="Canary_Filter"></a>Canary Filter ###
 
 The Canary filter, when activated, reset all the the different Steps, so that you can manually activate the Steps, which will help you troubleshoot a particular process.
