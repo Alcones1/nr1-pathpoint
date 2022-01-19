@@ -293,11 +293,11 @@ Return to top of [Index](#Index)
 
 As you saw before, New Relic Pathpoint is comprised of  different types of Touchpoints, for now five, which are adapted according to the needs of each business, and they are; 
 
-* PRC (Person Count) are used to count people
-* PCC (Process Count)  are used to count processes
-* APC (Application Health)  are used to see the health of an application
-* FRT (Front End Health)measures the health of the Front End of your APP
-* SYN are used to assess the health of a Syntethic monitor
+* PRC (Person Count), used to count people
+* PCC (Process Count), used to count processes
+* APC (Application Health), used to see the health of an application
+* FRT (Front End Health), which measures the health of the front end of your APP
+* SYN, used to assess the health of a Syntethic monitor
 
 There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
 
@@ -333,7 +333,7 @@ And these are some of the configuration details, of this particular type of Touc
 
 ○ Previous Week Comparison
 
-And on the next graphic you can see the relationship of two Touchpoints, to a particular Step, on this example; "Login".
+And on the next graphic you can see the relationship of two Touchpoints, one of the PRC type and the other of the SYN type, to a particular Step, on this example; "Login".
 
 
 ![image](screenshots/Example_TP_PRC21.png)
@@ -363,7 +363,7 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Past Transactions  
 ○ Previous Week Comparison
 
-And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Checkout".
+And on the next graphic you can see the relationship of this Touchpoint of the PCC type, to a particular Step, on this example; "Checkout".
 
 ![image](screenshots/pcc_step.png)
 
@@ -392,7 +392,7 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Breakdown  
 ○ Traces
 
-And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Add/remove item".
+And on the next graphic you can see the relationship of this Touchpoint of the APP type, to a particular Step, on this example; "Add/remove item".
 
 ![image](screenshots/app_step.png)
 
@@ -406,7 +406,7 @@ This is an example of a FRT touchpoint;
 
  ![image](screenshots/Example_TP_FRT1.png)
 
- And these are some of the configuration details, of this particular type of Touchpoint;
+ And these are some of the configuration details, of this particular type of Touchpoint;  
 ● Data:  
 ○ Transactions
 
@@ -421,7 +421,7 @@ This is an example of a FRT touchpoint;
 ○ Breakdown  
 ○ Traces
 
-And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Pay calculation".
+And on the next graphic you can see the relationship of this Touchpoint of the FRT type, to a particular Step, on this example; "Pay calculation".
 
 ![image](screenshots/frt_step.png)
 
@@ -452,7 +452,7 @@ And these are some of the configuration details, of this particular type of Touc
 ○ Total Time  
 ○ Requests Waterfall  
 
-And on the next graphic you can see the relationship of one Touchpoint, to a particular Step, on this example; "Order Tracking #".
+And on the next graphic you can see the relationship of one Touchpoint of the SYN type, to a particular Step, on this example; "Order Tracking #".
 
 ![image](screenshots/syn_step.png)
 
