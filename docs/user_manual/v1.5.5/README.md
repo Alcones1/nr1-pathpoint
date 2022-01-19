@@ -61,12 +61,11 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
 
 Business Journey Observability, is the Customer, Product and Services Paths, including all Internal Processes & External Dependencies, needed to meet a customer’s expectation and or service agreement. Pathpoing is Business Journey Observability.
 
-
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Pathpoint will work in nearly any New Relic account. And each Pathpoint is divided into; Stages, Steps and Touchpoints.
 
 To get started setting up Pathpoint you'll need some telemetry in the account that you would like to measure. This could be -for instance- any of the following telemetry types; 
 
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Metrics, Events, Logs and Traces. 
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) Metrics, Events, Logs and Traces. 
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
@@ -80,16 +79,15 @@ Stages are the principal parts of the Journey. They are defined as either a Pers
 
 The different Stages of a Pathpoint (five for now), will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators.
 
-And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. And on each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally. And if instead the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. 
+And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. And for each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally.  But if instead, the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. 
 
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
 ![Image](screenshots/stagesb.png)
 Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage is white, it means is free of congestion.
 
-```diff
-- Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint).
-```
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint).
+
 ![Image](screenshots/stage5.png)
  On the graphic above you can see the symbols for the two types of Stages;  
 
@@ -122,7 +120,7 @@ ID: Corresponds to the code that identifies the step in its order within the row
 
 Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). 
 
-Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) Touchpoints do also hold individual Health, Status, Performance, Count and even Business knowledge of a specific data object, environment, app, device, API or service. Additionally every Touchpoint can be tuned and modified to fit a specific journey’s goal.
 
 And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of each Pathpoint.
 
