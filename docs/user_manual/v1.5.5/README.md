@@ -701,15 +701,15 @@ To activate it, just click on the Flame Symbol, which now changes its color, to 
 This is very useful in situations where things look okay now, but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to enable the "Flame filter background script". that is downloadable from the Pathpoint Setup Menu.
 
 
-To use this special Pathpoing filter you must enable it on the "Credentials and General configuration" dialog box window.
+To use this special Pathpoint filter you must enable it on the "Credentials and General Configuration" dialog box window.
 
 ![image](screenshots/Flame_background.png)
 
-To begin this process, login to your Pathpoint window, and then follow these steps to enable it;
+To begin this process, login to your Pathpoint, and then follow these steps to enable it;
 
 1 Click on the three lines on the top left part of the window.
 
-2 Now, click on the option "Credentials and general configuration".  
+2 Now, click on the option "Credentials and General Configuration".  
 
 ![image](screenshots/Flame_background1.png)
 
