@@ -665,17 +665,19 @@ And when you apply the Ingest License, and the User API Key, select "Enable Path
 Return to top of [Index](#Index)
 # <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
 
-Pathpoint allows you execute  different tasks using New Relic synthetic monitors, which allow you to run those tasks in the background.
+Pathpoint allows you execute  different troubleshooting tasks using New Relic synthetic monitors, which in turn allow you to run those tasks in the background.
 
 ## <a id="Flame_Filter_Script"></a>Flame Filter Script ###
 
-To use this special filter you must had enable the Flame Filter Backgrond script option, under "Credentials and general configuration".
+To use this special filter you must had previously enabled the Flame Filter Backgrond script option, under the "Credentials and General configuration" window.
 
 ![image](screenshots/Flame_background.png)
 
-1 To enable this filter, once you are on the Pathpoint screen, click on the three lines on the top left part of the window.
+To begin this process, you must be looking at your Pathpoint, and these are the steps to begin making those changes;
 
-2 Now, click on the option ""Credentials and general configuration"".  
+1 Click on the three lines on the top left part of the window.
+
+2 Now, click on the option "Credentials and general configuration".  
 
 ![image](screenshots/Flame_background1.png)
 
@@ -684,39 +686,39 @@ On this dialog box window you will see a few options, asking you to fill some da
    A To enable this filter you must get an "Ingest License" key, as well as a "User API Key"    
    B Once you get that information, you will be able to select these two options; "Pathpoing Logging", and "Flame Filter Background Script".
 
- If when, you open the ""Credentials and general configuration"" dialog box window, the Ingest License key and the User API Kay and both of the options; "Enable Pathpoing Logging" and "Enable Flame Filter Background Script" are checked, then just click on "Save/Update, or the "X" on the upper right hand of that window, to close it.
+ If when, you open the ""Credentials and general configuration"" dialog box window, the Ingest License key and the User API Kay and both of the options; "Enable Pathpoing Logging" and "Enable Flame Filter Background Script" are checked, then just click on "Save/Update", or the "X" on the upper right hand of that window, to close it.
 
   ![image](screenshots/Flame_background2.png)
 
 These are the steps to get the "Ingest License" key, as well as a "User API Key";  
 1  Click on the Power button, on the upper right hand of the Pathpoint window.  
-2 Next click on the "API Keys" option.
+2 Next, click on the "API Keys" option.
 
   ![image](screenshots/API_Keys.png)
 
-Now you can see both of the Keys you need, to enable "Pathpoing Logging", and "Flame Filter Background Script".
+Now you will see both of the Keys you need, to enable "Pathpoing Logging", and "Flame Filter Background Script".
 
  ![image](screenshots/API_Keys1.png)
 
 And these are the steps to copy those two API Keys, to the " Credentials and General Configuration" dialog box window;  
-1 Click on the 3 dots, on the right of the user name, first for the Insaller API Key.  
+1 Click on the 3 dots, on the right of the user name, first for the "Installer API Key".  
 2 Now, click on "Copy key".
 
 ![image](screenshots/url_address_bar.png)
 
-Now, return to the main Pathpoing One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then pressing on Enter, to load the main Pathpoint page.
+Now, return to the main Pathpoint One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then pressing on Enter key, to load the main Pathpoint page.
 
 ![image](screenshots/Flame_background.png)
 
-To install thse API Keys, return to the "Credentials and general configuration";  
+Finally, to install these API Keys, return to the "Credentials and general configuration" window;  
 
-1 Again, click on the three lines on the top left part of the window.  
-2 Now, click on the option ""Credentials and general configuration"".  
+1 Again, click on the three lines on the top left part of the Pathpoint window.  
+2 Now, click on the option "Credentials and general configuration" window.  
 
 ![image](screenshots/ingest_license.png)
 
-These are the steps, once you check that the Account ID is the right one, to apply both of those API Keys;  
-1 Right click on the white space of the correspoing API you got, if for instance you copied the "Ingest License" Key, right click on the empty cell, and then select Paste to copy the key there. CTRL + V also works. Repeat the previous steps to get the other key you need, for instance the "User API Key", and right click on the white space under the "User API Key", and then select Paste, to copy it there. 
+These are the steps, once you check that the Account ID is the right one, to apply both of these API Keys;  
+1 Right click on the white space of the corresponding API Key you got, if for instance you copied the "Ingest License" Key, right click on the empty cell under its name, and then select Paste to copy the key there. CTRL + V also works. Repeat the previous steps to get the other key you need, for instance the "User API Key", and then right click on the white space under the "User API Key" too, and then select Paste, to copy it there. 
 2 Finally, click on "Install/Update Job", then on "Save/Update".
 
 Now, both Pathpoint Logging, and Flame Filter Background Script will be enabled.
