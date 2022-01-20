@@ -651,7 +651,10 @@ Return to top of [Index](#Index)
 
 The steps to do this are similar than the steps to configure the Flame Filter background script.
 
-* [Drop Filter Background Script](#Flame_Filter_Script)
+
+  *   [Flame Filter Background Script](#Flame_Filter)
+
+
 
 ![image](screenshots/pathpoint_login.png)
 
@@ -689,6 +692,7 @@ Please note that when you are running the Pathpoint background job, the signals 
 
 Return to top of [Index](#Index)
 ## <a id="Flame_Filter"></a>Flame Filter Background Script ###
+
 
 The Flame Filter Background script will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints (the status of the Touchpoint will turn red), as well the ones that are not behaving well (the status of the Touchpoint will turn green), like for instance the ones that are not meeting the threshold as the percentage is concern. 
 
