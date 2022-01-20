@@ -44,12 +44,7 @@ New Relic Pathpoint is an enterprise platform tracker that models system health 
    * ## [Configure Logging](#Configure_Logging)
 
 
-   * ## [Configure Background Jobs](#Configure_Background_Jobs)
-
-
-       * [Flame Filter Background Script](#Flame_Filter_Script)
-      * [Drop Filter Background Script](#Drop_Filter_Script)
-
+ 
 * ##  [Using Special Filters](#Using_Special_Filters)
 
    *   [Canary Filter](#Canary_Filter)
@@ -663,17 +658,54 @@ The steps to do this are similar than the steps to configure the Flame Filter ba
 And when you apply the Ingest License, and the User API Key, select "Enable Pathpoint Logging.
 
 Return to top of [Index](#Index)
-# <a id="Configure_Background_Jobs"></a>Configure Background Jobs ###
+
+# <a id="Using_Special_Filters"></a>Using Special Filters ###
 
 Pathpoint allows you execute  different troubleshooting tasks using New Relic synthetic monitors, which in turn allow you to run those tasks in the background.
 
-## <a id="Flame_Filter_Script"></a>Flame Filter Script ###
+## <a id="Canary_Filter"></a>Canary Filter ###
 
-To use this special filter you must had previously enabled the Flame Filter Backgrond script option, under the "Credentials and General configuration" window.
+This is an excellent filter to troubleshoot your Pathpoint, because when you activate the Canary filter, Pathpoint will only begin to calculate the steps that are activated manually, which will help you illustrate the specific operation of a particular step. This is very usefull when you are troubleshooting one step or in the process of a code deployment or system maintenance and want to constrain your view. 
+
+![image](screenshots/steps5.png)
+
+On this Pathpoint, you can see all the different Steps that are active right now, to troubleshoot this Pathpoint, you can turn off all of the Steps, and then enable them one by one, after turning on the Canary filter.
+
+
+![image](screenshots/canary2.png)
+
+
+To activate it, just click on the Canary Symbol (located on the top right part of the Pathpoint window), which now changes its color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+
+![image](screenshots/steps8.png)
+
+Now, you can see that the steps that were previously active, don't show any activity. 
+
+![image](screenshots/steps10.png)
+
+Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
+
+Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
+
+Return to top of [Index](#Index)
+## <a id="Flame_Filter"></a>Flame Filter Background Script ###
+
+The Flame Filter Background script will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints (the status of the Touchpoint will turn red), as well the ones that are not behaving well (the status of the Touchpoint will turn green), like for instance the ones that are not meeting the threshold as the percentage is concern. 
+
+![image](screenshots/flame2.png)
+
+To activate it, just click on the Flame Symbol, which now changes its color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+
+![image](screenshots/flame3.png)
+
+This is very useful in situations where things look okay now, but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to enable the "Flame filter background script". that is downloadable from the Pathpoint Setup Menu.
+
+
+To use this special Pathpoing filter you must enable it on the "Credentials and General configuration" dialog box window.
 
 ![image](screenshots/Flame_background.png)
 
-To begin this process, you must be looking at your Pathpoint, and these are the steps to begin making those changes;
+To begin this process, login to your Pathpoint window, and then follow these steps to enable it;
 
 1 Click on the three lines on the top left part of the window.
 
@@ -691,6 +723,7 @@ On this dialog box window you will see a few options, asking you to fill some da
   ![image](screenshots/Flame_background2.png)
 
 These are the steps to get the "Ingest License" key, as well as a "User API Key";  
+
 1  Click on the Power button, on the upper right hand of the Pathpoint window.  
 2 Next, click on the "API Keys" option.
 
@@ -701,6 +734,7 @@ Now you will see both of the Keys you need, to enable "Pathpoing Logging", and "
  ![image](screenshots/API_Keys1.png)
 
 And these are the steps to copy those two API Keys, to the " Credentials and General Configuration" dialog box window;  
+
 1 Click on the 3 dots, on the right of the user name, first for the "Installer API Key".  
 2 Now, click on "Copy key".
 
@@ -710,59 +744,19 @@ Now, return to the main Pathpoint One window, which can be achieved by clicking 
 
 ![image](screenshots/Flame_background.png)
 
-Finally, to install these API Keys, return to the "Credentials and general configuration" window;  
+Finally, to install these Keys, return to the "Credentials and general configuration" window;  
 
 1 Again, click on the three lines on the top left part of the Pathpoint window.  
 2 Now, click on the option "Credentials and general configuration" window.  
 
 ![image](screenshots/ingest_license.png)
 
-These are the steps, once you check that the Account ID is the right one, to apply both of these API Keys;  
-1 Right click on the white space of the corresponding API Key you got, if for instance you copied the "Ingest License" Key, right click on the empty cell under its name, and then select Paste to copy the key there. CTRL + V also works. Repeat the previous steps to get the other key you need, for instance the "User API Key", and then right click on the white space under the "User API Key" too, and then select Paste, to copy it there. 
+These are the steps, once you check that the Account ID is the right one, to apply both of these Keys;  
+
+1 Right click on the white space of the corresponding Key you got, if for instance you copied the "Ingest License" Key, right click on the empty cell under its name, and then select Paste to copy the key there. CTRL + V also works. Repeat the previous steps to get the other key you need, for instance the "User API Key", and then right click on the white space under the "User API Key", and then select Paste, to copy it there. 
 2 Finally, click on "Install/Update Job", then on "Save/Update".
 
 Now, both Pathpoint Logging, and Flame Filter Background Script will be enabled.
-
-Return to top of [Index](#Index)
-
-# <a id="Using_Special_Filters"></a>Using Special Filters ###
-
-## <a id="Canary_Filter"></a>Canary Filter ###
-
-The Canary filter, when activated, reset all the the different Steps, so that you can manually activate the Steps, which will help you troubleshoot a particular process.
-
-![image](screenshots/steps5.png)
-
-On this Pathpoint, you can see all the different Steps that are active right now, to troubleshoot this Pathpoint, you can turn off all of the Steps, and then enable them one by one, after turning on the Canary filter.
-
-
-![image](screenshots/canary2.png)
-
-
-To activate it, just click on the Canary Symbol (on the top right part of the Pathpoint window), which now changes its color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
-
-![image](screenshots/steps8.png)
-
-Now, you can see that the steps that were previously active, don't show any activity. 
-
-![image](screenshots/steps10.png)
-
-Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
-
-Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
-
-Return to top of [Index](#Index)
-## <a id="Flame_Filter"></a>Flame Filter ###
-
-The Flame filter will highlight the most problematic “Steps and Touchpoints” with a configurable time window and percentile threshold. When you use this filter, you will see the worst Touchpoints (the status of the Touchpoint will turn red), as well the ones that are not behaving well (the status of the Touchpoint will turn green), like for instance the ones that are not meeting the threshold as the percentage is concern. 
-
-![image](screenshots/flame2.png)
-
-To activate it, just click on the Flame Symbol, which now changes its color, to a reddish flame. On the Pop Up window that opens up, click on "Continue" to activate this filter.
-
-![image](screenshots/flame3.png)
-
-This is very useful in situations where things look okay now, but may have had a pattern of errors or latency in the recent past. To use this filter, you will need to install a background script that is downloadable from the Pathpoint Setup Menu.
 
 Return to top of [Index](#Index)
 
@@ -784,10 +778,10 @@ Displays a Total Drop count per Stage
 * This filter calculates the order or transaction loss by the drops
 
 
--Tunning: 
-Avg Order or Transaction Value
-Incident %
-Time Period
+-Tunning:   
+Avg Order or Transaction Value   
+Incident %   
+Time Period 
 
 Return to top of [Index](#Index)
 
