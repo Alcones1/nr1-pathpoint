@@ -292,9 +292,9 @@ As you saw before, New Relic Pathpoint is comprised of  different types of Touch
 * PCC (Process Count), used to count processes
 * APC (Application Health), used to see the health of an application
 * FRT (Front End Health), which measures the health of the front end of your APP
-* SYN, used to assess the health of a Syntethic monitor
+* SYN, used to assess the health of a Synthetic monitor
 
-There are three diferent colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
+There are three different colors, for a Touchpoint state (on the left of the Touchpoint name), and they are;
 
 * Green, the Touchpoint is healthy
 * Gray, the Touchpoint needs attention
@@ -333,7 +333,7 @@ And on the next graphic you can see the relationship of two Touchpoints, one of 
 
 ![image](screenshots/Example_TP_PRC21.png)
 
-On the this Example, the "Login" Step is related to two Touchpoints;
+On this Example, the "Login" Step is related to two Touchpoints;
 * Login People (PRC) 
 * Login Check (SYN)
 
@@ -391,7 +391,7 @@ And on the next graphic you can see the relationship of this Touchpoint of the A
 
 ![image](screenshots/app_step.png)
 
-On this Example, the "Add/remove item" Step is related to one Touchpoint; "Pricing API (APP)".
+In this Example, the "Add/remove item" Step is related to one Touchpoint; "Pricing API (APP)".
 
 Return to top of [Index](#Index)
 
@@ -420,7 +420,7 @@ And on the next graphic you can see the relationship of this Touchpoint of the F
 
 ![image](screenshots/frt_step.png)
 
-On this example, the "Pay calculation" Step is related to one Touchpoint; Master Data API (FRT) 
+In this example, the "Pay calculation" Step is related to one Touchpoint; Master Data API (FRT) 
 
 Return to top of [Index](#Index)
 
@@ -451,7 +451,7 @@ And on the next graphic you can see the relationship of one Touchpoint of the SY
 
 ![image](screenshots/syn_step.png)
 
-On this example, the "Order Tracking #" Step is related to one Touchpoint; "Gift Card Hub API(SYN)". 
+In this example, the "Order Tracking #" Step is related to one Touchpoint; "Gift Card Hub API(SYN)". 
 
 Return to top of [Index](#Index)
 
@@ -459,7 +459,7 @@ Return to top of [Index](#Index)
 
 As you read before Touchpoints are the more granular entities of the PathPoint model. TouchPoints do behave more like a specific browser application or APM (Application Monitor). And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. 
 
-And every since a Touchpoint is the pulse of each Pathpoint, your ability to test, tune, and work with the Touchpoint Queries are very important to getting the right data you seek.
+And ever since a Touchpoint is the pulse of each Pathpoint, your ability to test, tune, and work with the Touchpoint Queries are very important to getting the right data you seek.
 
 Return to top of [Index](#Index)
 ## <a id="Test_a_Touchpoint"></a>How to test a Touchpoint ###
@@ -472,24 +472,24 @@ To begin the process of testing a Touchpoint, right click on it, and then select
 
 ![image](screenshots/test_touchpoint.png)
 
-To begin testing a Touchpoint, on the Dialog box window that opens up, click on "Test", now you will see the result of the test, on this example, it says; "Succesfully validated", meaning the Touchpoint is healthy.
+To begin testing a Touchpoint, on the Dialog box window that opens up, click on "Test", now you will see the result of the test, on this example, it says; "Successfully validated", meaning the Touchpoint is healthy.
 
-But lets say that you change some part of the given query, for instance to test another aspect of the Touchpoint, now you must test the Touchpoint again.
+But let's say that you change some part of the given query, for instance to test another aspect of the Touchpoint, now you must test the Touchpoint again.
 
 ![image](screenshots/touch_test1.png)
 
-Notice how on this example I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint. Now, you can see the result, on the right; "incorrect validation". So now the query, that was rigth before, is incorrect now. 
+Notice how on this example I changed the Query, in front of count(*), I added three 000, and then I clicked on "Test", to test the Touchpoint. Now, you can see the result, on the right; "incorrect validation". So now the query, that was right before, is incorrect now. 
 
 ![image](screenshots/test_pathpoint1.png)
 
 If you chose to change the given Query, test your changes by clicking on "Test", to make sure the Touchpoint is "healthy", if it is, then save them (click on "Save/Update"). Now, if the validation fails, find out why, and fix it, then test it again until you get the "Successfully validated" message.
 
-Please note that if you get a "Incorrect validated" error, when testing a Touchpoint, it might be something as simple as  because you are running the Query on the wrong AccountID.
+Please note that if you get an "Incorrect validated" error, when testing a Touchpoint, it might be something as simple as  because you are running the Query on the wrong AccountID.
 
 ![image](screenshots/test_touchpoint1.png)
 To change it, to the right AccountID;  
 1 Click on the AccountID field, and then select the right AccountID.  
-2 Now, test it again. If the asnswer is "Successfully validated", the AccountID was the issue.
+2 Now, test it again. If the answer is "Successfully validated", the AccountID was the issue.
 
 Return to top of [Index](#Index)
 
@@ -515,8 +515,8 @@ On the next graphic you can see the tuning dialog box window of a Touchpoint of 
 
 There are two important values on this Touchpoint;
 
-* Session count (Min), if the value (under "Configured"), is  for example set at 10, and the value of sessions, on the last 5 minutes, is below this number, the status of the Touchpoint will turn red. You can change this #, for instance to 20, as your business needs require.
-* Session count (Max), if the value (under "Configured"), is  for example set at 110, and the value of sessions, on the last 5 minutes, is above this number, the status of the Touchpoint will turn red. You will also see the color of the Stage label turn, from blue, to white.
+* Session count (Min), if the value (under "Configured"), is  for example set at 10, and the value of sessions, in the last 5 minutes, is below this number, the status of the Touchpoint will turn red. You can change this #, for instance to 20, as your business needs require.
+* Session count (Max), if the value (under "Configured"), is  for example set at 110, and the value of sessions, in the last 5 minutes is above this number, the status of the Touchpoint will turn red. You will also see the color of the Stage label turn, from blue, to white.
 
 
 ## Subscriptions API (PCC)
@@ -550,7 +550,7 @@ You can manually work/troubleshoot a particular Touchpoint, by disabling it, and
 
 ![image](screenshots/touch.png)
 
-To disable a Touchpoint, right click on it. On this example I clicked on the Customer credit API (which is a PCC type of Touchpoint).
+To disable a Touchpoint, right click on it. In this example I clicked on the Customer credit API (which is a PCC type of Touchpoint).
 
 ![image](screenshots/touch1.png)
 
@@ -619,11 +619,11 @@ This query purpose is to get the latest workload status value.
 
 SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
 
-The only thing that can be changed on this query, is the entity name, on this exaple 'Demotron V2 - Acme Dev'.
+The only thing that can be changed on this query, is the entity name, in this example 'Demotron V2 - Acme Dev'.
 
-### APLICATION HEALTH (APP)
+### APPLICATION HEALTH (APP)
 
-This query purpose is to measure your aplication backend health.
+This query purpose is to measure your application backend health.
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
 
@@ -668,7 +668,7 @@ Pathpoint allows you to execute  different troubleshooting tasks using New Relic
 
 ## <a id="Canary_Filter"></a>Canary Filter ###
 
-This is an excellent filter to troubleshoot your Pathpoint, because when you activate the Canary filter, Pathpoint will only begin to calculate the steps that are activated manually, which will help you illustrate the specific operation of a particular step. This is very usefull when you are troubleshooting one step or in the process of a code deployment or system maintenance and want to constrain your view. 
+This is an excellent filter to troubleshoot your Pathpoint, because when you activate the Canary filter, Pathpoint will only begin to calculate the steps that are activated manually, which will help you illustrate the specific operation of a particular step. This is very useful when you are troubleshooting one step or in the process of a code deployment or system maintenance and want to constrain your view. 
 
 ![image](screenshots/steps5.png)
 
@@ -678,7 +678,7 @@ On this Pathpoint, you can see all the different Steps that are active right now
 ![image](screenshots/canary2.png)
 
 
-To activate it, just click on the Canary Symbol (located on the top right part of the Pathpoint window), which now changes its color, to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
+To activate it, just click on the Canary Symbol (located on the top right part of the Pathpoint window), which now changes its color to yellowish. On the Pop Up window that opens up, click on "Continue" to activate this filter.
 
 ![image](screenshots/steps8.png)
 
@@ -686,7 +686,7 @@ Now, you can see that the steps that were previously active, don't show any acti
 
 ![image](screenshots/steps10.png)
 
-Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice, that this action also enables the corresponding Touchpoints.
+Now, you can click on any of the Steps you want to troubleshoot, to enable them, for instance "Web" and "Login", and also notice that this action also enables the corresponding Touchpoints.
 
 Please note that when you are running the Pathpoint background job, the signals for non-visible touchpoints will still be available when you are using the Flame view.
 
@@ -771,14 +771,14 @@ The Drop filter calculates the order or transaction loss by stage with their mon
 
  ![image](screenshots/drop1.png)
 
- To activate it, just click on the tear-drop Symbol, which now changes its color to black. Now, if at least one of your Steps has a Touchpoint of the Drop(DRP) kind, you will see a dollar amount, on top of the correstponding Step.
+ To activate it, just click on the tear-drop Symbol, which now changes its color to black. Now, if at least one of your Steps has a Touchpoint of the Drop(DRP) kind, you will see a dollar amount, on top of the corresponding Step.
 
 
  ![image](screenshots/drop2.png)
 
  On the example figure above, you can see that all the five Steps of this Pathpoint have Touchpoints of the Drop(DRP) kind. You can clearly see the dollar amount of the order or transaction loss by Step, and that each one of the related Steps are in black.
 
-To tune this filter, so that the information it presents to you is more meaninful, click on the drop symbol, for the "Drop filter", with the right mouse botton.
+To tune this filter, so that the information it presents to you is more meaningful, click on the drop symbol, for the "Drop filter", with the right mouse button.
 
 ![image](screenshots/drop_3.png)
 
@@ -786,9 +786,9 @@ These are the steps to tune the Drop filter, of a Pathpoint, to taylor the data 
 
 A To change the "Average order value", click on the amount you see here, and type a new amount.  
 B To change the time period of the sampled data, type it here, for instance 45, instead of 55.  
-C To reduce, or increase the percentange of Steps you will see with the most drops, type a new number here. 
+C To reduce, or increase the percentage of Steps you will see with the most drops, type a new number here. 
 
-You don't need to press Enter, after each change, and the changes you make will stay saved, until you changed them again.
+You don't need to press Enter, after each change, and the changes you make will stay saved, until you change them again.
 
 
 Return to top of [Index](#Index)
