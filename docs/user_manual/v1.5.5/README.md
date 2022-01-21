@@ -64,22 +64,22 @@ To get started setting up Pathpoint you'll need some telemetry in the account th
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
-To configure your own Pathpoint simply download the current version of the JSON config that was writen for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
+To configure your own Pathpoint simply download the current version of the JSON config that was written for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
 
 Return to top of [Index](#Index)
 
 ## <a id="Stages"></a>Stages ###
 
-Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are design to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
+Stages are the principal parts of the Journey. They are defined as either a Person or a Process Stage and are designed to show the complete health, congestion, count and Infrastructure state of a Pathpoint. 
 
 The different Stages of a Pathpoint (five for now), will allow you to see the business processes at a high level, and notice how for each commercial stage, different services and methods are presented at the system level. Based on business information, PathPoint previews latency indicators.
 
-And the information related to a particular stage, including the errors for each one of them, can be viewed on REAL TIME at a high level. And for each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally.  But if instead, the stage turns the color red, it means that all its touchpoints have anomalies, that need to be resolved. 
+And the information related to a particular stage, including the errors for each one of them, can be viewed in REAL TIME at a high level. And for each particular stage we can see first-hand if any of its associated touchpoints are critical, and if this is the case, then the stage will turn yellow. If it stays green, it means that everything is working normally.  But if instead, the stage turns the color red, it means that all its touchpoints have anomalies that need to be resolved. 
 
 On the following graphic, you can see that this particular Pathpoint has five stages in process.
 
 ![Image](screenshots/stagesb.png)
-Additionally if the Stage turns blue, like on the example above, this represents congestiong on the Stage, and if the color of the stage is white, it means is free of congestion.
+Additionally if the Stage turns blue, like in the example above, this represents congestion on the Stage, and if the color of the Stage is white, it means it is free of congestion.
 
 ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Please note that under a single Stage you should only count either persons (PRC Touchpoint) or processes (PCC Touchpoint).
 
@@ -121,7 +121,7 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 ![image](screenshots/alltouchpoints.png)
 
-Please note that if you can't see a particular Touchpoint you are looking for, that you can click on "View all", to see it, under the particular Stage, and Step associated with it.
+Please note that if you can't see a particular Touchpoint you are looking for, you can click on "View all", to see it, under the particular Stage, and Step associated with it.
 
 
 
@@ -132,7 +132,7 @@ On the next example graphic you can see a Touchpoint.
 ![image](screenshots/TP1.png)
 
 
-On this example the Touchpoint name is "Chat Throughput (PCC)", and the PCC means that this is the type of Touchpoint designed to count processes. 
+In this example the Touchpoint name is "Chat Throughput (PCC)", and the PCC means that this is the type of Touchpoint designed to count processes. 
 
 * Status "On" or "Off": This option allows you to enable or disable a touchpoint for display mode. To access this view, right click on the particular touchpoint you want to work with and click on the option "ON/OFF". 
 
@@ -144,7 +144,7 @@ To turn Off a Touchpoint (for instace to troubleshoot it), right click on its na
 
 ![image](screenshots/Examples_related_steps_TP.png)
 
-On this example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove Item" Step.
+In this example, the "Pricing API (APP)" Touchpoint is linked to the "Add/Remove Item" Step.
 
 * Queries: Allow you to determine all the parameters that of a particular Touchpoint should consider. They are pre-programmed on a file called JSON configuration file, and you can also manually tweek them to fit a specific journey’s goal.
 
@@ -164,9 +164,9 @@ These are the different parts of the query box window, of a PRC person count Tou
      6 Measure_time: Determines the time from when you want the query to collect information to perform the measurement.
 
 
-![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) On this Readme file you will learn more about the different types of queries, for the different types of Touchpoints.   
+![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) In this Readme file you will learn more about the different types of queries, for the different types of Touchpoints.   
 
-And these are two examples of a typical Touchpoint configuration, as is writen on the JSON file;
+And these are two examples of a typical Touchpoint configuration, as is written on the JSON file;
 
 Example 1
 
@@ -177,15 +177,15 @@ Example 2
 ![image](screenshots/Example_Touchpoint2.png)
 
 
-Please note, that there is a recomendation that when you give a Touchpoint its name, also state the type of Touchpoint it is, like for example the Touchpoint VTEX Do API, name it like this; "VTEX Do API(PCC)", which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
+Please note, that there is a recommendation that when you give a Touchpoint its name, also state the type of Touchpoint it is, like for example the Touchpoint VTEX Do API, name it like this; "VTEX Do API(PCC)", which tells the person looking at the Touchpoint, at a later time, that this is a PCC Touchpoint, intended to count processes.
 
 # <a id="Pathpoint_Configuration"></a>Pathpoint Configuration ###
 
-Pathpoint is configured using a JSON configuration file, which is writen to the needs of your particular business. Once the configuration file is loaded, you can also manually tweek the Touchpoints, tuning them, or working with their queries. This information will be shown to you further down on this Readme file.
+Pathpoint is configured using a JSON configuration file, which is written to the needs of your particular business. Once the configuration file is loaded, you can also manually tweak the Touchpoints, tuning them, or working with their queries. This information will be shown to you further down on this Readme file.
 
 ## <a id="JSON_Configuration_File"></a>JSON Configuration File ###
 
-JSON for its acronym (JavaScript Object Notation) is a data structure, whose basic function is to allow for the exchange of information. Through this structure it will be possible to identify each of the elements and components that will facilitate the implementation of Pathpoint, knowing the function of its attributes, queries and data output. To program new stages, path and Pathpoints, you upload a New JSON Configuration file.
+JSON for its acronym (JavaScript Object Notation) is a data structure, whose basic function is to allow for the exchange of information. Through this structure it will be possible to identify each of the elements and components that will facilitate the implementation of Pathpoint, knowing the function of its attributes, queries and data output. To program new Stages, Steps and Touchpoints, you upload a New JSON Configuration file.
 
 ![image](screenshots/jsonfile.png)
 
@@ -664,7 +664,7 @@ Return to top of [Index](#Index)
 
 # <a id="Using_Special_Filters"></a>Using Special Filters ###
 
-Pathpoint allows you execute  different troubleshooting tasks using New Relic synthetic monitors, which in turn allow you to run those tasks in the background.
+Pathpoint allows you to execute  different troubleshooting tasks using New Relic synthetic monitors, which in turn allow you to run those tasks in the background.
 
 ## <a id="Canary_Filter"></a>Canary Filter ###
 
