@@ -566,7 +566,7 @@ Return to top of [Index](#Index)
 
 Touchpoint queries are writen in NRQL, which is New Relic's SQL-like query language. In general NRQL allows you to retrieve detailed New Relic data and get insight into your applications, hosts, and business-important activity.
 
-Using this guide you will learn about each Touchpoint Query (which are pre-writen by the JSON file you uploaded to your Pathpoint).
+Using this guide you will learn about each Touchpoint Query, which are pre-writen by the JSON file you uploaded to your Pathpoint, and you can also make some changes, as long as you don't change the main query variable that the Touchpoint is looking to get.
 
 To begin the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different results from the particular Touchpoint you select to work with.
 
@@ -766,26 +766,30 @@ Return to top of [Index](#Index)
 
 ## <a id="Drop_Filter"></a>Drop Filter ###
 
-Function: 
+The Drop filter calculates the order or transaction loss by stage with their monetary equivalents according to the values set in the tunning. It also shows the steps that are causing drops.
 
- Highlights Steps with Most Drops (Session Breaks or Abandonment) 
 
  ![image](screenshots/drop1.png)
 
- To activate it, just click on the tear-drop Symbol, which now changes its color, to black. 
+ To activate it, just click on the tear-drop Symbol, which now changes its color to black. Now, if at least one of your Steps has a Touchpoint of the Drop(DRP) kind, you will see a dollar amount, on top of the correstponding Step.
 
-Displays a Total Drop count per Stage
 
  ![image](screenshots/drop2.png)
 
+ On the example figure above, you can see that all the five Steps of this Pathpoint have Touchpoints of the Drop(DRP) kind. You can clearly see the dollar amount of the order or transaction loss by Step, and each one of the related steps are in black.
 
-* This filter calculates the order or transaction loss by the drops
+To tune this filter, so that the information it presents to you is more meaninful, click on the drop symbol, for the "Drop filter", with the right mouse botton.
 
+![image](screenshots/drop_3.png)
 
--Tunning:   
-Avg Order or Transaction Value   
-Incident %   
-Time Period 
+These are the steps to tune the Drop filter, of a Pathpoint, so that it shows you more useful data;
+
+A To change the "Average order value", click on the amount you see here, and type a new amount.
+B To change the time period of the sampled data, type it here, for instance 45, instead of 55.
+C To reduce, or increase the percentange of Steps you will see with the most drops, type a new number here.
+
+You don't need to press Enter, after each change, and the changes you make will stay saved, until you changed them again.
+
 
 Return to top of [Index](#Index)
 
