@@ -782,11 +782,11 @@ To tune this filter, so that the information it presents to you is more meaninfu
 
 ![image](screenshots/drop_3.png)
 
-These are the steps to tune the Drop filter, of a Pathpoint, to taylor the data you see on the Steps with touchpoints of the Drop(DRP) kind;
+These are the steps to tune the Drop filter, of a Pathpoint, to taylor the data you see on the Steps with touchpoints of the Drop(DRP) kind; 
 
-A To change the "Average order value", click on the amount you see here, and type a new amount.
-B To change the time period of the sampled data, type it here, for instance 45, instead of 55.
-C To reduce, or increase the percentange of Steps you will see with the most drops, type a new number here.
+A To change the "Average order value", click on the amount you see here, and type a new amount.  
+B To change the time period of the sampled data, type it here, for instance 45, instead of 55.  
+C To reduce, or increase the percentange of Steps you will see with the most drops, type a new number here. 
 
 You don't need to press Enter, after each change, and the changes you make will stay saved, until you changed them again.
 
