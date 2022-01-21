@@ -633,7 +633,7 @@ Has 3 variables;
 * RESPONSE, which measures the duration of a process in seconds.
 * Error, which is a percentage between 0 and 100.
 
-### Plase keep in mind that once you manually change a query, that you can save the changes you made, on the Touchpoint configuration.
+Please keep in mind that once you manually change a query, that you can chose to save the changes you made, on the Touchpoint configuration.
 
 
 ![image](screenshots/touchpoint_save.png)
@@ -776,7 +776,7 @@ The Drop filter calculates the order or transaction loss by stage with their mon
 
  ![image](screenshots/drop2.png)
 
- On the example figure above, you can see that all the five Steps of this Pathpoint have Touchpoints of the Drop(DRP) kind. You can clearly see the dollar amount of the order or transaction loss by Step, and that each one of the related steps are in black.
+ On the example figure above, you can see that all the five Steps of this Pathpoint have Touchpoints of the Drop(DRP) kind. You can clearly see the dollar amount of the order or transaction loss by Step, and that each one of the related Steps are in black.
 
 To tune this filter, so that the information it presents to you is more meaninful, click on the drop symbol, for the "Drop filter", with the right mouse botton.
 
