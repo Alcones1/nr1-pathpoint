@@ -564,9 +564,9 @@ Return to top of [Index](#Index)
 
 # <a id="How_to_run_touchpoing_queries"></a>How to run Touchpoint Queries ###
 
-Touchpoint queries are writen in NRQL, which is New Relic's SQL-like query language. In general NRQL allows you to retrieve detailed New Relic data and get insight into your applications, hosts, and business-important activity.
+Touchpoint queries are written in NRQL, which is New Relic's SQL-like query language. In general NRQL allows you to retrieve detailed New Relic data and get insight into your applications, hosts, and business-important activity.
 
-Using this guide you will learn about each Touchpoint Query, which are pre-writen by the JSON file you uploaded to your Pathpoint, and you can also make some changes, as long as you don't change the main query variable that the Touchpoint is looking to get.
+Using this guide you will learn about each Touchpoint Query, which are pre-written by the JSON file you uploaded to your Pathpoint, and you can also make some changes, as long as you don't change the main query variable that the Touchpoint is looking to get.
 
 To begin the process of working with a Touchpoint Query, right click on the particular Touchpoint you want to work with, and then select Queries, now you can modify them, to get different results from the particular Touchpoint you select to work with.
 
@@ -576,7 +576,7 @@ On this example graphic you can see the Query of the PRC type (used to count peo
 
 ### SYNTHETIC CHECK (SYN)
 
-This query purpuse is to get the health status of a Synthetic monitor.
+This query purpose is to get the health status of a Synthetic monitor.
 
 SELECT filter(percentage(count(result),WHERE result='SUCCESS'),WHERE 1=1) as success, max(duration) as duration, max(longRunningTasksAvgTime) as request from SyntheticCheck,SyntheticRequest WHERE monitorName='BDB Live person'
 
@@ -587,7 +587,7 @@ Has 3 variables;
 * REQUEST, how long it took to respond to a request.
 
 ### PROCESS COUNT (PCC)
-This query purpuse is to count processes.
+This query purpose is to count processes.
 
 SELECT count(*) FROM Public_APICall WHERE awsRegion='us-east-1'
 
@@ -595,7 +595,7 @@ Wait for a value on a variable called "count"
 
 ### PERSON COUNT (PRC)
 
-This query purpuse is to count people.
+This query purpose is to count people.
 
 SELECT count(*) as session FROM Public_APICall WHERE awsRegion='us-east-1'
 
@@ -603,7 +603,7 @@ Expects a value on a variable called "session".
 
 ### FRONT END HEALTH (FRT)
 
-This query purpuse is to measure the health of the front end of your aplication.
+This query purpose is to measure the health of the front end of your aplication.
 
 SELECT filter(apdex(duration, t:1), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from PageView WHERE appName='QS'
 
@@ -615,7 +615,7 @@ Has 3 variables;
 
 ### INFRA WORKLOAD (WLD)
 
-This query purpuse is to get the latest workload status value.
+This query purpose is to get the latest workload status value.
 
 SELECT latest(statusValue) as statusValue FROM WorkloadStatus WHERE entity.name='Demotron V2 - Acme Dev'
 
@@ -623,7 +623,7 @@ The only thing that can be changed on this query, is the entity name, on this ex
 
 ### APLICATION HEALTH (APP)
 
-This query purpuse is to measure your aplication backend health.
+This query purpose is to measure your aplication backend health.
 
 SELECT filter(apdex(duration, t:0.028), WHERE 1=1) as apdex, filter( max(duration), WHERE 1=1) as response,filter(percentage(count(*), WHERE error is true), WHERE 1=1) as error from Transaction WHERE appName='QS'
 
