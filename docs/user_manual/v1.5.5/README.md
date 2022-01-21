@@ -502,9 +502,18 @@ This is done using the JSON configuration file, which is taylor writen to the ne
 Return to top of [Index](#Index)
 # <a id="Tune_Touchpoint_Thresholds"></a>Tune Touchpoint Thresholds ###
 
-One way to get better data, from your Touchpoints, is to tweek their configuration, and to begin this process, right click on the Touchpoint you want to Tune, and then select "Tune".
+One way to get better data, from your Touchpoints, is to tweak their configuration, and bear in mind that the values you will see at the beginning of the tuning process were defined on the JSON file uploaded to your Pathpoint, and you can also change them, manually.
 
-The values you will see at the beginning of the tuning process were defined on the JSON file uploaded to your Pathpoing, and you can also change them, manually by right clicking on the Touchpoint, and selecting Tune. Once you change the values of the tuning, you can save them by clicking on "Save/Update".
+To begin this process, right click on the Touchpoint you want to Tune, and then select "Tune". If you wish to change the values of the tuning of a Touchpoint, be on the MIN part or the MAX part, click on the space, under configured and type the new value. 
+
+![image](screenshots/tune7.png)
+
+This is the way to change the value of the tuning, of a Pathpoint Touchpoint;  
+
+A Click on the current given value.   
+B Type the new Value.
+
+Once you change the values of the tuning, you can save them by clicking on "Save/Update".
 
 ## LOGIN PEOPLE PRC
 
@@ -572,7 +581,7 @@ To begin the process of working with a Touchpoint Query, right click on the part
 
 ![image](screenshots/prc_query.png)
 
-On this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "session".
+In this example graphic you can see the Query of the PRC type (used to count people) Touchpoint, in which the variable is "session".
 
 ### SYNTHETIC CHECK (SYN)
 
