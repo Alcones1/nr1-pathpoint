@@ -753,7 +753,7 @@ And these are the steps to copy those two API Keys, to the " Credentials and Gen
 
 ![image](screenshots/url_address_bar.png)
 
-Now, return to the main Pathpoint One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then pressing on Enter key, to load the main Pathpoint page.
+Now, return to the main Pathpoint One window, which can be achieved by clicking on the URL Address bar, typing "one.newrelic.com, and then pressing on the "Enter" key, to load the main Pathpoint page.
 
 ![image](screenshots/Flame_background.png)
 
