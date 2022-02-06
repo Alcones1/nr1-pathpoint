@@ -99,15 +99,12 @@ Steps represent the various actions/events occurring throughout the stage. They 
 
 Title: Corresponds to the name with which the Step is identified. On this example; "Customer info."
 
-
 On the next example graphic you can see the row in which each task is located within the Step.
 
 ![image](screenshots/Examples_Line_Step8.png)
 
 Values: Indicate the parameters for each step;  
 * Currently in line 1) "Web", "App", and in line 2)"Login"  and "Signup" are being considered, and in line 3) Search, Menu, Gift Card, and Rewards aren't being considered.
-
-
 
 ![image](screenshots/Examples_Title_Step4.png)
 
@@ -121,7 +118,7 @@ Touchpoints are the more granular entities of the PathPoint model. TouchPoints d
 
 And every Step of a Pathpoint is connected to one or more Touchpoints and Every Stage Status is based on the culmination of its respective Touchpoints. The Touchpoint is the pulse of each Pathpoint.
 
-![image](screenshots/alltouchpoints.png)
+![image](screenshots/activetouchpoints.png)
 
 Please note that if you can't see a particular Touchpoint you are looking for, you can click on "View all", to see it, under the particular Stage, and Step associated with it.
 
