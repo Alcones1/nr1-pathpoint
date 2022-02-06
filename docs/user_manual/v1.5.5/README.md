@@ -64,7 +64,9 @@ To get started setting up Pathpoint you'll need some telemetry in the account th
 
 A common starting place for Pathpoint is APM Events and Logs, but this is up to you. The other thing you'll need to know is how this telemetry maps onto the business process you want to model as stages and steps. That may require some internal discussions with your stakeholders to understand how things really fit in.
 
-To configure your own Pathpoint simply download the current version of the JSON config that was written for you, or edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
+To configure your own Pathpoint simply upload the current version of the JSON config that was written for your business, or download it and edit it yourself (if you wish to do so) and then re-upload it. Alternatively you can also manually "right click" over each one of the touchpoints you would like to work on, to manually adjust its configuration.
+
+Please note that every time you make a change to your JSON configuration file, using a program like Visual Studio, and want to apply that change to your Pathpoint, you will need to re-apply the changed JSON configuration file, using the same steps that you used to "Upload" a new JSON configuration file.
 
 Return to top of [Index](#Index)
 
