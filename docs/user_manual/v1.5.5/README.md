@@ -188,7 +188,7 @@ JSON for its acronym (JavaScript Object Notation) is a data structure, whose bas
 
 ![image](screenshots/jsonfile.png)
 
-The graphic above shows you how each Step is tied to a single Touchpoint, or to a few Touchpoints.
+The graphic above shows you how each Stage of a Pathpoint, is linked to one or more Steps, which in turn can then be tied to a single Touchpoint, or to a few Touchpoints.
 
 ## Uploading a New JSON Config File
 
