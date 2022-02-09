@@ -122,8 +122,6 @@ And every Step of a Pathpoint is connected to one or more Touchpoints and Every 
 
 Please note that if you can't see a particular Touchpoint you are looking for, you can click on "View all", to see it, under the particular Stage, and Step associated with it.
 
-
-
 On the next example graphic you can see a Touchpoint.
 
 * Title: Corresponds to the name that identifies the touchpoint.
@@ -203,10 +201,9 @@ Once you are given the JSON configuration file, you can Upload it to your Pathpo
 
 ![image](screenshots/Option_update.png)
 
-3 On the dialog box window that opens up, type under "Description" a memo that will remind you later why you chose to upload a new JSON configuration file. There is also a space for a Note, write the current date. Now, to start this process, click on "From File".
+3 On the dialog box window that opens up type, under "Description", a memo that will remind you later why you chose to upload a new JSON configuration file, for instance; "New json configuration". There is also a space for a Note, write the current date. Now, to start this process, click on "From File".
 
 ![image](screenshots/file_location.png)
-
 
 4 Next, locate the file you want to update and click on "Open"
 
